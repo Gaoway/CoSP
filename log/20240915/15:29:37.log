@@ -1,0 +1,182 @@
+The full evaluation configuration:
+Namespace(auto_model=False, datapath='/data0/amax/git/MCSD/dataset/wmt_ende.json', disable_tqdm=True, disable_tree_attn=False, draft_model='/data0/lygao/model/llama/vicuna-68m', flash_attn=False, fp16=False, k_config=(3, 2), max_new_tokens=128, naive_sampling=False, replacement=False, run_baseline=False, sampling_type='argmax', target_model='/data0/lygao/model/llama/llama-13b', tokenizer='/data0/lygao/model/llama/llama-13b')
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+/home/amax/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+Loading checkpoint shards:  33%|###3      | 1/3 [00:03<00:06,  3.03s/it]
+Loading checkpoint shards:  67%|######6   | 2/3 [00:05<00:02,  2.52s/it]
+Loading checkpoint shards: 100%|##########| 3/3 [00:06<00:00,  1.99s/it]
+Loading checkpoint shards: 100%|##########| 3/3 [00:06<00:00,  2.18s/it]
+/home/amax/miniconda3/envs/pytorch/lib/python3.8/site-packages/transformers/generation/configuration_utils.py:567: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/amax/miniconda3/envs/pytorch/lib/python3.8/site-packages/transformers/generation/configuration_utils.py:572: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/amax/miniconda3/envs/pytorch/lib/python3.8/site-packages/transformers/generation/configuration_utils.py:567: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/amax/miniconda3/envs/pytorch/lib/python3.8/site-packages/transformers/generation/configuration_utils.py:572: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+samples: 0, invocation_count: 15
+samples: 1, invocation_count: 45
+samples: 2, invocation_count: 64
+samples: 3, invocation_count: 61
+samples: 4, invocation_count: 47
+samples: 5, invocation_count: 41
+samples: 6, invocation_count: 19
+samples: 7, invocation_count: 52
+samples: 8, invocation_count: 25
+samples: 9, invocation_count: 26
+samples: 10, invocation_count: 19
+samples: 11, invocation_count: 83
+samples: 12, invocation_count: 11
+samples: 13, invocation_count: 48
+samples: 14, invocation_count: 12
+samples: 15, invocation_count: 54
+Running time: 30.84 s
+Token latency: 49.59 ms
+Speed: 20.17 tokens/s
+samples: 0, invocation_count: 128
+samples: 1, invocation_count: 128
+samples: 2, invocation_count: 128
+samples: 3, invocation_count: 128
+samples: 4, invocation_count: 54
+samples: 5, invocation_count: 128
+samples: 6, invocation_count: 128
+samples: 7, invocation_count: 128
+samples: 8, invocation_count: 128
+samples: 9, invocation_count: 128
+samples: 10, invocation_count: 128
+samples: 11, invocation_count: 128
+samples: 12, invocation_count: 128
+samples: 13, invocation_count: 128
+samples: 14, invocation_count: 128
+samples: 15, invocation_count: 128
+Running time: 3.79 s
+Token latency: 1.92 ms
+Speed: 520.49 tokens/s
+Draft time: 0.067, speed: 390.95
+Verify time: 0.744, speed: 17.48, Output: 15 / 13
+Draft time: 0.050, speed: 517.16
+Verify time: 0.638, speed: 20.39, Output: 15 / 13
+Draft time: 0.050, speed: 521.24
+Verify time: 0.637, speed: 20.40, Output: 15 / 13
+Draft time: 0.050, speed: 520.57
+Verify time: 0.638, speed: 20.39, Output: 15 / 13
+Draft time: 0.050, speed: 516.97
+Verify time: 0.638, speed: 20.38, Output: 15 / 13
+Draft time: 0.050, speed: 518.08
+Verify time: 0.638, speed: 20.39, Output: 15 / 13
+Draft time: 0.050, speed: 520.67
+Verify time: 0.637, speed: 20.39, Output: 15 / 13
+Draft time: 0.050, speed: 518.82
+Verify time: 0.637, speed: 20.40, Output: 15 / 13
+Draft time: 0.128, speed: 514.74
+Verify time: 1.631, speed: 20.24, Output: 45 / 33
+Draft time: 0.127, speed: 518.89
+Verify time: 1.621, speed: 20.36, Output: 45 / 33
+Draft time: 0.128, speed: 517.32
+Verify time: 1.621, speed: 20.36, Output: 45 / 33
+Draft time: 0.128, speed: 516.32
+Verify time: 1.620, speed: 20.37, Output: 45 / 33
+Draft time: 0.127, speed: 518.71
+Verify time: 1.621, speed: 20.36, Output: 45 / 33
+Draft time: 0.128, speed: 515.53
+Verify time: 1.621, speed: 20.36, Output: 45 / 33
+Draft time: 0.128, speed: 516.10
+Verify time: 1.621, speed: 20.36, Output: 45 / 33
+Draft time: 0.128, speed: 515.26
+Verify time: 1.621, speed: 20.36, Output: 45 / 33
+Draft time: 0.193, speed: 518.14
+Verify time: 2.468, speed: 20.26, Output: 64 / 50
+Draft time: 0.193, speed: 518.05
+Verify time: 2.469, speed: 20.25, Output: 64 / 50
+Draft time: 0.193, speed: 517.89
+Verify time: 2.469, speed: 20.25, Output: 64 / 50
+Draft time: 0.194, speed: 516.58
+Verify time: 2.471, speed: 20.24, Output: 64 / 50
+Draft time: 0.193, speed: 518.26
+Verify time: 2.471, speed: 20.23, Output: 64 / 50
+Draft time: 0.193, speed: 519.31
+Verify time: 2.471, speed: 20.24, Output: 64 / 50
+Draft time: 0.192, speed: 519.73
+Verify time: 2.471, speed: 20.24, Output: 64 / 50
+Draft time: 0.193, speed: 519.28
+Verify time: 2.471, speed: 20.24, Output: 64 / 50
+Draft time: 0.182, speed: 516.96
+Verify time: 2.314, speed: 20.31, Output: 61 / 47
+Draft time: 0.181, speed: 519.76
+Verify time: 2.313, speed: 20.32, Output: 61 / 47
+Draft time: 0.183, speed: 514.61
+Verify time: 2.316, speed: 20.30, Output: 61 / 47
+Draft time: 0.187, speed: 501.63
+Verify time: 2.327, speed: 20.19, Output: 61 / 47
+Draft time: 0.197, speed: 476.15
+Verify time: 2.333, speed: 20.15, Output: 61 / 47
+Draft time: 0.184, speed: 511.49
+Verify time: 2.326, speed: 20.20, Output: 61 / 47
+Draft time: 0.181, speed: 518.84
+Verify time: 2.314, speed: 20.31, Output: 61 / 47
+Draft time: 0.181, speed: 519.76
+Verify time: 2.314, speed: 20.31, Output: 61 / 47
+Draft time: 0.151, speed: 516.89
+Verify time: 1.931, speed: 20.20, Output: 47 / 39
+Draft time: 0.150, speed: 521.22
+Verify time: 1.920, speed: 20.31, Output: 47 / 39
+Draft time: 0.150, speed: 520.42
+Verify time: 1.923, speed: 20.28, Output: 47 / 39
+Draft time: 0.150, speed: 518.67
+Verify time: 1.924, speed: 20.27, Output: 47 / 39
+Draft time: 0.149, speed: 521.81
+Verify time: 1.923, speed: 20.28, Output: 47 / 39
+Draft time: 0.150, speed: 521.61
+Verify time: 1.923, speed: 20.28, Output: 47 / 39
+Draft time: 0.150, speed: 521.17
+Verify time: 1.923, speed: 20.28, Output: 47 / 39
+Draft time: 0.150, speed: 521.23
+Verify time: 1.923, speed: 20.28, Output: 47 / 39
+Draft time: 0.146, speed: 519.13
+Verify time: 1.873, speed: 20.29, Output: 41 / 38
+Draft time: 0.146, speed: 522.18
+Verify time: 1.872, speed: 20.29, Output: 41 / 38
+Draft time: 0.146, speed: 521.34
+Verify time: 1.873, speed: 20.29, Output: 41 / 38
+Draft time: 0.146, speed: 519.18
+Verify time: 1.873, speed: 20.29, Output: 41 / 38
+Draft time: 0.146, speed: 521.55
+Verify time: 1.872, speed: 20.30, Output: 41 / 38
+Draft time: 0.146, speed: 520.40
+Verify time: 1.873, speed: 20.29, Output: 41 / 38
+Draft time: 0.146, speed: 520.61
+Verify time: 1.873, speed: 20.29, Output: 41 / 38
+Draft time: 0.146, speed: 521.94
+Verify time: 1.872, speed: 20.30, Output: 41 / 38
+Speed: 23.25 tokens/s
+Acceptance rate: 0.12
+Block efficiency: 1.24
+block_list: [1.229905071909552, 1.2299050719095506, 1.249320883483817, 1.229905071909551, 1.189838316623031, 1.2551173919399004, 1.120290466035147, 1.2299050719095515]
+Draft time: 0.075, speed: 521.42
+Verify time: 0.641, speed: 20.27, Output: 15 / 13
+Draft time: 0.075, speed: 521.96
+Verify time: 0.641, speed: 20.28, Output: 15 / 13
+Draft time: 0.075, speed: 521.65
+Verify time: 0.641, speed: 20.29, Output: 15 / 13
+Draft time: 0.075, speed: 521.94
+Verify time: 0.641, speed: 20.29, Output: 15 / 13
+Draft time: 0.075, speed: 521.60
+Verify time: 0.641, speed: 20.29, Output: 15 / 13
+Draft time: 0.075, speed: 523.26
+Verify time: 0.641, speed: 20.28, Output: 15 / 13
+Draft time: 0.075, speed: 521.96
+Verify time: 0.641, speed: 20.29, Output: 15 / 13
+Draft time: 0.075, speed: 522.55
+Verify time: 0.641, speed: 20.29, Output: 15 / 13
+Draft time: 0.184, speed: 520.50
+Verify time: 1.583, speed: 20.22, Output: 45 / 32
+Uncaught exception
+Traceback (most recent call last):
+  File "evaluation_log.py", line 397, in <module>
+    main(args)
+  File "evaluation_log.py", line 280, in main
+    run_eval(
+  File "evaluation_log.py", line 124, in run_eval
+    one_sample_start += time.time() - one_epoch_start
+UnboundLocalError: local variable 'one_sample_start' referenced before assignment

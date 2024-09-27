@@ -1,0 +1,505 @@
+The full evaluation configuration:
+Namespace(auto_model=False, datapath='/data0/amax/git/MCSD/dataset/wmt_ende.json', disable_tqdm=True, disable_tree_attn=False, draft_model='/data0/lygao/model/llama/vicuna-68m', flash_attn=False, fp16=False, k_config=(3, 2), max_new_tokens=128, naive_sampling=False, replacement=False, run_baseline=False, sampling_type='sampling', target_model='/data0/lygao/model/llama/llama-13b', tokenizer='/data0/lygao/model/llama/llama-13b')
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+/home/amax/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+Loading checkpoint shards:  33%|###3      | 1/3 [00:02<00:04,  2.30s/it]
+Loading checkpoint shards:  67%|######6   | 2/3 [00:04<00:02,  2.10s/it]
+Loading checkpoint shards: 100%|##########| 3/3 [00:05<00:00,  1.69s/it]
+Loading checkpoint shards: 100%|##########| 3/3 [00:05<00:00,  1.82s/it]
+/home/amax/miniconda3/envs/pytorch/lib/python3.8/site-packages/transformers/generation/configuration_utils.py:567: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/amax/miniconda3/envs/pytorch/lib/python3.8/site-packages/transformers/generation/configuration_utils.py:572: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/amax/miniconda3/envs/pytorch/lib/python3.8/site-packages/transformers/generation/configuration_utils.py:567: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/amax/miniconda3/envs/pytorch/lib/python3.8/site-packages/transformers/generation/configuration_utils.py:572: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+Draft time: 0.869, speed: 135.73
+Verify time: 3.005, speed: 19.63, Output: 92 / 59
+Draft time: 0.050, speed: 483.23
+Verify time: 0.590, speed: 20.35, Output: 15 / 12
+Draft time: 0.062, speed: 485.41
+Verify time: 0.737, speed: 20.36, Output: 18 / 15
+Draft time: 0.315, speed: 482.11
+Verify time: 3.757, speed: 20.23, Output: 104 / 76
+Draft time: 0.050, speed: 483.73
+Verify time: 0.590, speed: 20.32, Output: 14 / 12
+Draft time: 0.145, speed: 483.75
+Verify time: 1.723, speed: 20.31, Output: 50 / 35
+Draft time: 0.046, speed: 481.63
+Verify time: 0.541, speed: 20.32, Output: 12 / 11
+Draft time: 0.057, speed: 487.29
+Verify time: 0.688, speed: 20.34, Output: 16 / 14
+sample_idx: 0, k_config: (1, 1), good_speed > 1.4: 24.642, count: 0.25, invocation: 142 / 94
+Draft time: 0.093, speed: 473.62
+Verify time: 1.094, speed: 20.12, Output: 29 / 22
+Draft time: 0.369, speed: 482.13
+Verify time: 4.412, speed: 20.17, Output: 129 / 89
+Draft time: 0.078, speed: 486.18
+Verify time: 0.935, speed: 20.32, Output: 23 / 19
+Draft time: 0.111, speed: 485.55
+Verify time: 1.328, speed: 20.33, Output: 31 / 27
+Draft time: 0.211, speed: 483.15
+Verify time: 2.513, speed: 20.30, Output: 81 / 51
+Draft time: 0.157, speed: 484.71
+Verify time: 1.870, speed: 20.33, Output: 49 / 38
+Draft time: 0.071, speed: 478.84
+Verify time: 0.837, speed: 20.32, Output: 28 / 17
+Draft time: 0.058, speed: 482.62
+Verify time: 0.690, speed: 20.28, Output: 17 / 14
+sample_idx: 1, k_config: (1, 1), good_speed > 1.4: 28.220, count: 0.375, invocation: 238 / 157
+Draft time: 0.194, speed: 483.95
+Verify time: 2.327, speed: 20.20, Output: 59 / 47
+Draft time: 0.210, speed: 486.60
+Verify time: 2.520, speed: 20.23, Output: 63 / 51
+Draft time: 0.305, speed: 478.38
+Verify time: 3.622, speed: 20.15, Output: 128 / 73
+Draft time: 0.215, speed: 483.40
+Verify time: 2.574, speed: 20.20, Output: 61 / 52
+Draft time: 0.198, speed: 485.53
+Verify time: 2.375, speed: 20.21, Output: 60 / 48
+Draft time: 0.222, speed: 486.47
+Verify time: 2.673, speed: 20.21, Output: 71 / 54
+Draft time: 0.199, speed: 482.50
+Verify time: 2.376, speed: 20.20, Output: 60 / 48
+Draft time: 0.182, speed: 483.81
+Verify time: 2.179, speed: 20.19, Output: 59 / 44
+sample_idx: 2, k_config: (1, 1), good_speed > 1.4: 32.494, count: 0.125, invocation: 128 / 73
+Draft time: 0.223, speed: 485.03
+Verify time: 2.663, speed: 20.28, Output: 74 / 54
+Draft time: 0.283, speed: 488.28
+Verify time: 3.406, speed: 20.26, Output: 83 / 69
+Draft time: 0.383, speed: 485.45
+Verify time: 4.606, speed: 20.19, Output: 128 / 93
+Draft time: 0.100, speed: 478.95
+Verify time: 1.186, speed: 20.23, Output: 46 / 24
+Draft time: 0.309, speed: 485.64
+Verify time: 3.707, speed: 20.23, Output: 97 / 75
+Draft time: 0.391, speed: 486.19
+Verify time: 4.700, speed: 20.21, Output: 128 / 95
+Draft time: 0.363, speed: 485.40
+Verify time: 4.355, speed: 20.21, Output: 129 / 88
+Draft time: 0.259, speed: 486.15
+Verify time: 3.112, speed: 20.24, Output: 77 / 63
+sample_idx: 3, k_config: (1, 1), good_speed > 1.4: 29.073, count: 0.25, invocation: 175 / 112
+Draft time: 0.225, speed: 480.16
+Verify time: 2.672, speed: 20.21, Output: 87 / 54
+Draft time: 0.095, speed: 483.67
+Verify time: 1.136, speed: 20.24, Output: 37 / 23
+Draft time: 0.062, speed: 483.41
+Verify time: 0.743, speed: 20.19, Output: 22 / 15
+Draft time: 0.193, speed: 487.51
+Verify time: 2.323, speed: 20.23, Output: 47 / 47
+Draft time: 0.395, speed: 486.11
+Verify time: 4.760, speed: 20.17, Output: 129 / 96
+Draft time: 0.197, speed: 488.41
+Verify time: 2.373, speed: 20.23, Output: 51 / 48
+Draft time: 0.082, speed: 485.57
+Verify time: 0.989, speed: 20.21, Output: 27 / 20
+Draft time: 0.342, speed: 485.53
+Verify time: 4.112, speed: 20.19, Output: 112 / 83
+sample_idx: 4, k_config: (1, 1), good_speed > 1.4: 29.526, count: 0.375, invocation: 146 / 92
+Draft time: 0.219, speed: 484.71
+Verify time: 2.621, speed: 20.22, Output: 64 / 53
+Draft time: 0.324, speed: 481.20
+Verify time: 3.868, speed: 20.17, Output: 128 / 78
+Draft time: 0.159, speed: 489.18
+Verify time: 1.927, speed: 20.24, Output: 42 / 39
+Draft time: 0.293, speed: 485.46
+Verify time: 3.516, speed: 20.20, Output: 95 / 71
+Draft time: 0.311, speed: 482.66
+Verify time: 3.723, speed: 20.15, Output: 128 / 75
+Draft time: 0.135, speed: 488.69
+Verify time: 1.631, speed: 20.23, Output: 35 / 33
+Draft time: 0.184, speed: 488.64
+Verify time: 2.226, speed: 20.22, Output: 59 / 45
+Draft time: 0.104, speed: 479.46
+Verify time: 1.237, speed: 20.21, Output: 45 / 25
+sample_idx: 5, k_config: (1, 1), good_speed > 1.4: 31.378, count: 0.375, invocation: 301 / 178
+Speed: 25.32 tokens/s
+Acceptance rate: 0.18
+Block efficiency: 1.37
+Please input the k_config:
+k_config: 4,2
+Draft time: 0.323, speed: 389.67
+Verify time: 3.195, speed: 19.72, Output: 128 / 63
+Draft time: 0.049, speed: 450.13
+Verify time: 0.557, speed: 19.75, Output: 15 / 11
+Draft time: 0.040, speed: 448.24
+Verify time: 0.456, speed: 19.73, Output: 13 / 9
+Draft time: 0.233, speed: 446.54
+Verify time: 2.630, speed: 19.77, Output: 103 / 52
+Draft time: 0.049, speed: 451.74
+Verify time: 0.557, speed: 19.76, Output: 15 / 11
+Draft time: 0.049, speed: 451.27
+Verify time: 0.557, speed: 19.74, Output: 15 / 11
+Draft time: 0.049, speed: 450.35
+Verify time: 0.556, speed: 19.78, Output: 16 / 11
+Draft time: 0.040, speed: 446.51
+Verify time: 0.456, speed: 19.76, Output: 15 / 9
+sample_idx: 0, k_config: (4, 2), good_speed > 1.4: 34.389, count: 0.625, invocation: 275 / 144
+Draft time: 0.090, speed: 422.17
+Verify time: 0.979, speed: 19.41, Output: 28 / 19
+Draft time: 0.127, speed: 439.51
+Verify time: 1.420, speed: 19.71, Output: 60 / 28
+Draft time: 0.329, speed: 438.27
+Verify time: 3.680, speed: 19.56, Output: 128 / 72
+Draft time: 0.286, speed: 426.91
+Verify time: 3.105, speed: 19.65, Output: 128 / 61
+Draft time: 0.210, speed: 427.78
+Verify time: 2.290, speed: 19.65, Output: 78 / 45
+Draft time: 0.105, speed: 439.59
+Verify time: 1.167, speed: 19.70, Output: 33 / 23
+Draft time: 0.102, speed: 451.24
+Verify time: 1.165, speed: 19.75, Output: 33 / 23
+Draft time: 0.345, speed: 446.96
+Verify time: 3.916, speed: 19.66, Output: 128 / 77
+sample_idx: 1, k_config: (4, 2), good_speed > 1.4: 31.806, count: 1.0, invocation: 616 / 348
+Draft time: 0.122, speed: 444.15
+Verify time: 1.374, speed: 19.65, Output: 60 / 27
+Draft time: 0.191, speed: 449.60
+Verify time: 2.191, speed: 19.63, Output: 69 / 43
+Draft time: 0.147, speed: 449.57
+Verify time: 1.683, speed: 19.61, Output: 52 / 33
+Draft time: 0.236, speed: 449.58
+Verify time: 2.701, speed: 19.62, Output: 75 / 53
+Draft time: 0.182, speed: 450.87
+Verify time: 2.090, speed: 19.62, Output: 55 / 41
+Draft time: 0.292, speed: 445.38
+Verify time: 3.315, speed: 19.61, Output: 128 / 65
+Draft time: 0.257, speed: 443.93
+Verify time: 2.916, speed: 19.55, Output: 86 / 57
+Draft time: 0.359, speed: 446.10
+Verify time: 4.087, speed: 19.58, Output: 128 / 80
+sample_idx: 2, k_config: (4, 2), good_speed > 1.4: 30.020, count: 0.875, invocation: 598 / 358
+Draft time: 0.055, speed: 436.39
+Verify time: 0.608, speed: 19.74, Output: 32 / 12
+Draft time: 0.297, speed: 437.92
+Verify time: 3.348, speed: 19.41, Output: 105 / 65
+Draft time: 0.331, speed: 447.58
+Verify time: 3.779, speed: 19.58, Output: 128 / 74
+Draft time: 0.090, speed: 443.07
+Verify time: 1.014, speed: 19.73, Output: 44 / 20
+Draft time: 0.175, speed: 446.96
+Verify time: 2.000, speed: 19.50, Output: 48 / 39
+Draft time: 0.164, speed: 452.17
+Verify time: 1.880, speed: 19.68, Output: 45 / 37
+Draft time: 0.231, speed: 450.18
+Verify time: 2.643, speed: 19.67, Output: 74 / 52
+Draft time: 0.265, speed: 445.50
+Verify time: 2.998, speed: 19.68, Output: 128 / 59
+sample_idx: 3, k_config: (4, 2), good_speed > 1.4: 32.550, count: 0.75, invocation: 511 / 282
+Draft time: 0.267, speed: 449.61
+Verify time: 3.052, speed: 19.66, Output: 96 / 60
+Draft time: 0.217, speed: 451.59
+Verify time: 2.492, speed: 19.66, Output: 67 / 49
+Draft time: 0.355, speed: 450.19
+Verify time: 4.075, speed: 19.63, Output: 128 / 80
+Draft time: 0.283, speed: 451.78
+Verify time: 3.257, speed: 19.65, Output: 83 / 64
+Draft time: 0.096, speed: 437.78
+Verify time: 1.069, speed: 19.64, Output: 43 / 21
+Draft time: 0.129, speed: 448.46
+Verify time: 1.473, speed: 19.68, Output: 52 / 29
+Draft time: 0.080, speed: 449.04
+Verify time: 0.914, speed: 19.70, Output: 32 / 18
+Draft time: 0.076, speed: 448.98
+Verify time: 0.865, speed: 19.66, Output: 31 / 17
+sample_idx: 4, k_config: (4, 2), good_speed > 1.4: 30.604, count: 0.75, invocation: 382 / 225
+Draft time: 0.182, speed: 450.08
+Verify time: 2.086, speed: 19.65, Output: 58 / 41
+Draft time: 0.150, speed: 453.27
+Verify time: 1.731, speed: 19.65, Output: 37 / 34
+Draft time: 0.145, speed: 453.92
+Verify time: 1.680, speed: 19.64, Output: 39 / 33
+Draft time: 0.204, speed: 451.95
+Verify time: 2.341, speed: 19.65, Output: 60 / 46
+Draft time: 0.168, speed: 453.69
+Verify time: 1.934, speed: 19.65, Output: 44 / 38
+Draft time: 0.169, speed: 450.58
+Verify time: 1.935, speed: 19.64, Output: 44 / 38
+Draft time: 0.347, speed: 444.38
+Verify time: 3.927, speed: 19.61, Output: 128 / 77
+Draft time: 0.309, speed: 447.13
+Verify time: 3.515, speed: 19.63, Output: 128 / 69
+sample_idx: 5, k_config: (4, 2), good_speed > 1.4: 30.210, count: 0.375, invocation: 314 / 187
+Speed: 29.41 tokens/s
+Acceptance rate: 0.32
+Block efficiency: 1.63
+Please input the k_config:
+k_config: 10,5
+Draft time: 0.225, speed: 435.73
+Verify time: 2.651, speed: 18.48, Output: 110 / 49
+Draft time: 0.036, speed: 439.43
+Verify time: 0.433, speed: 18.49, Output: 16 / 8
+Draft time: 0.041, speed: 443.70
+Verify time: 0.489, speed: 18.42, Output: 15 / 9
+Draft time: 0.045, speed: 448.53
+Verify time: 0.543, speed: 18.42, Output: 16 / 10
+Draft time: 0.208, speed: 442.59
+Verify time: 2.478, speed: 18.57, Output: 101 / 46
+Draft time: 0.049, speed: 447.88
+Verify time: 0.596, speed: 18.46, Output: 20 / 11
+Draft time: 0.044, speed: 451.60
+Verify time: 0.543, speed: 18.41, Output: 15 / 10
+Draft time: 0.049, speed: 452.02
+Verify time: 0.597, speed: 18.44, Output: 16 / 11
+sample_idx: 0, k_config: (10, 5), good_speed > 1.4: 34.163, count: 1.0, invocation: 309 / 154
+Draft time: 0.093, speed: 452.01
+Verify time: 1.141, speed: 18.41, Output: 32 / 21
+Draft time: 0.080, speed: 448.09
+Verify time: 0.980, speed: 18.38, Output: 26 / 18
+Draft time: 0.085, speed: 446.00
+Verify time: 1.034, speed: 18.38, Output: 29 / 19
+Draft time: 0.172, speed: 440.85
+Verify time: 2.050, speed: 18.53, Output: 93 / 38
+Draft time: 0.282, speed: 439.65
+Verify time: 3.357, speed: 18.47, Output: 128 / 62
+Draft time: 0.088, speed: 452.41
+Verify time: 1.087, speed: 18.40, Output: 29 / 20
+Draft time: 0.103, speed: 448.27
+Verify time: 1.245, speed: 18.48, Output: 47 / 23
+Draft time: 0.088, speed: 452.82
+Verify time: 1.087, speed: 18.39, Output: 27 / 20
+sample_idx: 1, k_config: (10, 5), good_speed > 1.4: 32.475, count: 0.875, invocation: 384 / 201
+Draft time: 0.151, speed: 449.06
+Verify time: 1.857, speed: 18.31, Output: 47 / 34
+Draft time: 0.296, speed: 445.83
+Verify time: 3.601, speed: 18.33, Output: 130 / 66
+Draft time: 0.174, speed: 447.91
+Verify time: 2.131, speed: 18.30, Output: 64 / 39
+Draft time: 0.173, speed: 449.69
+Verify time: 2.132, speed: 18.29, Output: 58 / 39
+Draft time: 0.299, speed: 447.76
+Verify time: 3.654, speed: 18.34, Output: 121 / 67
+Draft time: 0.165, speed: 449.83
+Verify time: 2.022, speed: 18.30, Output: 60 / 37
+Draft time: 0.144, speed: 445.29
+Verify time: 1.746, speed: 18.33, Output: 54 / 32
+Draft time: 0.036, speed: 445.43
+Verify time: 0.443, speed: 18.05, Output: 14 / 8
+sample_idx: 2, k_config: (10, 5), good_speed > 1.4: 29.370, count: 0.875, invocation: 501 / 288
+Draft time: 0.310, speed: 444.54
+Verify time: 3.764, speed: 18.33, Output: 123 / 69
+Draft time: 0.115, speed: 451.41
+Verify time: 1.421, speed: 18.30, Output: 38 / 26
+Draft time: 0.201, speed: 448.80
+Verify time: 2.452, speed: 18.35, Output: 72 / 45
+Draft time: 0.263, speed: 441.28
+Verify time: 3.155, speed: 18.38, Output: 128 / 58
+Draft time: 0.305, speed: 446.01
+Verify time: 3.702, speed: 18.37, Output: 129 / 68
+Draft time: 0.314, speed: 446.44
+Verify time: 3.812, speed: 18.36, Output: 130 / 70
+Draft time: 0.142, speed: 450.72
+Verify time: 1.750, speed: 18.29, Output: 46 / 32
+Draft time: 0.134, speed: 448.46
+Verify time: 1.635, speed: 18.35, Output: 52 / 30
+sample_idx: 3, k_config: (10, 5), good_speed > 1.4: 30.514, count: 1.0, invocation: 718 / 398
+Draft time: 0.147, speed: 449.19
+Verify time: 1.805, speed: 18.29, Output: 48 / 33
+Draft time: 0.143, speed: 449.11
+Verify time: 1.752, speed: 18.27, Output: 48 / 32
+Draft time: 0.284, speed: 443.36
+Verify time: 3.438, speed: 18.33, Output: 128 / 63
+Draft time: 0.151, speed: 451.44
+Verify time: 1.857, speed: 18.31, Output: 46 / 34
+Draft time: 0.219, speed: 446.53
+Verify time: 2.668, speed: 18.36, Output: 85 / 49
+Draft time: 0.138, speed: 449.38
+Verify time: 1.695, speed: 18.29, Output: 48 / 31
+Draft time: 0.228, speed: 447.49
+Verify time: 2.775, speed: 18.38, Output: 91 / 51
+Draft time: 0.142, speed: 450.32
+Verify time: 1.747, speed: 18.31, Output: 47 / 32
+sample_idx: 4, k_config: (10, 5), good_speed > 1.4: 28.747, count: 0.875, invocation: 495 / 291
+Draft time: 0.128, speed: 451.99
+Verify time: 1.584, speed: 18.31, Output: 41 / 29
+Draft time: 0.150, speed: 452.99
+Verify time: 1.857, speed: 18.31, Output: 43 / 34
+Draft time: 0.219, speed: 448.32
+Verify time: 2.669, speed: 18.36, Output: 86 / 49
+Draft time: 0.155, speed: 450.32
+Verify time: 1.909, speed: 18.34, Output: 56 / 35
+Draft time: 0.128, speed: 454.22
+Verify time: 1.585, speed: 18.29, Output: 40 / 29
+Draft time: 0.142, speed: 450.59
+Verify time: 1.747, speed: 18.31, Output: 47 / 32
+Draft time: 0.141, speed: 453.65
+Verify time: 1.750, speed: 18.29, Output: 41 / 32
+Draft time: 0.160, speed: 450.58
+Verify time: 1.966, speed: 18.31, Output: 51 / 36
+sample_idx: 5, k_config: (10, 5), good_speed > 1.4: 26.257, count: 0.625, invocation: 281 / 181
+Speed: 29.26 tokens/s
+Acceptance rate: 0.36
+Block efficiency: 1.73
+Please input the k_config:
+k_config: 0
+samples: 0, invocation_count: 35
+samples: 1, invocation_count: 21
+samples: 2, invocation_count: 58
+samples: 3, invocation_count: 53
+samples: 4, invocation_count: 76
+samples: 5, invocation_count: 41
+samples: 6, invocation_count: 98
+samples: 7, invocation_count: 128
+samples: 8, invocation_count: 128
+samples: 9, invocation_count: 31
+evaluation complete.
+Running time: 32.71 s
+Token latency: 48.89 ms
+Speed: 20.45 tokens/s
+samples: 0, invocation_count: 128
+samples: 1, invocation_count: 128
+samples: 2, invocation_count: 128
+samples: 3, invocation_count: 98
+samples: 4, invocation_count: 128
+samples: 5, invocation_count: 128
+samples: 6, invocation_count: 128
+samples: 7, invocation_count: 128
+samples: 8, invocation_count: 128
+samples: 9, invocation_count: 127
+evaluation complete.
+Running time: 2.64 s
+Token latency: 2.11 ms
+Speed: 473.80 tokens/s
+Please input the k_config:
+k_config: 0
+samples: 0, invocation_count: 18
+samples: 1, invocation_count: 128
+samples: 2, invocation_count: 86
+samples: 3, invocation_count: 82
+samples: 4, invocation_count: 84
+samples: 5, invocation_count: 104
+samples: 6, invocation_count: 128
+samples: 7, invocation_count: 52
+samples: 8, invocation_count: 127
+samples: 9, invocation_count: 31
+evaluation complete.
+Running time: 39.65 s
+Token latency: 47.20 ms
+Speed: 21.18 tokens/s
+samples: 0, invocation_count: 128
+samples: 1, invocation_count: 118
+samples: 2, invocation_count: 128
+samples: 3, invocation_count: 128
+samples: 4, invocation_count: 128
+samples: 5, invocation_count: 128
+samples: 6, invocation_count: 128
+samples: 7, invocation_count: 128
+samples: 8, invocation_count: 128
+samples: 9, invocation_count: 76
+evaluation complete.
+Running time: 2.52 s
+Token latency: 2.07 ms
+Speed: 483.52 tokens/s
+Please input the k_config:
+k_config: 3,2,1
+Draft time: 0.414, speed: 442.31
+Verify time: 3.125, speed: 19.52, Output: 128 / 61
+Draft time: 0.067, speed: 449.66
+Verify time: 0.512, speed: 19.54, Output: 13 / 10
+Draft time: 0.060, speed: 450.15
+Verify time: 0.460, speed: 19.55, Output: 14 / 9
+Draft time: 0.301, speed: 449.01
+Verify time: 2.301, speed: 19.55, Output: 93 / 45
+Draft time: 0.160, speed: 450.66
+Verify time: 1.227, speed: 19.56, Output: 53 / 24
+Draft time: 0.053, speed: 451.47
+Verify time: 0.410, speed: 19.52, Output: 14 / 8
+Draft time: 0.341, speed: 448.86
+Verify time: 2.612, speed: 19.53, Output: 129 / 51
+Draft time: 0.328, speed: 448.29
+Verify time: 2.513, speed: 19.50, Output: 110 / 49
+sample_idx: 0, k_config: (3, 2, 1), good_speed > 1.4: 37.734, count: 0.875, invocation: 541 / 247
+Draft time: 0.233, speed: 449.98
+Verify time: 1.792, speed: 19.53, Output: 76 / 35
+Draft time: 0.313, speed: 441.53
+Verify time: 2.360, speed: 19.49, Output: 129 / 46
+Draft time: 0.166, speed: 452.83
+Verify time: 1.278, speed: 19.55, Output: 29 / 25
+Draft time: 0.226, speed: 450.46
+Verify time: 1.746, speed: 19.47, Output: 54 / 34
+Draft time: 0.166, speed: 451.19
+Verify time: 1.280, speed: 19.53, Output: 32 / 25
+Draft time: 0.159, speed: 453.14
+Verify time: 1.230, speed: 19.52, Output: 36 / 24
+Draft time: 0.392, speed: 443.48
+Verify time: 2.983, speed: 19.44, Output: 128 / 58
+Draft time: 0.153, speed: 452.11
+Verify time: 1.177, speed: 19.54, Output: 37 / 23
+sample_idx: 1, k_config: (3, 2, 1), good_speed > 1.4: 35.954, count: 0.75, invocation: 460 / 220
+Draft time: 0.285, speed: 453.25
+Verify time: 2.211, speed: 19.45, Output: 63 / 43
+Draft time: 0.272, speed: 451.43
+Verify time: 2.108, speed: 19.45, Output: 56 / 41
+Draft time: 0.285, speed: 453.23
+Verify time: 2.211, speed: 19.45, Output: 59 / 43
+Draft time: 0.317, speed: 454.00
+Verify time: 2.469, speed: 19.44, Output: 69 / 48
+Draft time: 0.324, speed: 453.58
+Verify time: 2.519, speed: 19.45, Output: 63 / 49
+Draft time: 0.232, speed: 451.96
+Verify time: 1.800, speed: 19.45, Output: 52 / 35
+Draft time: 0.086, speed: 451.28
+Verify time: 0.672, speed: 19.36, Output: 20 / 13
+Draft time: 0.134, speed: 448.83
+Verify time: 1.030, speed: 19.42, Output: 53 / 20
+sample_idx: 2, k_config: (3, 2, 1), good_speed > 1.4: 27.768, count: 0.625, invocation: 257 / 159
+Draft time: 0.246, speed: 451.79
+Verify time: 1.896, speed: 19.52, Output: 45 / 37
+Draft time: 0.438, speed: 452.31
+Verify time: 3.387, speed: 19.48, Output: 128 / 66
+Draft time: 0.238, speed: 453.44
+Verify time: 1.844, speed: 19.52, Output: 46 / 36
+Draft time: 0.239, speed: 451.93
+Verify time: 1.845, speed: 19.51, Output: 47 / 36
+Draft time: 0.335, speed: 447.39
+Verify time: 2.572, speed: 19.44, Output: 71 / 50
+Draft time: 0.408, speed: 448.98
+Verify time: 3.132, speed: 19.48, Output: 104 / 61
+Draft time: 0.305, speed: 452.74
+Verify time: 2.357, speed: 19.52, Output: 66 / 46
+Draft time: 0.268, speed: 447.72
+Verify time: 2.057, speed: 19.45, Output: 60 / 40
+sample_idx: 3, k_config: (3, 2, 1), good_speed > 1.4: 28.049, count: 0.625, invocation: 429 / 263
+Draft time: 0.318, speed: 377.52
+Verify time: 2.262, speed: 17.68, Output: 46 / 40
+Draft time: 0.348, speed: 439.39
+Verify time: 2.628, speed: 19.40, Output: 78 / 51
+Draft time: 0.301, speed: 438.27
+Verify time: 2.284, speed: 19.26, Output: 59 / 44
+Draft time: 0.291, speed: 422.62
+Verify time: 2.174, speed: 18.86, Output: 48 / 41
+Draft time: 0.267, speed: 370.59
+Verify time: 1.881, speed: 17.55, Output: 48 / 33
+Draft time: 0.259, speed: 439.39
+Verify time: 1.959, speed: 19.40, Output: 57 / 38
+Draft time: 0.288, speed: 447.72
+Verify time: 2.213, speed: 19.43, Output: 50 / 43
+Draft time: 0.263, speed: 455.51
+Verify time: 2.066, speed: 19.36, Output: 48 / 40
+sample_idx: 4, k_config: (3, 2, 1), good_speed > 1.4: 24.862, count: 0.375, invocation: 183 / 122
+Draft time: 0.190, speed: 458.48
+Verify time: 1.493, speed: 19.42, Output: 38 / 29
+Draft time: 0.216, speed: 457.85
+Verify time: 1.695, speed: 19.47, Output: 34 / 33
+Draft time: 0.086, speed: 451.79
+Verify time: 0.668, speed: 19.45, Output: 35 / 13
+Draft time: 0.463, speed: 460.15
+Verify time: 3.649, speed: 19.46, Output: 128 / 71
+Draft time: 0.520, speed: 455.47
+Verify time: 4.060, speed: 19.46, Output: 128 / 79
+Draft time: 0.275, speed: 458.66
+Verify time: 2.156, speed: 19.48, Output: 75 / 42
+Draft time: 0.138, speed: 456.41
+Verify time: 1.080, speed: 19.44, Output: 56 / 21
+Draft time: 0.298, speed: 462.48
+Verify time: 2.365, speed: 19.45, Output: 70 / 46
+sample_idx: 5, k_config: (3, 2, 1), good_speed > 1.4: 31.142, count: 0.75, invocation: 492 / 272
+Speed: 28.35 tokens/s
+Acceptance rate: 0.22
+Block efficiency: 1.66
+Please input the k_config:
+k_config: -1

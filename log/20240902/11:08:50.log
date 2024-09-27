@@ -1,0 +1,652 @@
+11:08:51 - INFO - GPU usage: ['0', '0', '0', '0', '0', '0', '0', '0']
+11:08:51 - INFO - The full evaluation configuration:
+Namespace(auto_model=False, datapath='/data0/amax/git/MCSD/dataset/wmt_ende.json', disable_tqdm=True, disable_tree_attn=False, draft_model='/data0/lygao/model/llama/vicuna-160m', flash_attn=False, fp16=False, k_config=(3, 2), max_new_tokens=128, naive_sampling=False, replacement=False, run_baseline=False, sampling_type='sampling', target_model='/data0/lygao/model/llama/llama-13b', tokenizer='/data0/lygao/model/llama/llama-13b')
+11:08:51 - INFO - Loading draft model: /data0/lygao/model/llama/vicuna-160m
+11:08:52 - INFO - Loading target model: /data0/lygao/model/llama/llama-13b
+11:08:53 - ERROR - Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+11:08:53 - ERROR - /home/amax/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+11:08:56 - ERROR - Loading checkpoint shards:  33%|###3      | 1/3 [00:02<00:05,  2.94s/it]
+11:08:59 - ERROR - Loading checkpoint shards:  67%|######6   | 2/3 [00:05<00:02,  2.86s/it]
+11:09:01 - ERROR - Loading checkpoint shards: 100%|##########| 3/3 [00:07<00:00,  2.51s/it]
+11:09:01 - ERROR - Loading checkpoint shards: 100%|##########| 3/3 [00:07<00:00,  2.61s/it]
+11:09:01 - ERROR - /home/amax/miniconda3/envs/pytorch/lib/python3.8/site-packages/transformers/generation/configuration_utils.py:567: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+11:09:01 - ERROR - /home/amax/miniconda3/envs/pytorch/lib/python3.8/site-packages/transformers/generation/configuration_utils.py:572: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+11:09:01 - ERROR - /home/amax/miniconda3/envs/pytorch/lib/python3.8/site-packages/transformers/generation/configuration_utils.py:567: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+11:09:01 - ERROR - /home/amax/miniconda3/envs/pytorch/lib/python3.8/site-packages/transformers/generation/configuration_utils.py:572: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+11:09:01 - INFO - Arguments: Namespace(auto_model=False, datapath='/data0/amax/git/MCSD/dataset/wmt_ende.json', disable_tqdm=True, disable_tree_attn=False, draft_model='/data0/lygao/model/llama/vicuna-160m', flash_attn=False, fp16=False, k_config=(3, 2), max_new_tokens=128, naive_sampling=False, replacement=False, run_baseline=False, sampling_type='sampling', target_model='/data0/lygao/model/llama/llama-13b', tokenizer='/data0/lygao/model/llama/llama-13b')
+11:09:01 - INFO - k_config: 1,1
+11:09:01 - INFO - sample_idx: 0, k_config: (1, 1)
+11:09:11 - INFO - Draft time: 3.488, speed: 39.566
+11:09:11 - INFO - Verify time: 6.018, speed: 11.467
+11:09:11 - INFO - Generate output: 112 / 69, 
+11:09:16 - INFO - Draft time: 1.484, speed: 93.019
+11:09:16 - INFO - Verify time: 3.647, speed: 18.921
+11:09:16 - INFO - Generate output: 128 / 69, 
+11:09:17 - INFO - Draft time: 0.252, speed: 95.376
+11:09:17 - INFO - Verify time: 0.634, speed: 18.932
+11:09:17 - INFO - Generate output: 15 / 12, 
+11:09:18 - INFO - Draft time: 0.410, speed: 58.514
+11:09:18 - INFO - Verify time: 0.986, speed: 12.168
+11:09:18 - INFO - Generate output: 15 / 12, 
+11:09:19 - INFO - Draft time: 0.292, speed: 82.204
+11:09:19 - INFO - Verify time: 0.687, speed: 17.459
+11:09:19 - INFO - Generate output: 13 / 12, 
+11:09:20 - INFO - Draft time: 0.285, speed: 91.156
+11:09:20 - INFO - Verify time: 0.686, speed: 18.962
+11:09:20 - INFO - Generate output: 16 / 13, 
+11:09:20 - INFO - sample_idx: 1, k_config: (1, 1)
+11:09:21 - INFO - Draft time: 0.314, speed: 89.113
+11:09:21 - INFO - Verify time: 0.759, speed: 18.451
+11:09:21 - INFO - Generate output: 23 / 14, 
+11:09:24 - INFO - Draft time: 0.753, speed: 92.908
+11:09:24 - INFO - Verify time: 1.851, speed: 18.906
+11:09:24 - INFO - Generate output: 49 / 35, 
+11:09:29 - INFO - Draft time: 1.348, speed: 94.932
+11:09:29 - INFO - Verify time: 3.318, speed: 19.288
+11:09:29 - INFO - Generate output: 110 / 64, 
+11:09:30 - INFO - Draft time: 0.444, speed: 94.699
+11:09:30 - INFO - Verify time: 1.091, speed: 19.253
+11:09:30 - INFO - Generate output: 28 / 21, 
+11:09:32 - INFO - Draft time: 0.587, speed: 95.350
+11:09:32 - INFO - Verify time: 1.463, speed: 19.135
+11:09:32 - INFO - Generate output: 30 / 28, 
+11:09:34 - INFO - Draft time: 0.568, speed: 95.122
+11:09:34 - INFO - Verify time: 1.396, speed: 19.346
+11:09:34 - INFO - Generate output: 31 / 27, 
+11:09:34 - INFO - sample_idx: 2, k_config: (1, 1)
+11:09:38 - INFO - Draft time: 0.994, speed: 94.584
+11:09:38 - INFO - Verify time: 2.443, speed: 19.237
+11:09:38 - INFO - Generate output: 57 / 47, 
+11:09:41 - INFO - Draft time: 0.926, speed: 92.903
+11:09:41 - INFO - Verify time: 2.315, speed: 18.576
+11:09:41 - INFO - Generate output: 73 / 43, 
+11:09:43 - INFO - Draft time: 0.785, speed: 89.195
+11:09:43 - INFO - Verify time: 1.883, speed: 18.586
+11:09:43 - INFO - Generate output: 73 / 35, 
+11:09:47 - INFO - Draft time: 0.978, speed: 89.957
+11:09:47 - INFO - Verify time: 2.396, speed: 18.364
+11:09:47 - INFO - Generate output: 57 / 44, 
+11:09:50 - INFO - Draft time: 0.931, speed: 92.395
+11:09:50 - INFO - Verify time: 2.317, speed: 18.555
+11:09:50 - INFO - Generate output: 53 / 43, 
+11:09:53 - INFO - Draft time: 0.899, speed: 91.194
+11:09:53 - INFO - Verify time: 2.205, speed: 18.591
+11:09:53 - INFO - Generate output: 53 / 41, 
+11:09:53 - INFO - sample_idx: 3, k_config: (1, 1)
+11:09:56 - INFO - Draft time: 0.950, speed: 92.639
+11:09:56 - INFO - Verify time: 2.339, speed: 18.812
+11:09:56 - INFO - Generate output: 63 / 44, 
+11:09:59 - INFO - Draft time: 0.861, speed: 90.634
+11:09:59 - INFO - Verify time: 2.095, speed: 18.612
+11:09:59 - INFO - Generate output: 44 / 39, 
+11:10:05 - INFO - Draft time: 1.700, speed: 91.760
+11:10:05 - INFO - Verify time: 4.165, speed: 18.726
+11:10:05 - INFO - Generate output: 129 / 78, 
+11:10:10 - INFO - Draft time: 1.403, speed: 92.644
+11:10:10 - INFO - Verify time: 3.447, speed: 18.857
+11:10:10 - INFO - Generate output: 94 / 65, 
+11:10:14 - INFO - Draft time: 1.115, speed: 89.671
+11:10:14 - INFO - Verify time: 2.817, speed: 17.748
+11:10:14 - INFO - Generate output: 60 / 50, 
+11:10:17 - INFO - Draft time: 0.812, speed: 91.080
+11:10:17 - INFO - Verify time: 1.968, speed: 18.797
+11:10:17 - INFO - Generate output: 44 / 37, 
+11:10:17 - INFO - sample_idx: 4, k_config: (1, 1)
+11:10:20 - INFO - Draft time: 0.846, speed: 92.232
+11:10:20 - INFO - Verify time: 2.096, speed: 18.605
+11:10:20 - INFO - Generate output: 45 / 39, 
+11:10:24 - INFO - Draft time: 1.235, speed: 97.129
+11:10:24 - INFO - Verify time: 3.108, speed: 19.304
+11:10:24 - INFO - Generate output: 78 / 60, 
+11:10:31 - INFO - Draft time: 1.887, speed: 91.143
+11:10:31 - INFO - Verify time: 4.564, speed: 18.845
+11:10:31 - INFO - Generate output: 128 / 86, 
+11:10:35 - INFO - Draft time: 1.104, speed: 92.390
+11:10:35 - INFO - Verify time: 2.720, speed: 18.752
+11:10:35 - INFO - Generate output: 62 / 51, 
+11:10:42 - INFO - Draft time: 2.051, speed: 90.689
+11:10:42 - INFO - Verify time: 5.048, speed: 18.425
+11:10:42 - INFO - Generate output: 128 / 93, 
+11:10:43 - INFO - Draft time: 0.292, speed: 96.041
+11:10:43 - INFO - Verify time: 0.736, speed: 19.034
+11:10:43 - INFO - Generate output: 18 / 14, 
+11:10:43 - INFO - sample_idx: 5, k_config: (1, 1)
+11:10:49 - INFO - Draft time: 1.958, speed: 90.932
+11:10:49 - INFO - Verify time: 4.774, speed: 18.644
+11:10:49 - INFO - Generate output: 128 / 89, 
+11:10:54 - INFO - Draft time: 1.172, speed: 90.421
+11:10:54 - INFO - Verify time: 2.885, speed: 18.372
+11:10:54 - INFO - Generate output: 67 / 53, 
+11:10:57 - INFO - Draft time: 0.921, speed: 89.019
+11:10:57 - INFO - Verify time: 2.233, speed: 18.362
+11:10:57 - INFO - Generate output: 67 / 41, 
+11:11:00 - INFO - Draft time: 1.099, speed: 90.979
+11:11:00 - INFO - Verify time: 2.679, speed: 18.665
+11:11:00 - INFO - Generate output: 58 / 50, 
+11:11:04 - INFO - Draft time: 1.068, speed: 91.743
+11:11:04 - INFO - Verify time: 2.628, speed: 18.642
+11:11:04 - INFO - Generate output: 57 / 49, 
+11:11:09 - INFO - Draft time: 1.547, speed: 90.513
+11:11:09 - INFO - Verify time: 3.750, speed: 18.666
+11:11:09 - INFO - Generate output: 93 / 70, 
+11:11:09 - INFO - Running time: 128.30 s
+11:11:09 - INFO - Speed: 17.92 tokens/s
+11:11:09 - INFO - Acceptance rate: 0.20
+11:11:09 - INFO - Block efficiency: 1.40
+11:11:09 - INFO - k_config: 2,1
+11:11:10 - INFO - sample_idx: 0, k_config: (2, 1)
+11:11:10 - INFO - Draft time: 0.322, speed: 74.540
+11:11:10 - INFO - Verify time: 0.645, speed: 18.618
+11:11:10 - INFO - Generate output: 15 / 12, 
+11:11:16 - INFO - Draft time: 1.560, speed: 88.435
+11:11:16 - INFO - Verify time: 3.715, speed: 18.576
+11:11:16 - INFO - Generate output: 128 / 69, 
+11:11:20 - INFO - Draft time: 1.393, speed: 87.571
+11:11:20 - INFO - Verify time: 3.277, speed: 18.615
+11:11:20 - INFO - Generate output: 128 / 61, 
+11:11:21 - INFO - Draft time: 0.225, speed: 88.747
+11:11:21 - INFO - Verify time: 0.521, speed: 19.208
+11:11:21 - INFO - Generate output: 13 / 10, 
+11:11:22 - INFO - Draft time: 0.246, speed: 89.287
+11:11:22 - INFO - Verify time: 0.595, speed: 18.495
+11:11:22 - INFO - Generate output: 14 / 11, 
+11:11:23 - INFO - Draft time: 0.274, speed: 87.613
+11:11:23 - INFO - Verify time: 0.637, speed: 18.850
+11:11:23 - INFO - Generate output: 15 / 12, 
+11:11:23 - INFO - sample_idx: 1, k_config: (2, 1)
+11:11:29 - INFO - Draft time: 1.723, speed: 91.682
+11:11:29 - INFO - Verify time: 4.154, speed: 19.019
+11:11:29 - INFO - Generate output: 129 / 79, 
+11:11:31 - INFO - Draft time: 0.531, speed: 94.208
+11:11:31 - INFO - Verify time: 1.284, speed: 19.472
+11:11:31 - INFO - Generate output: 31 / 25, 
+11:11:32 - INFO - Draft time: 0.414, speed: 91.871
+11:11:32 - INFO - Verify time: 0.999, speed: 19.014
+11:11:32 - INFO - Generate output: 25 / 19, 
+11:11:33 - INFO - Draft time: 0.232, speed: 86.101
+11:11:33 - INFO - Verify time: 0.520, speed: 19.219
+11:11:33 - INFO - Generate output: 25 / 10, 
+11:11:37 - INFO - Draft time: 1.114, speed: 87.985
+11:11:37 - INFO - Verify time: 2.622, speed: 18.691
+11:11:37 - INFO - Generate output: 96 / 49, 
+11:11:39 - INFO - Draft time: 0.604, speed: 86.022
+11:11:39 - INFO - Verify time: 1.425, speed: 18.245
+11:11:39 - INFO - Generate output: 32 / 26, 
+11:11:39 - INFO - sample_idx: 2, k_config: (2, 1)
+11:11:42 - INFO - Draft time: 0.861, speed: 85.945
+11:11:42 - INFO - Verify time: 2.031, speed: 18.215
+11:11:42 - INFO - Generate output: 51 / 37, 
+11:11:47 - INFO - Draft time: 1.582, speed: 88.489
+11:11:47 - INFO - Verify time: 3.755, speed: 18.642
+11:11:47 - INFO - Generate output: 122 / 70, 
+11:11:48 - INFO - Draft time: 0.441, speed: 86.151
+11:11:48 - INFO - Verify time: 1.020, speed: 18.634
+11:11:48 - INFO - Generate output: 45 / 19, 
+11:11:52 - INFO - Draft time: 0.976, speed: 88.097
+11:11:52 - INFO - Verify time: 2.315, speed: 18.572
+11:11:52 - INFO - Generate output: 58 / 43, 
+11:11:56 - INFO - Draft time: 1.208, speed: 89.409
+11:11:56 - INFO - Verify time: 2.876, speed: 18.778
+11:11:56 - INFO - Generate output: 80 / 54, 
+11:12:00 - INFO - Draft time: 1.111, speed: 90.041
+11:12:00 - INFO - Verify time: 2.656, speed: 18.828
+11:12:00 - INFO - Generate output: 66 / 50, 
+11:12:00 - INFO - sample_idx: 3, k_config: (2, 1)
+11:12:04 - INFO - Draft time: 1.180, speed: 88.135
+11:12:04 - INFO - Verify time: 2.834, speed: 18.345
+11:12:04 - INFO - Generate output: 84 / 52, 
+11:12:06 - INFO - Draft time: 0.858, speed: 86.220
+11:12:06 - INFO - Verify time: 2.008, speed: 18.426
+11:12:06 - INFO - Generate output: 45 / 37, 
+11:12:12 - INFO - Draft time: 1.654, speed: 88.244
+11:12:12 - INFO - Verify time: 3.956, speed: 18.454
+11:12:12 - INFO - Generate output: 128 / 73, 
+11:12:15 - INFO - Draft time: 0.877, speed: 86.694
+11:12:15 - INFO - Verify time: 2.048, speed: 18.552
+11:12:15 - INFO - Generate output: 47 / 38, 
+11:12:17 - INFO - Draft time: 0.669, speed: 86.743
+11:12:17 - INFO - Verify time: 1.552, speed: 18.684
+11:12:17 - INFO - Generate output: 58 / 29, 
+11:12:23 - INFO - Draft time: 1.721, speed: 90.646
+11:12:23 - INFO - Verify time: 4.117, speed: 18.947
+11:12:23 - INFO - Generate output: 117 / 78, 
+11:12:23 - INFO - sample_idx: 4, k_config: (2, 1)
+11:12:26 - INFO - Draft time: 0.815, speed: 90.794
+11:12:26 - INFO - Verify time: 1.983, speed: 18.657
+11:12:26 - INFO - Generate output: 47 / 37, 
+11:12:29 - INFO - Draft time: 1.014, speed: 86.795
+11:12:29 - INFO - Verify time: 2.394, speed: 18.379
+11:12:29 - INFO - Generate output: 49 / 44, 
+11:12:32 - INFO - Draft time: 0.948, speed: 86.515
+11:12:32 - INFO - Verify time: 2.259, speed: 18.153
+11:12:32 - INFO - Generate output: 48 / 41, 
+11:12:36 - INFO - Draft time: 0.959, speed: 87.593
+11:12:36 - INFO - Verify time: 2.276, speed: 18.453
+11:12:36 - INFO - Generate output: 53 / 42, 
+11:12:38 - INFO - Draft time: 0.756, speed: 87.248
+11:12:38 - INFO - Verify time: 1.773, speed: 18.616
+11:12:38 - INFO - Generate output: 73 / 33, 
+11:12:43 - INFO - Draft time: 1.266, speed: 88.484
+11:12:43 - INFO - Verify time: 3.014, speed: 18.578
+11:12:43 - INFO - Generate output: 79 / 56, 
+11:12:43 - INFO - sample_idx: 5, k_config: (2, 1)
+11:12:49 - INFO - Draft time: 1.900, speed: 89.472
+11:12:49 - INFO - Verify time: 4.508, speed: 18.856
+11:12:49 - INFO - Generate output: 128 / 85, 
+11:12:52 - INFO - Draft time: 0.988, speed: 87.068
+11:12:52 - INFO - Verify time: 2.363, speed: 18.196
+11:12:52 - INFO - Generate output: 50 / 43, 
+11:12:59 - INFO - Draft time: 1.977, speed: 87.997
+11:12:59 - INFO - Verify time: 4.634, speed: 18.773
+11:12:59 - INFO - Generate output: 128 / 87, 
+11:13:01 - INFO - Draft time: 0.713, speed: 89.736
+11:13:01 - INFO - Verify time: 1.709, speed: 18.725
+11:13:01 - INFO - Generate output: 39 / 32, 
+11:13:05 - INFO - Draft time: 0.952, speed: 88.194
+11:13:05 - INFO - Verify time: 2.230, speed: 18.834
+11:13:05 - INFO - Generate output: 78 / 42, 
+11:13:08 - INFO - Draft time: 0.965, speed: 89.162
+11:13:08 - INFO - Verify time: 2.269, speed: 18.948
+11:13:08 - INFO - Generate output: 52 / 43, 
+11:13:08 - INFO - Running time: 118.34 s
+11:13:08 - INFO - Speed: 20.08 tokens/s
+11:13:08 - INFO - Acceptance rate: 0.27
+11:13:08 - INFO - Block efficiency: 1.53
+11:13:08 - INFO - k_config: 1,1,1
+11:13:08 - INFO - sample_idx: 0, k_config: (1, 1, 1)
+11:13:09 - INFO - Draft time: 0.407, speed: 95.874
+11:13:09 - INFO - Verify time: 0.671, speed: 19.369
+11:13:09 - INFO - Generate output: 15 / 13, 
+11:13:10 - INFO - Draft time: 0.384, speed: 93.851
+11:13:10 - INFO - Verify time: 0.623, speed: 19.258
+11:13:10 - INFO - Generate output: 14 / 12, 
+11:13:11 - INFO - Draft time: 0.374, speed: 96.300
+11:13:11 - INFO - Verify time: 0.615, speed: 19.505
+11:13:11 - INFO - Generate output: 15 / 12, 
+11:13:12 - INFO - Draft time: 0.340, speed: 97.087
+11:13:12 - INFO - Verify time: 0.571, speed: 19.271
+11:13:12 - INFO - Generate output: 14 / 11, 
+11:13:15 - INFO - Draft time: 1.171, speed: 94.777
+11:13:15 - INFO - Verify time: 1.914, speed: 19.331
+11:13:15 - INFO - Generate output: 60 / 37, 
+11:13:22 - INFO - Draft time: 2.516, speed: 89.421
+11:13:22 - INFO - Verify time: 4.175, speed: 17.965
+11:13:22 - INFO - Generate output: 129 / 75, 
+11:13:22 - INFO - sample_idx: 1, k_config: (1, 1, 1)
+11:13:29 - INFO - Draft time: 2.655, speed: 77.955
+11:13:29 - INFO - Verify time: 4.353, speed: 15.851
+11:13:29 - INFO - Generate output: 111 / 69, 
+11:13:35 - INFO - Draft time: 2.549, speed: 94.152
+11:13:35 - INFO - Verify time: 4.229, speed: 18.916
+11:13:35 - INFO - Generate output: 131 / 80, 
+11:13:38 - INFO - Draft time: 0.846, speed: 92.147
+11:13:38 - INFO - Verify time: 1.393, speed: 18.670
+11:13:38 - INFO - Generate output: 29 / 26, 
+11:13:43 - INFO - Draft time: 1.836, speed: 91.507
+11:13:43 - INFO - Verify time: 3.069, speed: 18.244
+11:13:43 - INFO - Generate output: 95 / 56, 
+11:13:48 - INFO - Draft time: 2.043, speed: 92.493
+11:13:48 - INFO - Verify time: 3.353, speed: 18.790
+11:13:48 - INFO - Generate output: 100 / 63, 
+11:13:51 - INFO - Draft time: 1.077, speed: 91.879
+11:13:51 - INFO - Verify time: 1.771, speed: 18.635
+11:13:51 - INFO - Generate output: 45 / 33, 
+11:13:51 - INFO - sample_idx: 2, k_config: (1, 1, 1)
+11:13:57 - INFO - Draft time: 2.321, speed: 89.175
+11:13:57 - INFO - Verify time: 3.823, speed: 18.047
+11:13:57 - INFO - Generate output: 95 / 69, 
+11:14:01 - INFO - Draft time: 1.421, speed: 90.777
+11:14:01 - INFO - Verify time: 2.335, speed: 18.413
+11:14:01 - INFO - Generate output: 57 / 43, 
+11:14:05 - INFO - Draft time: 1.445, speed: 93.405
+11:14:05 - INFO - Verify time: 2.376, speed: 18.937
+11:14:05 - INFO - Generate output: 59 / 45, 
+11:14:09 - INFO - Draft time: 1.510, speed: 91.379
+11:14:09 - INFO - Verify time: 2.482, speed: 18.535
+11:14:09 - INFO - Generate output: 64 / 46, 
+11:14:13 - INFO - Draft time: 1.673, speed: 93.270
+11:14:13 - INFO - Verify time: 2.768, speed: 18.788
+11:14:13 - INFO - Generate output: 70 / 52, 
+11:14:17 - INFO - Draft time: 1.352, speed: 97.608
+11:14:17 - INFO - Verify time: 2.296, speed: 19.164
+11:14:17 - INFO - Generate output: 77 / 44, 
+11:14:17 - INFO - sample_idx: 3, k_config: (1, 1, 1)
+11:14:23 - INFO - Draft time: 2.235, speed: 92.619
+11:14:23 - INFO - Verify time: 3.687, speed: 18.716
+11:14:23 - INFO - Generate output: 103 / 69, 
+11:14:26 - INFO - Draft time: 1.234, speed: 92.400
+11:14:26 - INFO - Verify time: 2.033, speed: 18.695
+11:14:26 - INFO - Generate output: 45 / 38, 
+11:14:31 - INFO - Draft time: 1.655, speed: 87.002
+11:14:31 - INFO - Verify time: 2.881, speed: 16.660
+11:14:31 - INFO - Generate output: 108 / 48, 
+11:14:35 - INFO - Draft time: 1.543, speed: 91.393
+11:14:35 - INFO - Verify time: 2.553, speed: 18.412
+11:14:35 - INFO - Generate output: 92 / 47, 
+11:14:38 - INFO - Draft time: 1.355, speed: 88.530
+11:14:38 - INFO - Verify time: 2.202, speed: 18.169
+11:14:38 - INFO - Generate output: 82 / 40, 
+11:14:46 - INFO - Draft time: 3.092, speed: 85.377
+11:14:46 - INFO - Verify time: 4.993, speed: 17.623
+11:14:46 - INFO - Generate output: 129 / 88, 
+11:14:46 - INFO - sample_idx: 4, k_config: (1, 1, 1)
+11:14:48 - INFO - Draft time: 0.589, speed: 91.606
+11:14:48 - INFO - Verify time: 0.982, speed: 18.322
+11:14:48 - INFO - Generate output: 23 / 18, 
+11:14:54 - INFO - Draft time: 2.263, speed: 90.154
+11:14:54 - INFO - Verify time: 3.717, speed: 18.294
+11:14:54 - INFO - Generate output: 97 / 68, 
+11:14:55 - INFO - Draft time: 0.592, speed: 96.327
+11:14:55 - INFO - Verify time: 1.010, speed: 18.816
+11:14:55 - INFO - Generate output: 30 / 19, 
+11:15:00 - INFO - Draft time: 1.595, speed: 95.895
+11:15:00 - INFO - Verify time: 2.644, speed: 19.291
+11:15:00 - INFO - Generate output: 61 / 51, 
+11:15:03 - INFO - Draft time: 1.399, speed: 96.465
+11:15:03 - INFO - Verify time: 2.320, speed: 19.398
+11:15:03 - INFO - Generate output: 49 / 45, 
+11:15:11 - INFO - Draft time: 2.769, speed: 94.247
+11:15:11 - INFO - Verify time: 4.553, speed: 19.110
+11:15:11 - INFO - Generate output: 122 / 87, 
+11:15:11 - INFO - sample_idx: 5, k_config: (1, 1, 1)
+11:15:15 - INFO - Draft time: 1.539, speed: 91.591
+11:15:15 - INFO - Verify time: 2.529, speed: 18.587
+11:15:15 - INFO - Generate output: 56 / 47, 
+11:15:22 - INFO - Draft time: 2.755, speed: 93.637
+11:15:22 - INFO - Verify time: 4.575, speed: 18.796
+11:15:22 - INFO - Generate output: 130 / 86, 
+11:15:26 - INFO - Draft time: 1.406, speed: 93.886
+11:15:26 - INFO - Verify time: 2.348, speed: 18.738
+11:15:26 - INFO - Generate output: 51 / 44, 
+11:15:30 - INFO - Draft time: 1.637, speed: 89.824
+11:15:30 - INFO - Verify time: 2.705, speed: 18.115
+11:15:30 - INFO - Generate output: 59 / 49, 
+11:15:33 - INFO - Draft time: 1.116, speed: 91.390
+11:15:33 - INFO - Verify time: 1.836, speed: 18.522
+11:15:33 - INFO - Generate output: 39 / 34, 
+11:15:36 - INFO - Draft time: 1.050, speed: 94.251
+11:15:36 - INFO - Verify time: 1.725, speed: 19.126
+11:15:36 - INFO - Generate output: 39 / 33, 
+11:15:36 - INFO - Running time: 148.24 s
+11:15:36 - INFO - Speed: 16.83 tokens/s
+11:15:36 - INFO - Acceptance rate: 0.16
+11:15:36 - INFO - Block efficiency: 1.47
+11:15:36 - INFO - k_config: 2,1,1
+11:15:36 - INFO - sample_idx: 0, k_config: (2, 1, 1)
+11:15:37 - INFO - Draft time: 0.404, speed: 89.085
+11:15:37 - INFO - Verify time: 0.639, speed: 18.777
+11:15:37 - INFO - Generate output: 15 / 12, 
+11:15:44 - INFO - Draft time: 2.641, speed: 89.748
+11:15:44 - INFO - Verify time: 4.187, speed: 18.868
+11:15:44 - INFO - Generate output: 128 / 79, 
+11:15:45 - INFO - Draft time: 0.396, speed: 90.917
+11:15:45 - INFO - Verify time: 0.635, speed: 18.886
+11:15:45 - INFO - Generate output: 13 / 12, 
+11:15:51 - INFO - Draft time: 2.384, speed: 88.089
+11:15:51 - INFO - Verify time: 3.767, speed: 18.581
+11:15:51 - INFO - Generate output: 128 / 70, 
+11:15:53 - INFO - Draft time: 0.615, speed: 87.852
+11:15:53 - INFO - Verify time: 0.967, speed: 18.624
+11:15:53 - INFO - Generate output: 34 / 18, 
+11:15:54 - INFO - Draft time: 0.343, speed: 87.367
+11:15:54 - INFO - Verify time: 0.549, speed: 18.205
+11:15:54 - INFO - Generate output: 13 / 10, 
+11:15:54 - INFO - sample_idx: 1, k_config: (2, 1, 1)
+11:16:00 - INFO - Draft time: 2.441, speed: 87.243
+11:16:00 - INFO - Verify time: 3.846, speed: 18.461
+11:16:00 - INFO - Generate output: 128 / 71, 
+11:16:02 - INFO - Draft time: 0.704, speed: 80.984
+11:16:02 - INFO - Verify time: 1.105, speed: 17.200
+11:16:02 - INFO - Generate output: 50 / 19, 
+11:16:05 - INFO - Draft time: 1.034, speed: 78.347
+11:16:05 - INFO - Verify time: 1.694, speed: 15.938
+11:16:05 - INFO - Generate output: 33 / 27, 
+11:16:08 - INFO - Draft time: 1.160, speed: 56.894
+11:16:08 - INFO - Verify time: 1.940, speed: 11.338
+11:16:08 - INFO - Generate output: 51 / 22, 
+11:16:13 - INFO - Draft time: 2.271, speed: 52.850
+11:16:13 - INFO - Verify time: 3.416, speed: 11.709
+11:16:13 - INFO - Generate output: 61 / 40, 
+11:16:15 - INFO - Draft time: 0.606, speed: 54.486
+11:16:15 - INFO - Verify time: 0.887, speed: 12.398
+11:16:15 - INFO - Generate output: 19 / 11, 
+11:16:15 - INFO - sample_idx: 2, k_config: (2, 1, 1)
+11:16:17 - INFO - Draft time: 0.871, speed: 61.979
+11:16:17 - INFO - Verify time: 1.391, speed: 12.938
+11:16:17 - INFO - Generate output: 48 / 18, 
+11:16:22 - INFO - Draft time: 2.029, speed: 69.490
+11:16:22 - INFO - Verify time: 3.281, speed: 14.327
+11:16:22 - INFO - Generate output: 63 / 47, 
+11:16:26 - INFO - Draft time: 1.493, speed: 80.363
+11:16:26 - INFO - Verify time: 2.409, speed: 16.602
+11:16:26 - INFO - Generate output: 54 / 40, 
+11:16:30 - INFO - Draft time: 1.243, speed: 89.311
+11:16:30 - INFO - Verify time: 1.973, speed: 18.753
+11:16:30 - INFO - Generate output: 73 / 37, 
+11:16:33 - INFO - Draft time: 1.238, speed: 89.626
+11:16:33 - INFO - Verify time: 1.966, speed: 18.820
+11:16:33 - INFO - Generate output: 55 / 37, 
+11:16:36 - INFO - Draft time: 1.133, speed: 90.057
+11:16:36 - INFO - Verify time: 1.806, speed: 18.831
+11:16:36 - INFO - Generate output: 49 / 34, 
+11:16:36 - INFO - sample_idx: 3, k_config: (2, 1, 1)
+11:16:39 - INFO - Draft time: 1.165, speed: 90.119
+11:16:39 - INFO - Verify time: 1.852, speed: 18.899
+11:16:39 - INFO - Generate output: 46 / 35, 
+11:16:42 - INFO - Draft time: 1.333, speed: 87.750
+11:16:42 - INFO - Verify time: 2.092, speed: 18.639
+11:16:42 - INFO - Generate output: 48 / 39, 
+11:16:49 - INFO - Draft time: 2.806, speed: 85.531
+11:16:49 - INFO - Verify time: 4.417, speed: 18.110
+11:16:49 - INFO - Generate output: 128 / 80, 
+11:16:54 - INFO - Draft time: 1.808, speed: 87.945
+11:16:54 - INFO - Verify time: 2.895, speed: 18.306
+11:16:54 - INFO - Generate output: 69 / 53, 
+11:17:00 - INFO - Draft time: 2.262, speed: 87.517
+11:17:00 - INFO - Verify time: 3.547, speed: 18.608
+11:17:00 - INFO - Generate output: 98 / 66, 
+11:17:04 - INFO - Draft time: 1.731, speed: 90.137
+11:17:04 - INFO - Verify time: 2.746, speed: 18.935
+11:17:04 - INFO - Generate output: 76 / 52, 
+11:17:04 - INFO - sample_idx: 4, k_config: (2, 1, 1)
+11:17:07 - INFO - Draft time: 1.132, speed: 90.083
+11:17:07 - INFO - Verify time: 1.804, speed: 18.851
+11:17:07 - INFO - Generate output: 50 / 34, 
+11:17:12 - INFO - Draft time: 1.861, speed: 90.293
+11:17:12 - INFO - Verify time: 2.955, speed: 18.951
+11:17:12 - INFO - Generate output: 83 / 56, 
+11:17:16 - INFO - Draft time: 1.264, speed: 87.837
+11:17:16 - INFO - Verify time: 2.006, speed: 18.443
+11:17:16 - INFO - Generate output: 46 / 37, 
+11:17:18 - INFO - Draft time: 1.137, speed: 87.102
+11:17:18 - INFO - Verify time: 1.807, speed: 18.261
+11:17:18 - INFO - Generate output: 46 / 33, 
+11:17:21 - INFO - Draft time: 0.863, speed: 86.867
+11:17:21 - INFO - Verify time: 1.359, speed: 18.400
+11:17:21 - INFO - Generate output: 59 / 25, 
+11:17:28 - INFO - Draft time: 2.657, speed: 86.927
+11:17:28 - INFO - Verify time: 4.177, speed: 18.435
+11:17:28 - INFO - Generate output: 128 / 77, 
+11:17:28 - INFO - sample_idx: 5, k_config: (2, 1, 1)
+11:17:30 - INFO - Draft time: 1.059, speed: 90.685
+11:17:30 - INFO - Verify time: 1.692, speed: 18.912
+11:17:30 - INFO - Generate output: 41 / 32, 
+11:17:37 - INFO - Draft time: 2.391, speed: 90.354
+11:17:37 - INFO - Verify time: 3.811, speed: 18.895
+11:17:37 - INFO - Generate output: 129 / 72, 
+11:17:40 - INFO - Draft time: 1.516, speed: 89.039
+11:17:40 - INFO - Verify time: 2.397, speed: 18.773
+11:17:40 - INFO - Generate output: 63 / 45, 
+11:17:44 - INFO - Draft time: 1.400, speed: 89.994
+11:17:44 - INFO - Verify time: 2.241, speed: 18.739
+11:17:44 - INFO - Generate output: 53 / 42, 
+11:17:47 - INFO - Draft time: 1.108, speed: 89.341
+11:17:47 - INFO - Verify time: 1.756, speed: 18.797
+11:17:47 - INFO - Generate output: 36 / 33, 
+11:17:54 - INFO - Draft time: 2.597, speed: 90.094
+11:17:54 - INFO - Verify time: 4.129, speed: 18.892
+11:17:54 - INFO - Generate output: 128 / 78, 
+11:17:54 - INFO - Running time: 137.61 s
+11:17:54 - INFO - Speed: 17.02 tokens/s
+11:17:54 - INFO - Acceptance rate: 0.19
+11:17:54 - INFO - Block efficiency: 1.57
+11:17:54 - INFO - Please input the k_config:
+13:20:35 - INFO - k_config: 0
+13:20:36 - INFO - samples: 0, invocation_count: 13
+13:20:38 - INFO - samples: 1, invocation_count: 51
+13:20:40 - INFO - samples: 2, invocation_count: 51
+13:20:41 - INFO - samples: 3, invocation_count: 20
+13:20:47 - INFO - samples: 4, invocation_count: 115
+13:20:50 - INFO - samples: 5, invocation_count: 66
+13:20:52 - INFO - samples: 6, invocation_count: 53
+13:20:55 - INFO - samples: 7, invocation_count: 50
+13:20:56 - INFO - samples: 8, invocation_count: 19
+13:21:02 - INFO - samples: 9, invocation_count: 128
+13:21:02 - INFO - evaluation complete.
+13:21:02 - INFO - Running time: 26.75 s
+13:21:02 - INFO - Token latency: 47.27 ms
+13:21:02 - INFO - Speed: 21.16 tokens/s
+13:21:03 - INFO - samples: 0, invocation_count: 128
+13:21:04 - INFO - samples: 1, invocation_count: 128
+13:21:05 - INFO - samples: 2, invocation_count: 128
+13:21:07 - INFO - samples: 3, invocation_count: 128
+13:21:08 - INFO - samples: 4, invocation_count: 128
+13:21:09 - INFO - samples: 5, invocation_count: 128
+13:21:10 - INFO - samples: 6, invocation_count: 128
+13:21:12 - INFO - samples: 7, invocation_count: 128
+13:21:13 - INFO - samples: 8, invocation_count: 128
+13:21:14 - INFO - samples: 9, invocation_count: 128
+13:21:14 - INFO - evaluation complete.
+13:21:14 - INFO - Running time: 12.48 s
+13:21:14 - INFO - Token latency: 9.75 ms
+13:21:14 - INFO - Speed: 102.60 tokens/s
+13:21:14 - INFO - Please input the k_config:
+13:21:59 - INFO - k_config: 3,2,1,1
+13:21:59 - INFO - sample_idx: 0, k_config: (3, 2, 1, 1)
+13:22:00 - INFO - Draft time: 0.537, speed: 96.876
+13:22:00 - INFO - Verify time: 0.663, speed: 19.616
+13:22:00 - INFO - Generate output: 16 / 13, 
+13:22:01 - INFO - Draft time: 0.453, speed: 97.183
+13:22:01 - INFO - Verify time: 0.559, speed: 19.685
+13:22:01 - INFO - Generate output: 15 / 11, 
+13:22:06 - INFO - Draft time: 1.939, speed: 96.949
+13:22:06 - INFO - Verify time: 2.392, speed: 19.646
+13:22:06 - INFO - Generate output: 128 / 47, 
+13:22:07 - INFO - Draft time: 0.410, speed: 97.478
+13:22:07 - INFO - Verify time: 0.508, speed: 19.677
+13:22:07 - INFO - Generate output: 14 / 10, 
+13:22:09 - INFO - Draft time: 1.187, speed: 97.686
+13:22:09 - INFO - Verify time: 1.473, speed: 19.683
+13:22:09 - INFO - Generate output: 68 / 29, 
+13:22:11 - INFO - Draft time: 0.532, speed: 97.820
+13:22:11 - INFO - Verify time: 0.661, speed: 19.675
+13:22:11 - INFO - Generate output: 15 / 13, 
+13:22:11 - INFO - sample_idx: 1, k_config: (3, 2, 1, 1)
+13:22:14 - INFO - Draft time: 1.304, speed: 98.131
+13:22:14 - INFO - Verify time: 1.629, speed: 19.648
+13:22:14 - INFO - Generate output: 48 / 32, 
+13:22:16 - INFO - Draft time: 1.181, speed: 98.182
+13:22:16 - INFO - Verify time: 1.476, speed: 19.650
+13:22:16 - INFO - Generate output: 40 / 29, 
+13:22:21 - INFO - Draft time: 1.996, speed: 98.178
+13:22:21 - INFO - Verify time: 2.495, speed: 19.643
+13:22:21 - INFO - Generate output: 78 / 49, 
+13:22:23 - INFO - Draft time: 0.817, speed: 97.897
+13:22:23 - INFO - Verify time: 1.018, speed: 19.654
+13:22:23 - INFO - Generate output: 53 / 20, 
+13:22:23 - INFO - Draft time: 0.288, speed: 97.094
+13:22:23 - INFO - Verify time: 0.357, speed: 19.609
+13:22:23 - INFO - Generate output: 25 / 7, 
+13:22:25 - INFO - Draft time: 0.774, speed: 98.242
+13:22:25 - INFO - Verify time: 0.967, speed: 19.651
+13:22:25 - INFO - Generate output: 38 / 19, 
+13:22:25 - INFO - sample_idx: 2, k_config: (3, 2, 1, 1)
+13:22:28 - INFO - Draft time: 1.264, speed: 98.111
+13:22:28 - INFO - Verify time: 1.580, speed: 19.620
+13:22:28 - INFO - Generate output: 53 / 31, 
+13:22:31 - INFO - Draft time: 1.310, speed: 97.682
+13:22:31 - INFO - Verify time: 1.633, speed: 19.597
+13:22:31 - INFO - Generate output: 51 / 32, 
+13:22:34 - INFO - Draft time: 1.358, speed: 97.202
+13:22:34 - INFO - Verify time: 1.690, speed: 19.527
+13:22:34 - INFO - Generate output: 86 / 33, 
+13:22:37 - INFO - Draft time: 1.521, speed: 97.278
+13:22:37 - INFO - Verify time: 1.886, speed: 19.623
+13:22:37 - INFO - Generate output: 53 / 37, 
+13:22:40 - INFO - Draft time: 1.233, speed: 97.303
+13:22:40 - INFO - Verify time: 1.530, speed: 19.612
+13:22:40 - INFO - Generate output: 39 / 30, 
+13:22:44 - INFO - Draft time: 1.892, speed: 97.255
+13:22:44 - INFO - Verify time: 2.350, speed: 19.573
+13:22:44 - INFO - Generate output: 60 / 46, 
+13:22:44 - INFO - sample_idx: 3, k_config: (3, 2, 1, 1)
+13:22:47 - INFO - Draft time: 1.354, speed: 97.509
+13:22:47 - INFO - Verify time: 1.682, speed: 19.614
+13:22:47 - INFO - Generate output: 47 / 33, 
+13:22:49 - INFO - Draft time: 0.658, speed: 97.334
+13:22:49 - INFO - Verify time: 0.827, speed: 19.358
+13:22:49 - INFO - Generate output: 30 / 16, 
+13:22:54 - INFO - Draft time: 2.476, speed: 96.948
+13:22:54 - INFO - Verify time: 3.063, speed: 19.590
+13:22:54 - INFO - Generate output: 132 / 60, 
+13:22:57 - INFO - Draft time: 1.272, speed: 97.448
+13:22:57 - INFO - Verify time: 1.581, speed: 19.605
+13:22:57 - INFO - Generate output: 44 / 31, 
+13:23:01 - INFO - Draft time: 1.685, speed: 97.349
+13:23:01 - INFO - Verify time: 2.089, speed: 19.626
+13:23:01 - INFO - Generate output: 57 / 41, 
+13:23:05 - INFO - Draft time: 2.011, speed: 97.445
+13:23:05 - INFO - Verify time: 2.498, speed: 19.619
+13:23:05 - INFO - Generate output: 79 / 49, 
+13:23:05 - INFO - sample_idx: 4, k_config: (3, 2, 1, 1)
+13:23:09 - INFO - Draft time: 1.767, speed: 97.367
+13:23:09 - INFO - Verify time: 2.193, speed: 19.606
+13:23:09 - INFO - Generate output: 64 / 43, 
+13:23:11 - INFO - Draft time: 0.739, speed: 97.441
+13:23:11 - INFO - Verify time: 0.921, speed: 19.543
+13:23:11 - INFO - Generate output: 35 / 18, 
+13:23:17 - INFO - Draft time: 2.874, speed: 97.430
+13:23:17 - INFO - Verify time: 3.576, speed: 19.577
+13:23:17 - INFO - Generate output: 128 / 70, 
+13:23:19 - INFO - Draft time: 0.534, speed: 97.331
+13:23:19 - INFO - Verify time: 0.666, speed: 19.508
+13:23:19 - INFO - Generate output: 26 / 13, 
+13:23:22 - INFO - Draft time: 1.520, speed: 97.354
+13:23:22 - INFO - Verify time: 1.903, speed: 19.445
+13:23:22 - INFO - Generate output: 51 / 37, 
+13:23:25 - INFO - Draft time: 1.355, speed: 97.395
+13:23:25 - INFO - Verify time: 1.684, speed: 19.593
+13:23:25 - INFO - Generate output: 47 / 33, 
+13:23:25 - INFO - sample_idx: 5, k_config: (3, 2, 1, 1)
+13:23:29 - INFO - Draft time: 1.889, speed: 97.402
+13:23:29 - INFO - Verify time: 2.345, speed: 19.613
+13:23:29 - INFO - Generate output: 83 / 46, 
+13:23:35 - INFO - Draft time: 2.634, speed: 97.199
+13:23:35 - INFO - Verify time: 3.261, speed: 19.624
+13:23:35 - INFO - Generate output: 131 / 64, 
+13:23:41 - INFO - Draft time: 2.721, speed: 97.016
+13:23:41 - INFO - Verify time: 3.369, speed: 19.590
+13:23:41 - INFO - Generate output: 128 / 66, 
+13:23:46 - INFO - Draft time: 2.176, speed: 97.427
+13:23:46 - INFO - Verify time: 2.703, speed: 19.611
+13:23:46 - INFO - Generate output: 93 / 53, 
+13:23:51 - INFO - Draft time: 2.219, speed: 97.339
+13:23:51 - INFO - Verify time: 2.755, speed: 19.599
+13:23:51 - INFO - Generate output: 81 / 54, 
+13:23:55 - INFO - Draft time: 1.848, speed: 97.408
+13:23:55 - INFO - Verify time: 2.296, speed: 19.598
+13:23:55 - INFO - Generate output: 59 / 45, 
+13:23:55 - INFO - Running time: 116.20 s
+13:23:55 - INFO - Speed: 18.89 tokens/s
+13:23:55 - INFO - Acceptance rate: 0.19
+13:23:55 - INFO - Block efficiency: 1.74
+13:23:55 - INFO - Please input the k_config:
+13:26:17 - INFO - k_config: 
+13:26:17 - ERROR - Invalid k_config. Please try again.
+13:26:17 - INFO - Please input the k_config:
+13:26:20 - INFO - k_config: -1

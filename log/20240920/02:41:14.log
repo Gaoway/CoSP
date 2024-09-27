@@ -1,0 +1,3524 @@
+The full evaluation configuration:
+Namespace(auto_model=False, datapath='/data0/amax/git/MCSD/dataset/wmt_ende.json', disable_tqdm=True, disable_tree_attn=False, draft_model='/data0/lygao/model/llama/vicuna-68m', flash_attn=False, fp16=False, gpu_id=6, k_config=(3, 2), max_new_tokens=128, naive_sampling=False, replacement=False, run_baseline=False, sampling_type='myway', target_model='/data0/lygao/model/llama/llama-13b', tokenizer='/data0/lygao/model/llama/llama-13b')
+/home/amax/miniconda3/envs/pytorch/lib/python3.8/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|###3      | 1/3 [00:02<00:05,  2.91s/it]
+Loading checkpoint shards:  67%|######6   | 2/3 [00:06<00:03,  3.24s/it]
+Loading checkpoint shards: 100%|##########| 3/3 [00:08<00:00,  2.70s/it]
+Loading checkpoint shards: 100%|##########| 3/3 [00:08<00:00,  2.81s/it]
+/home/amax/miniconda3/envs/pytorch/lib/python3.8/site-packages/transformers/generation/configuration_utils.py:567: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/amax/miniconda3/envs/pytorch/lib/python3.8/site-packages/transformers/generation/configuration_utils.py:572: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/amax/miniconda3/envs/pytorch/lib/python3.8/site-packages/transformers/generation/configuration_utils.py:567: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/amax/miniconda3/envs/pytorch/lib/python3.8/site-packages/transformers/generation/configuration_utils.py:572: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+samples: 0, invocation_count: 16
+samples: 1, invocation_count: 58
+samples: 2, invocation_count: 59
+samples: 3, invocation_count: 60
+samples: 4, invocation_count: 18
+samples: 5, invocation_count: 128
+samples: 6, invocation_count: 126
+samples: 7, invocation_count: 128
+samples: 8, invocation_count: 92
+samples: 9, invocation_count: 29
+samples: 10, invocation_count: 25
+samples: 11, invocation_count: 30
+samples: 12, invocation_count: 39
+samples: 13, invocation_count: 128
+samples: 14, invocation_count: 47
+samples: 15, invocation_count: 41
+samples: 16, invocation_count: 24
+samples: 17, invocation_count: 23
+samples: 18, invocation_count: 51
+samples: 19, invocation_count: 64
+samples: 20, invocation_count: 52
+samples: 21, invocation_count: 74
+samples: 22, invocation_count: 22
+samples: 23, invocation_count: 36
+samples: 24, invocation_count: 48
+samples: 25, invocation_count: 128
+samples: 26, invocation_count: 128
+samples: 27, invocation_count: 62
+samples: 28, invocation_count: 64
+samples: 29, invocation_count: 59
+samples: 30, invocation_count: 9
+samples: 31, invocation_count: 21
+Running time: 92.72 s
+Token latency: 49.08 ms
+Speed: 20.37 tokens/s
+samples: 0, invocation_count: 37
+samples: 1, invocation_count: 99
+samples: 2, invocation_count: 128
+samples: 3, invocation_count: 21
+samples: 4, invocation_count: 128
+samples: 5, invocation_count: 128
+samples: 6, invocation_count: 128
+samples: 7, invocation_count: 128
+samples: 8, invocation_count: 128
+samples: 9, invocation_count: 128
+samples: 10, invocation_count: 128
+samples: 11, invocation_count: 36
+samples: 12, invocation_count: 128
+samples: 13, invocation_count: 126
+samples: 14, invocation_count: 128
+samples: 15, invocation_count: 128
+samples: 16, invocation_count: 128
+samples: 17, invocation_count: 128
+samples: 18, invocation_count: 128
+samples: 19, invocation_count: 73
+samples: 20, invocation_count: 128
+samples: 21, invocation_count: 128
+samples: 22, invocation_count: 128
+samples: 23, invocation_count: 28
+samples: 24, invocation_count: 128
+samples: 25, invocation_count: 59
+samples: 26, invocation_count: 128
+samples: 27, invocation_count: 128
+samples: 28, invocation_count: 128
+samples: 29, invocation_count: 128
+samples: 30, invocation_count: 128
+samples: 31, invocation_count: 128
+Running time: 7.00 s
+Token latency: 1.97 ms
+Speed: 507.22 tokens/s
+samples: 0, invocation_count: 128
+samples: 1, invocation_count: 128
+samples: 2, invocation_count: 40
+samples: 3, invocation_count: 75
+samples: 4, invocation_count: 10
+samples: 5, invocation_count: 102
+samples: 6, invocation_count: 41
+samples: 7, invocation_count: 13
+samples: 8, invocation_count: 5
+samples: 9, invocation_count: 73
+samples: 10, invocation_count: 53
+samples: 11, invocation_count: 128
+samples: 12, invocation_count: 71
+samples: 13, invocation_count: 66
+samples: 14, invocation_count: 37
+samples: 15, invocation_count: 48
+samples: 16, invocation_count: 49
+samples: 17, invocation_count: 128
+samples: 18, invocation_count: 18
+samples: 19, invocation_count: 82
+samples: 20, invocation_count: 52
+samples: 21, invocation_count: 18
+samples: 22, invocation_count: 115
+samples: 23, invocation_count: 21
+samples: 24, invocation_count: 108
+samples: 25, invocation_count: 19
+samples: 26, invocation_count: 84
+samples: 27, invocation_count: 13
+samples: 28, invocation_count: 25
+samples: 29, invocation_count: 6
+samples: 30, invocation_count: 34
+samples: 31, invocation_count: 31
+Running time: 3.59 s
+Token latency: 1.97 ms
+Speed: 507.40 tokens/s
+Draft model: 0
+0, prompt_text: Translate the input English sentence into German.
+Input: Gutach: Increased safety for pedestrians
+Output: 
+Draft time: 0.103, speed: 319.91
+Verify time: 0.597, speed: 18.42, Output: 15 / 11
+Draft time: 0.237, speed: 443.60
+Verify time: 1.882, speed: 18.60, Output: 61 / 35
+Draft time: 0.422, speed: 497.74
+Verify time: 3.497, speed: 20.02, Output: 128 / 70
+Draft time: 0.065, speed: 505.43
+Verify time: 0.546, speed: 20.14, Output: 15 / 11
+Draft time: 0.331, speed: 507.26
+Verify time: 2.786, speed: 20.10, Output: 130 / 56
+Draft time: 0.065, speed: 509.23
+Verify time: 0.546, speed: 20.14, Output: 15 / 11
+Draft time: 0.059, speed: 511.86
+Verify time: 0.496, speed: 20.16, Output: 13 / 10
+Draft time: 0.217, speed: 510.60
+Verify time: 1.836, speed: 20.16, Output: 71 / 37
+sample_idx: 0, k_config: (2, 1, 1), good_speed > 1.4: 34.710, count: 0.5, invocation: 390 / 198
+1, prompt_text: Translate the input English sentence into German.
+Input: The Kluser lights protect cyclists, as well as those travelling by bus and the residents of Bergle.
+Output: 
+Draft time: 0.200, speed: 510.34
+Verify time: 1.688, speed: 20.14, Output: 49 / 34
+Draft time: 0.149, speed: 504.02
+Verify time: 1.267, speed: 19.74, Output: 59 / 25
+Draft time: 0.142, speed: 421.54
+Verify time: 1.173, speed: 17.05, Output: 30 / 20
+Draft time: 0.140, speed: 427.80
+Verify time: 1.208, speed: 16.55, Output: 29 / 20
+Draft time: 0.229, speed: 405.77
+Verify time: 1.737, speed: 17.85, Output: 58 / 31
+Draft time: 0.048, speed: 502.25
+Verify time: 0.398, speed: 20.10, Output: 25 / 8
+Draft time: 0.137, speed: 504.35
+Verify time: 1.158, speed: 19.86, Output: 31 / 23
+Draft time: 0.195, speed: 508.28
+Verify time: 1.639, speed: 20.13, Output: 57 / 33
+sample_idx: 1, k_config: (2, 1, 1), good_speed > 1.4: 29.985, count: 0.875, invocation: 307 / 171
+2, prompt_text: Translate the input English sentence into German.
+Input: A total of four road safety inspections were carried out and a roundabout was also considered, however, this idea was rejected on account of the narrowness of the Sulzbachweg/Kirchstrasse junctions.
+Output: 
+Draft time: 0.368, speed: 505.04
+Verify time: 3.106, speed: 19.96, Output: 129 / 62
+Draft time: 0.229, speed: 510.54
+Verify time: 1.947, speed: 20.03, Output: 56 / 39
+Draft time: 0.273, speed: 483.60
+Verify time: 2.292, speed: 19.20, Output: 64 / 44
+Draft time: 0.222, speed: 500.61
+Verify time: 1.851, speed: 19.99, Output: 55 / 37
+Draft time: 0.246, speed: 488.68
+Verify time: 2.004, speed: 19.96, Output: 56 / 40
+Draft time: 0.247, speed: 474.29
+Verify time: 1.968, speed: 19.82, Output: 62 / 39
+Draft time: 0.212, speed: 510.31
+Verify time: 1.798, speed: 20.03, Output: 53 / 36
+Draft time: 0.247, speed: 510.54
+Verify time: 2.097, speed: 20.03, Output: 62 / 42
+sample_idx: 2, k_config: (2, 1, 1), good_speed > 1.4: 28.461, count: 0.875, invocation: 481 / 299
+3, prompt_text: Translate the input English sentence into German.
+Input: If the street is clear, the pedestrian obtains a green light immediately, if not, there is a delay of around 15 seconds.
+Output: 
+Draft time: 0.251, speed: 501.31
+Verify time: 2.313, speed: 18.16, Output: 60 / 42
+Draft time: 0.211, speed: 511.26
+Verify time: 1.791, speed: 20.10, Output: 46 / 36
+Draft time: 0.105, speed: 428.85
+Verify time: 0.820, speed: 18.30, Output: 43 / 15
+Draft time: 0.470, speed: 497.87
+Verify time: 3.940, speed: 19.80, Output: 128 / 78
+Draft time: 0.078, speed: 464.46
+Verify time: 0.613, speed: 19.58, Output: 32 / 12
+Draft time: 0.199, speed: 511.81
+Verify time: 1.692, speed: 20.10, Output: 44 / 34
+Draft time: 0.062, speed: 483.73
+Verify time: 0.499, speed: 20.02, Output: 31 / 10
+Draft time: 0.412, speed: 510.30
+Verify time: 3.489, speed: 20.06, Output: 128 / 70
+sample_idx: 3, k_config: (2, 1, 1), good_speed > 1.4: 32.245, count: 0.75, invocation: 422 / 227
+4, prompt_text: Translate the input English sentence into German.
+Input: "If a group of people or if disabled persons are crossing the street, the green phase is extended, thus ensuring that everyone gets safely across the street," explained Arnold.
+Output: 
+Draft time: 0.071, speed: 503.76
+Verify time: 0.597, speed: 20.08, Output: 36 / 12
+Draft time: 0.246, speed: 511.95
+Verify time: 2.089, speed: 20.10, Output: 54 / 42
+Draft time: 0.532, speed: 428.45
+Verify time: 4.266, speed: 17.81, Output: 129 / 76
+Draft time: 0.473, speed: 513.62
+Verify time: 4.052, speed: 19.99, Output: 130 / 81
+Draft time: 0.082, speed: 514.25
+Verify time: 0.697, speed: 20.08, Output: 35 / 14
+Draft time: 0.232, speed: 492.35
+Verify time: 2.168, speed: 17.53, Output: 56 / 38
+Draft time: 0.266, speed: 518.11
+Verify time: 2.290, speed: 20.09, Output: 59 / 46
+Draft time: 0.012, speed: 514.41
+Verify time: 0.101, speed: 19.72, Output: 2 / 2
+sample_idx: 4, k_config: (2, 1, 1), good_speed > 1.4: 29.225, count: 0.625, invocation: 386 / 221
+5, prompt_text: Translate the input English sentence into German.
+Input: Yesterday this was not the case: The light had barely turned green for pedestrians when a luxury vehicle sped through on a red light.
+Output: 
+Draft time: 0.461, speed: 482.04
+Verify time: 3.857, speed: 19.18, Output: 108 / 74
+Draft time: 0.254, speed: 518.93
+Verify time: 2.189, speed: 20.10, Output: 58 / 44
+Draft time: 0.203, speed: 518.19
+Verify time: 1.899, speed: 18.43, Output: 43 / 35
+Draft time: 0.198, speed: 515.78
+Verify time: 1.692, speed: 20.10, Output: 63 / 34
+Draft time: 0.271, speed: 520.36
+Verify time: 2.337, speed: 20.11, Output: 60 / 47
+Draft time: 0.172, speed: 522.02
+Verify time: 1.491, speed: 20.12, Output: 39 / 30
+Draft time: 0.201, speed: 521.87
+Verify time: 1.740, speed: 20.12, Output: 38 / 35
+Draft time: 0.467, speed: 482.00
+Verify time: 3.853, speed: 19.47, Output: 129 / 75
+sample_idx: 5, k_config: (2, 1, 1), good_speed > 1.4: 28.421, count: 0.375, invocation: 300 / 183
+6, prompt_text: Translate the input English sentence into German.
+Input: On the predominantly empty stage - with one important requirement: a crumpled sofa, on which cast members allude to copulating and masturbating - the eight-person ensemble work their way through the text material.
+Output: 
+Draft time: 0.426, speed: 506.95
+Verify time: 3.613, speed: 19.93, Output: 128 / 72
+Draft time: 0.500, speed: 521.63
+Verify time: 4.352, speed: 19.99, Output: 128 / 87
+Draft time: 0.525, speed: 463.11
+Verify time: 4.289, speed: 18.88, Output: 109 / 81
+Draft time: 0.421, speed: 477.94
+Verify time: 3.417, speed: 19.61, Output: 128 / 67
+Draft time: 0.123, speed: 512.69
+Verify time: 1.052, speed: 19.96, Output: 36 / 21
+Draft time: 0.070, speed: 516.04
+Verify time: 0.604, speed: 19.88, Output: 16 / 12
+Draft time: 0.058, speed: 512.92
+Verify time: 0.505, speed: 19.82, Output: 13 / 10
+Draft time: 0.413, speed: 515.60
+Verify time: 3.553, speed: 19.98, Output: 130 / 71
+sample_idx: 6, k_config: (2, 1, 1), good_speed > 1.4: 30.665, count: 0.625, invocation: 550 / 318
+7, prompt_text: Translate the input English sentence into German.
+Input: The 70-minute performance glosses over the script with a host of director's additions, well-known from the repertoire of post-dramatic theatrical styles.
+Output: 
+Draft time: 0.215, speed: 516.46
+Verify time: 1.848, speed: 20.02, Output: 52 / 37
+Draft time: 0.373, speed: 410.67
+Verify time: 2.954, speed: 17.27, Output: 68 / 51
+Draft time: 0.287, speed: 428.33
+Verify time: 2.219, speed: 18.48, Output: 53 / 41
+Draft time: 0.484, speed: 508.33
+Verify time: 4.130, speed: 19.85, Output: 129 / 82
+Draft time: 0.123, speed: 511.02
+Verify time: 1.052, speed: 19.97, Output: 38 / 21
+Draft time: 0.218, speed: 509.47
+Verify time: 1.850, speed: 20.00, Output: 49 / 37
+Draft time: 0.217, speed: 511.23
+Verify time: 1.849, speed: 20.01, Output: 51 / 37
+Draft time: 0.315, speed: 457.41
+Verify time: 2.524, speed: 19.02, Output: 76 / 48
+sample_idx: 7, k_config: (2, 1, 1), good_speed > 1.4: 27.519, count: 0.5, invocation: 295 / 188
+k_config: (2, 1, 1), Speed: 27.99 tokens/s, Acceptance rate: 0.20, Block efficiency: 1.61
+Draft model: 1
+0, prompt_text: Translate the input English sentence into German.
+Input: Gutach: Increased safety for pedestrians
+Output: 
+Draft time: 0.058, speed: 461.85
+Verify time: 0.500, speed: 18.02, Output: 15 / 9
+Draft time: 0.062, speed: 434.89
+Verify time: 0.486, speed: 18.53, Output: 15 / 9
+Draft time: 0.042, speed: 504.21
+Verify time: 0.349, speed: 20.05, Output: 14 / 7
+Draft time: 0.048, speed: 500.15
+Verify time: 0.399, speed: 20.05, Output: 13 / 8
+Draft time: 0.048, speed: 501.13
+Verify time: 0.399, speed: 20.07, Output: 14 / 8
+Draft time: 0.041, speed: 510.01
+Verify time: 0.349, speed: 20.05, Output: 14 / 7
+Draft time: 0.058, speed: 516.41
+Verify time: 0.497, speed: 20.14, Output: 15 / 10
+Draft time: 0.358, speed: 510.86
+Verify time: 3.044, speed: 20.04, Output: 129 / 61
+sample_idx: 0, k_config: (2, 1, 1), good_speed > 1.4: 33.894, count: 1.0, invocation: 229 / 119
+1, prompt_text: Translate the input English sentence into German.
+Input: The Kluser lights protect cyclists, as well as those travelling by bus and the residents of Bergle.
+Output: 
+Draft time: 0.047, speed: 505.67
+Verify time: 0.398, speed: 20.08, Output: 25 / 8
+Draft time: 0.214, speed: 519.20
+Verify time: 1.838, speed: 20.13, Output: 68 / 37
+Draft time: 0.219, speed: 520.10
+Verify time: 1.888, speed: 20.13, Output: 59 / 38
+Draft time: 0.179, speed: 520.00
+Verify time: 1.540, speed: 20.13, Output: 47 / 31
+Draft time: 0.179, speed: 519.02
+Verify time: 1.540, speed: 20.13, Output: 54 / 31
+Draft time: 0.142, speed: 465.75
+Verify time: 1.228, speed: 17.91, Output: 32 / 22
+Draft time: 0.106, speed: 509.67
+Verify time: 0.896, speed: 20.09, Output: 30 / 18
+Draft time: 0.242, speed: 507.27
+Verify time: 2.041, speed: 20.08, Output: 61 / 41
+sample_idx: 1, k_config: (2, 1, 1), good_speed > 1.4: 29.539, count: 1.0, invocation: 376 / 226
+2, prompt_text: Translate the input English sentence into German.
+Input: A total of four road safety inspections were carried out and a roundabout was also considered, however, this idea was rejected on account of the narrowness of the Sulzbachweg/Kirchstrasse junctions.
+Output: 
+Draft time: 0.223, speed: 510.75
+Verify time: 1.907, speed: 19.93, Output: 57 / 38
+Draft time: 0.254, speed: 519.52
+Verify time: 2.197, speed: 20.03, Output: 63 / 44
+Draft time: 0.290, speed: 516.38
+Verify time: 2.502, speed: 19.98, Output: 100 / 50
+Draft time: 0.046, speed: 518.35
+Verify time: 0.405, speed: 19.76, Output: 13 / 8
+Draft time: 0.362, speed: 496.95
+Verify time: 3.065, speed: 19.58, Output: 87 / 60
+Draft time: 0.311, speed: 376.06
+Verify time: 2.493, speed: 15.64, Output: 53 / 39
+Draft time: 0.190, speed: 489.70
+Verify time: 1.565, speed: 19.80, Output: 49 / 31
+Draft time: 0.218, speed: 508.30
+Verify time: 1.861, speed: 19.88, Output: 55 / 37
+sample_idx: 2, k_config: (2, 1, 1), good_speed > 1.4: 28.038, count: 0.875, invocation: 424 / 268
+3, prompt_text: Translate the input English sentence into German.
+Input: If the street is clear, the pedestrian obtains a green light immediately, if not, there is a delay of around 15 seconds.
+Output: 
+Draft time: 0.185, speed: 519.83
+Verify time: 1.592, speed: 20.11, Output: 45 / 32
+Draft time: 0.487, speed: 517.93
+Verify time: 4.188, speed: 20.06, Output: 129 / 84
+Draft time: 0.278, speed: 518.13
+Verify time: 2.401, speed: 20.00, Output: 73 / 48
+Draft time: 0.298, speed: 472.50
+Verify time: 2.454, speed: 19.15, Output: 66 / 47
+Draft time: 0.471, speed: 496.43
+Verify time: 3.914, speed: 19.93, Output: 128 / 78
+Draft time: 0.099, speed: 514.81
+Verify time: 0.847, speed: 20.08, Output: 44 / 17
+Draft time: 0.398, speed: 519.64
+Verify time: 3.440, speed: 20.06, Output: 128 / 69
+Draft time: 0.265, speed: 520.27
+Verify time: 2.288, speed: 20.11, Output: 72 / 46
+sample_idx: 3, k_config: (2, 1, 1), good_speed > 1.4: 28.941, count: 1.0, invocation: 685 / 421
+4, prompt_text: Translate the input English sentence into German.
+Input: "If a group of people or if disabled persons are crossing the street, the green phase is extended, thus ensuring that everyone gets safely across the street," explained Arnold.
+Output: 
+Draft time: 0.233, speed: 501.48
+Verify time: 1.997, speed: 19.53, Output: 50 / 39
+Draft time: 0.347, speed: 475.11
+Verify time: 2.803, speed: 19.62, Output: 93 / 55
+Draft time: 0.319, speed: 507.49
+Verify time: 2.700, speed: 20.00, Output: 71 / 54
+Draft time: 0.266, speed: 519.60
+Verify time: 2.288, speed: 20.10, Output: 53 / 46
+Draft time: 0.328, speed: 521.08
+Verify time: 2.838, speed: 20.09, Output: 83 / 57
+Draft time: 0.196, speed: 521.26
+Verify time: 1.690, speed: 20.12, Output: 40 / 34
+Draft time: 0.361, speed: 482.32
+Verify time: 2.957, speed: 19.61, Output: 102 / 58
+Draft time: 0.486, speed: 487.29
+Verify time: 4.016, speed: 19.67, Output: 128 / 79
+sample_idx: 4, k_config: (2, 1, 1), good_speed > 1.4: 28.642, count: 0.5, invocation: 406 / 249
+5, prompt_text: Translate the input English sentence into German.
+Input: Yesterday this was not the case: The light had barely turned green for pedestrians when a luxury vehicle sped through on a red light.
+Output: 
+Draft time: 0.246, speed: 500.25
+Verify time: 2.049, speed: 20.01, Output: 55 / 41
+Draft time: 0.167, speed: 520.34
+Verify time: 1.442, speed: 20.11, Output: 39 / 29
+Draft time: 0.238, speed: 517.59
+Verify time: 2.040, speed: 20.10, Output: 58 / 41
+Draft time: 0.225, speed: 519.38
+Verify time: 1.939, speed: 20.11, Output: 53 / 39
+Draft time: 0.354, speed: 483.44
+Verify time: 2.911, speed: 19.58, Output: 99 / 57
+Draft time: 0.247, speed: 509.31
+Verify time: 2.152, speed: 19.52, Output: 60 / 42
+Draft time: 0.189, speed: 506.67
+Verify time: 1.596, speed: 20.05, Output: 40 / 32
+Draft time: 0.220, speed: 519.26
+Verify time: 1.911, speed: 19.88, Output: 44 / 38
+sample_idx: 5, k_config: (2, 1, 1), good_speed > 1.4: 27.263, count: 0.375, invocation: 217 / 140
+6, prompt_text: Translate the input English sentence into German.
+Input: On the predominantly empty stage - with one important requirement: a crumpled sofa, on which cast members allude to copulating and masturbating - the eight-person ensemble work their way through the text material.
+Output: 
+Draft time: 0.490, speed: 520.58
+Verify time: 4.251, speed: 19.99, Output: 129 / 85
+Draft time: 0.162, speed: 519.65
+Verify time: 1.399, speed: 20.01, Output: 42 / 28
+Draft time: 0.508, speed: 489.80
+Verify time: 4.298, speed: 19.31, Output: 128 / 83
+Draft time: 0.072, speed: 502.67
+Verify time: 0.605, speed: 19.82, Output: 22 / 12
+Draft time: 0.106, speed: 479.48
+Verify time: 0.858, speed: 19.81, Output: 23 / 17
+Draft time: 0.059, speed: 507.25
+Verify time: 0.505, speed: 19.80, Output: 13 / 10
+Draft time: 0.092, speed: 521.82
+Verify time: 0.802, speed: 19.95, Output: 25 / 16
+Draft time: 0.284, speed: 507.60
+Verify time: 2.412, speed: 19.90, Output: 64 / 48
+sample_idx: 6, k_config: (2, 1, 1), good_speed > 1.4: 27.202, count: 0.625, invocation: 346 / 224
+7, prompt_text: Translate the input English sentence into German.
+Input: The 70-minute performance glosses over the script with a host of director's additions, well-known from the repertoire of post-dramatic theatrical styles.
+Output: 
+Draft time: 0.106, speed: 511.28
+Verify time: 0.906, speed: 19.86, Output: 27 / 18
+Draft time: 0.098, speed: 520.26
+Verify time: 0.851, speed: 19.97, Output: 22 / 17
+Draft time: 0.237, speed: 519.13
+Verify time: 2.047, speed: 20.03, Output: 71 / 41
+Draft time: 0.318, speed: 518.21
+Verify time: 2.746, speed: 20.03, Output: 77 / 55
+Draft time: 0.239, speed: 452.74
+Verify time: 2.001, speed: 17.99, Output: 48 / 36
+Draft time: 0.311, speed: 395.27
+Verify time: 2.442, speed: 16.79, Output: 54 / 41
+Draft time: 0.087, speed: 517.86
+Verify time: 0.752, speed: 19.94, Output: 21 / 15
+Draft time: 0.098, speed: 519.47
+Verify time: 0.852, speed: 19.96, Output: 24 / 17
+sample_idx: 7, k_config: (2, 1, 1), good_speed > 1.4: 28.672, count: 0.375, invocation: 122 / 76
+k_config: (2, 1, 1), Speed: 27.05 tokens/s, Acceptance rate: 0.18, Block efficiency: 1.54
+Draft model: 2
+0, prompt_text: Translate the input English sentence into German.
+Input: Gutach: Increased safety for pedestrians
+Output: 
+Draft time: 0.058, speed: 516.83
+Verify time: 0.517, speed: 19.35, Output: 15 / 10
+Draft time: 0.064, speed: 517.53
+Verify time: 0.546, speed: 20.15, Output: 14 / 11
+Draft time: 0.058, speed: 520.05
+Verify time: 0.497, speed: 20.12, Output: 16 / 10
+Draft time: 0.081, speed: 521.33
+Verify time: 0.694, speed: 20.16, Output: 16 / 14
+Draft time: 0.058, speed: 518.18
+Verify time: 0.497, speed: 20.14, Output: 15 / 10
+Draft time: 0.388, speed: 518.50
+Verify time: 3.334, speed: 20.10, Output: 128 / 67
+Draft time: 0.035, speed: 518.69
+Verify time: 0.298, speed: 20.10, Output: 14 / 6
+Draft time: 0.052, speed: 522.03
+Verify time: 0.447, speed: 20.13, Output: 14 / 9
+sample_idx: 0, k_config: (2, 1, 1), good_speed > 1.4: 32.297, count: 0.75, invocation: 202 / 112
+1, prompt_text: Translate the input English sentence into German.
+Input: The Kluser lights protect cyclists, as well as those travelling by bus and the residents of Bergle.
+Output: 
+Draft time: 0.133, speed: 520.06
+Verify time: 1.143, speed: 20.13, Output: 32 / 23
+Draft time: 0.126, speed: 521.82
+Verify time: 1.092, speed: 20.14, Output: 31 / 22
+Draft time: 0.058, speed: 515.36
+Verify time: 0.498, speed: 20.09, Output: 18 / 10
+Draft time: 0.446, speed: 477.79
+Verify time: 3.669, speed: 19.35, Output: 130 / 71
+Draft time: 0.081, speed: 517.30
+Verify time: 0.696, speed: 20.12, Output: 24 / 14
+Draft time: 0.192, speed: 500.18
+Verify time: 1.602, speed: 19.98, Output: 67 / 32
+Draft time: 0.161, speed: 520.40
+Verify time: 1.391, speed: 20.12, Output: 35 / 28
+Draft time: 0.087, speed: 520.23
+Verify time: 0.745, speed: 20.14, Output: 28 / 15
+sample_idx: 1, k_config: (2, 1, 1), good_speed > 1.4: 31.985, count: 0.75, invocation: 298 / 164
+2, prompt_text: Translate the input English sentence into German.
+Input: A total of four road safety inspections were carried out and a roundabout was also considered, however, this idea was rejected on account of the narrowness of the Sulzbachweg/Kirchstrasse junctions.
+Output: 
+Draft time: 0.219, speed: 520.71
+Verify time: 1.899, speed: 20.01, Output: 58 / 38
+Draft time: 0.501, speed: 496.82
+Verify time: 4.223, speed: 19.65, Output: 129 / 83
+Draft time: 0.398, speed: 505.05
+Verify time: 3.405, speed: 19.67, Output: 117 / 67
+Draft time: 0.397, speed: 514.23
+Verify time: 3.410, speed: 19.94, Output: 106 / 68
+Draft time: 0.156, speed: 520.75
+Verify time: 1.350, speed: 20.00, Output: 39 / 27
+Draft time: 0.236, speed: 521.16
+Verify time: 2.048, speed: 20.02, Output: 61 / 41
+Draft time: 0.232, speed: 516.89
+Verify time: 1.998, speed: 20.02, Output: 58 / 40
+Draft time: 0.270, speed: 511.44
+Verify time: 2.327, speed: 19.77, Output: 64 / 46
+sample_idx: 2, k_config: (2, 1, 1), good_speed > 1.4: 27.668, count: 0.875, invocation: 568 / 364
+3, prompt_text: Translate the input English sentence into German.
+Input: If the street is clear, the pedestrian obtains a green light immediately, if not, there is a delay of around 15 seconds.
+Output: 
+Draft time: 0.319, speed: 480.28
+Verify time: 2.630, speed: 19.40, Output: 72 / 51
+Draft time: 0.201, speed: 521.42
+Verify time: 1.740, speed: 20.11, Output: 46 / 35
+Draft time: 0.305, speed: 512.13
+Verify time: 2.599, speed: 20.01, Output: 76 / 52
+Draft time: 0.446, speed: 517.69
+Verify time: 3.842, speed: 20.04, Output: 128 / 77
+Draft time: 0.454, speed: 501.68
+Verify time: 3.924, speed: 19.37, Output: 131 / 76
+Draft time: 0.179, speed: 452.55
+Verify time: 1.569, speed: 17.21, Output: 39 / 27
+Draft time: 0.257, speed: 501.38
+Verify time: 2.165, speed: 19.86, Output: 59 / 43
+Draft time: 0.428, speed: 511.99
+Verify time: 3.646, speed: 20.02, Output: 118 / 73
+sample_idx: 3, k_config: (2, 1, 1), good_speed > 1.4: 27.654, count: 0.75, invocation: 564 / 356
+4, prompt_text: Translate the input English sentence into German.
+Input: "If a group of people or if disabled persons are crossing the street, the green phase is extended, thus ensuring that everyone gets safely across the street," explained Arnold.
+Output: 
+Draft time: 0.254, speed: 519.36
+Verify time: 2.190, speed: 20.09, Output: 56 / 44
+Draft time: 0.237, speed: 519.80
+Verify time: 2.039, speed: 20.10, Output: 47 / 41
+Draft time: 0.115, speed: 519.99
+Verify time: 0.995, speed: 20.10, Output: 34 / 20
+Draft time: 0.058, speed: 520.94
+Verify time: 0.498, speed: 20.08, Output: 20 / 10
+Draft time: 0.360, speed: 483.66
+Verify time: 2.989, speed: 19.40, Output: 79 / 58
+Draft time: 0.210, speed: 514.20
+Verify time: 1.792, speed: 20.09, Output: 45 / 36
+Draft time: 0.244, speed: 515.36
+Verify time: 2.101, speed: 19.99, Output: 49 / 42
+Draft time: 0.155, speed: 521.11
+Verify time: 1.343, speed: 20.11, Output: 46 / 27
+sample_idx: 4, k_config: (2, 1, 1), good_speed > 1.4: 31.530, count: 0.375, invocation: 100 / 57
+5, prompt_text: Translate the input English sentence into German.
+Input: Yesterday this was not the case: The light had barely turned green for pedestrians when a luxury vehicle sped through on a red light.
+Output: 
+Draft time: 0.427, speed: 519.32
+Verify time: 3.687, speed: 20.07, Output: 128 / 74
+Draft time: 0.304, speed: 512.36
+Verify time: 2.625, speed: 19.81, Output: 74 / 52
+Draft time: 0.246, speed: 414.00
+Verify time: 1.986, speed: 17.12, Output: 41 / 34
+Draft time: 0.228, speed: 501.04
+Verify time: 1.896, speed: 20.04, Output: 49 / 38
+Draft time: 0.283, speed: 519.75
+Verify time: 2.477, speed: 19.78, Output: 59 / 49
+Draft time: 0.230, speed: 521.41
+Verify time: 1.989, speed: 20.11, Output: 57 / 40
+Draft time: 0.261, speed: 517.81
+Verify time: 2.238, speed: 20.10, Output: 59 / 45
+Draft time: 0.323, speed: 520.62
+Verify time: 2.787, speed: 20.09, Output: 85 / 56
+sample_idx: 5, k_config: (2, 1, 1), good_speed > 1.4: 27.733, count: 0.5, invocation: 344 / 222
+6, prompt_text: Translate the input English sentence into German.
+Input: On the predominantly empty stage - with one important requirement: a crumpled sofa, on which cast members allude to copulating and masturbating - the eight-person ensemble work their way through the text material.
+Output: 
+Draft time: 0.600, speed: 445.23
+Verify time: 4.897, speed: 18.17, Output: 128 / 89
+Draft time: 0.058, speed: 521.61
+Verify time: 0.504, speed: 19.82, Output: 14 / 10
+Draft time: 0.528, speed: 517.20
+Verify time: 4.558, speed: 19.96, Output: 131 / 91
+Draft time: 0.046, speed: 517.57
+Verify time: 0.405, speed: 19.74, Output: 17 / 8
+Draft time: 0.352, speed: 519.21
+Verify time: 3.050, speed: 20.00, Output: 119 / 61
+Draft time: 0.040, speed: 521.72
+Verify time: 0.355, speed: 19.70, Output: 12 / 7
+Draft time: 0.283, speed: 488.34
+Verify time: 2.554, speed: 18.01, Output: 107 / 46
+Draft time: 0.503, speed: 507.12
+Verify time: 4.267, speed: 19.92, Output: 125 / 85
+sample_idx: 6, k_config: (2, 1, 1), good_speed > 1.4: 28.381, count: 0.875, invocation: 639 / 387
+7, prompt_text: Translate the input English sentence into German.
+Input: The 70-minute performance glosses over the script with a host of director's additions, well-known from the repertoire of post-dramatic theatrical styles.
+Output: 
+Draft time: 0.230, speed: 520.98
+Verify time: 1.996, speed: 20.04, Output: 49 / 40
+Draft time: 0.128, speed: 515.90
+Verify time: 1.102, speed: 19.97, Output: 56 / 22
+Draft time: 0.225, speed: 520.55
+Verify time: 1.947, speed: 20.03, Output: 54 / 39
+Draft time: 0.249, speed: 518.16
+Verify time: 2.146, speed: 20.03, Output: 56 / 43
+Draft time: 0.209, speed: 516.31
+Verify time: 1.799, speed: 20.02, Output: 47 / 36
+Draft time: 0.249, speed: 456.95
+Verify time: 2.004, speed: 18.96, Output: 53 / 38
+Draft time: 0.207, speed: 492.07
+Verify time: 1.707, speed: 19.92, Output: 44 / 34
+Draft time: 0.063, speed: 520.94
+Verify time: 0.555, speed: 19.83, Output: 19 / 11
+sample_idx: 7, k_config: (2, 1, 1), good_speed > 1.4: 40.496, count: 0.25, invocation: 75 / 33
+k_config: (2, 1, 1), Speed: 26.92 tokens/s, Acceptance rate: 0.18, Block efficiency: 1.53
+Draft model: 0
+0, prompt_text: Translate the input English sentence into German.
+Input: Gutach: Increased safety for pedestrians
+Output: 
+Draft time: 0.383, speed: 508.91
+Verify time: 3.296, speed: 19.72, Output: 128 / 65
+Draft time: 0.318, speed: 510.10
+Verify time: 2.727, speed: 19.80, Output: 128 / 54
+Draft time: 0.052, speed: 515.55
+Verify time: 0.455, speed: 19.78, Output: 13 / 9
+Draft time: 0.064, speed: 515.88
+Verify time: 0.556, speed: 19.80, Output: 15 / 11
+Draft time: 0.064, speed: 514.44
+Verify time: 0.556, speed: 19.80, Output: 15 / 11
+Draft time: 0.052, speed: 516.25
+Verify time: 0.454, speed: 19.81, Output: 14 / 9
+Draft time: 0.053, speed: 514.25
+Verify time: 0.455, speed: 19.78, Output: 14 / 9
+Draft time: 0.064, speed: 515.45
+Verify time: 0.555, speed: 19.81, Output: 15 / 11
+sample_idx: 0, k_config: (4, 1, 1), good_speed > 1.4: 35.926, count: 0.625, invocation: 297 / 146
+1, prompt_text: Translate the input English sentence into German.
+Input: The Kluser lights protect cyclists, as well as those travelling by bus and the residents of Bergle.
+Output: 
+Draft time: 0.124, speed: 436.90
+Verify time: 0.988, speed: 18.22, Output: 29 / 18
+Draft time: 0.107, speed: 504.12
+Verify time: 0.911, speed: 19.77, Output: 30 / 18
+Draft time: 0.169, speed: 497.20
+Verify time: 1.420, speed: 19.72, Output: 55 / 28
+Draft time: 0.321, speed: 504.46
+Verify time: 2.734, speed: 19.75, Output: 129 / 54
+Draft time: 0.280, speed: 513.40
+Verify time: 2.424, speed: 19.80, Output: 92 / 48
+Draft time: 0.111, speed: 514.47
+Verify time: 0.961, speed: 19.77, Output: 31 / 19
+Draft time: 0.187, speed: 514.12
+Verify time: 1.617, speed: 19.78, Output: 64 / 32
+Draft time: 0.053, speed: 510.98
+Verify time: 0.455, speed: 19.76, Output: 15 / 9
+sample_idx: 1, k_config: (4, 1, 1), good_speed > 1.4: 34.508, count: 1.0, invocation: 445 / 226
+2, prompt_text: Translate the input English sentence into German.
+Input: A total of four road safety inspections were carried out and a roundabout was also considered, however, this idea was rejected on account of the narrowness of the Sulzbachweg/Kirchstrasse junctions.
+Output: 
+Draft time: 0.239, speed: 515.12
+Verify time: 2.084, speed: 19.68, Output: 62 / 41
+Draft time: 0.226, speed: 477.84
+Verify time: 1.934, speed: 18.61, Output: 57 / 36
+Draft time: 0.217, speed: 511.65
+Verify time: 1.881, speed: 19.67, Output: 60 / 37
+Draft time: 0.294, speed: 509.73
+Verify time: 2.540, speed: 19.68, Output: 90 / 50
+Draft time: 0.245, speed: 501.98
+Verify time: 2.094, speed: 19.58, Output: 60 / 41
+Draft time: 0.198, speed: 515.31
+Verify time: 1.727, speed: 19.69, Output: 55 / 34
+Draft time: 0.222, speed: 513.78
+Verify time: 1.931, speed: 19.68, Output: 57 / 38
+Draft time: 0.263, speed: 513.57
+Verify time: 2.288, speed: 19.67, Output: 75 / 45
+sample_idx: 2, k_config: (4, 1, 1), good_speed > 1.4: 28.008, count: 1.0, invocation: 516 / 322
+3, prompt_text: Translate the input English sentence into German.
+Input: If the street is clear, the pedestrian obtains a green light immediately, if not, there is a delay of around 15 seconds.
+Output: 
+Draft time: 0.269, speed: 469.19
+Verify time: 2.257, speed: 18.61, Output: 58 / 42
+Draft time: 0.204, speed: 485.49
+Verify time: 1.676, speed: 19.69, Output: 45 / 33
+Draft time: 0.119, speed: 505.95
+Verify time: 1.011, speed: 19.78, Output: 54 / 20
+Draft time: 0.345, speed: 513.22
+Verify time: 3.003, speed: 19.64, Output: 108 / 59
+Draft time: 0.329, speed: 509.87
+Verify time: 2.839, speed: 19.72, Output: 129 / 56
+Draft time: 0.216, speed: 514.65
+Verify time: 1.872, speed: 19.76, Output: 49 / 37
+Draft time: 0.297, speed: 515.76
+Verify time: 2.580, speed: 19.77, Output: 84 / 51
+Draft time: 0.308, speed: 447.80
+Verify time: 2.568, speed: 17.91, Output: 74 / 46
+sample_idx: 3, k_config: (4, 1, 1), good_speed > 1.4: 33.419, count: 0.625, invocation: 449 / 232
+4, prompt_text: Translate the input English sentence into German.
+Input: "If a group of people or if disabled persons are crossing the street, the green phase is extended, thus ensuring that everyone gets safely across the street," explained Arnold.
+Output: 
+Draft time: 0.356, speed: 480.17
+Verify time: 2.994, speed: 19.04, Output: 91 / 57
+Draft time: 0.394, speed: 509.64
+Verify time: 3.395, speed: 19.73, Output: 131 / 67
+Draft time: 0.215, speed: 503.22
+Verify time: 1.849, speed: 19.47, Output: 50 / 36
+Draft time: 0.191, speed: 517.72
+Verify time: 1.669, speed: 19.78, Output: 46 / 33
+Draft time: 0.389, speed: 462.19
+Verify time: 3.161, speed: 18.98, Output: 103 / 60
+Draft time: 0.136, speed: 505.72
+Verify time: 1.165, speed: 19.74, Output: 56 / 23
+Draft time: 0.095, speed: 473.16
+Verify time: 0.762, speed: 19.68, Output: 30 / 15
+Draft time: 0.224, speed: 495.10
+Verify time: 1.875, speed: 19.73, Output: 51 / 37
+sample_idx: 4, k_config: (4, 1, 1), good_speed > 1.4: 31.899, count: 0.625, invocation: 411 / 222
+5, prompt_text: Translate the input English sentence into German.
+Input: Yesterday this was not the case: The light had barely turned green for pedestrians when a luxury vehicle sped through on a red light.
+Output: 
+Draft time: 0.197, speed: 517.06
+Verify time: 1.739, speed: 19.55, Output: 44 / 34
+Draft time: 0.278, speed: 518.06
+Verify time: 2.428, speed: 19.77, Output: 77 / 48
+Draft time: 0.360, speed: 516.38
+Verify time: 3.139, speed: 19.75, Output: 117 / 62
+Draft time: 0.285, speed: 441.86
+Verify time: 2.265, speed: 18.54, Output: 71 / 42
+Draft time: 0.196, speed: 505.83
+Verify time: 1.768, speed: 18.67, Output: 41 / 33
+Draft time: 0.321, speed: 495.33
+Verify time: 2.702, speed: 19.62, Output: 97 / 53
+Draft time: 0.449, speed: 494.28
+Verify time: 3.758, speed: 19.69, Output: 129 / 74
+Draft time: 0.365, speed: 517.60
+Verify time: 3.192, speed: 19.74, Output: 129 / 63
+sample_idx: 5, k_config: (4, 1, 1), good_speed > 1.4: 31.641, count: 0.75, invocation: 620 / 342
+6, prompt_text: Translate the input English sentence into German.
+Input: On the predominantly empty stage - with one important requirement: a crumpled sofa, on which cast members allude to copulating and masturbating - the eight-person ensemble work their way through the text material.
+Output: 
+Draft time: 0.479, speed: 519.61
+Verify time: 4.219, speed: 19.67, Output: 127 / 83
+Draft time: 0.255, speed: 517.70
+Verify time: 2.233, speed: 19.70, Output: 97 / 44
+Draft time: 0.295, speed: 518.69
+Verify time: 2.591, speed: 19.69, Output: 69 / 51
+Draft time: 0.384, speed: 515.72
+Verify time: 3.354, speed: 19.68, Output: 131 / 66
+Draft time: 0.075, speed: 518.55
+Verify time: 0.663, speed: 19.60, Output: 24 / 13
+Draft time: 0.121, speed: 518.77
+Verify time: 1.068, speed: 19.67, Output: 40 / 21
+Draft time: 0.444, speed: 519.80
+Verify time: 3.909, speed: 19.70, Output: 110 / 77
+Draft time: 0.261, speed: 517.78
+Verify time: 2.286, speed: 19.69, Output: 72 / 45
+sample_idx: 6, k_config: (4, 1, 1), good_speed > 1.4: 30.341, count: 0.875, invocation: 601 / 349
+7, prompt_text: Translate the input English sentence into German.
+Input: The 70-minute performance glosses over the script with a host of director's additions, well-known from the repertoire of post-dramatic theatrical styles.
+Output: 
+Draft time: 0.075, speed: 518.06
+Verify time: 0.664, speed: 19.58, Output: 23 / 13
+Draft time: 0.075, speed: 517.53
+Verify time: 0.663, speed: 19.62, Output: 24 / 13
+Draft time: 0.220, speed: 519.27
+Verify time: 1.930, speed: 19.69, Output: 54 / 38
+Draft time: 0.237, speed: 519.11
+Verify time: 2.081, speed: 19.70, Output: 61 / 41
+Draft time: 0.399, speed: 519.15
+Verify time: 3.506, speed: 19.68, Output: 128 / 69
+Draft time: 0.227, speed: 514.94
+Verify time: 1.982, speed: 19.68, Output: 56 / 39
+Draft time: 0.250, speed: 516.58
+Verify time: 2.181, speed: 19.71, Output: 76 / 43
+Draft time: 0.098, speed: 518.22
+Verify time: 0.864, speed: 19.67, Output: 32 / 17
+sample_idx: 7, k_config: (4, 1, 1), good_speed > 1.4: 29.308, count: 1.0, invocation: 454 / 273
+k_config: (4, 1, 1), Speed: 30.21 tokens/s, Acceptance rate: 0.24, Block efficiency: 1.73
+Draft model: 1
+0, prompt_text: Translate the input English sentence into German.
+Input: Gutach: Increased safety for pedestrians
+Output: 
+Draft time: 0.052, speed: 515.03
+Verify time: 0.455, speed: 19.77, Output: 15 / 9
+Draft time: 0.064, speed: 517.63
+Verify time: 0.556, speed: 19.78, Output: 15 / 11
+Draft time: 0.052, speed: 519.25
+Verify time: 0.456, speed: 19.76, Output: 13 / 9
+Draft time: 0.233, speed: 515.75
+Verify time: 2.020, speed: 19.80, Output: 85 / 40
+Draft time: 0.245, speed: 515.20
+Verify time: 2.121, speed: 19.80, Output: 106 / 42
+Draft time: 0.309, speed: 514.62
+Verify time: 2.680, speed: 19.78, Output: 129 / 53
+Draft time: 0.058, speed: 517.43
+Verify time: 0.505, speed: 19.78, Output: 16 / 10
+Draft time: 0.291, speed: 515.66
+Verify time: 2.526, speed: 19.79, Output: 128 / 50
+sample_idx: 0, k_config: (4, 1, 1), good_speed > 1.4: 40.896, count: 0.875, invocation: 492 / 213
+1, prompt_text: Translate the input English sentence into German.
+Input: The Kluser lights protect cyclists, as well as those travelling by bus and the residents of Bergle.
+Output: 
+Draft time: 0.243, speed: 518.88
+Verify time: 2.124, speed: 19.78, Output: 75 / 42
+Draft time: 0.208, speed: 518.97
+Verify time: 1.819, speed: 19.79, Output: 53 / 36
+Draft time: 0.104, speed: 517.67
+Verify time: 0.910, speed: 19.77, Output: 29 / 18
+Draft time: 0.110, speed: 518.71
+Verify time: 0.961, speed: 19.78, Output: 31 / 19
+Draft time: 0.092, speed: 519.13
+Verify time: 0.809, speed: 19.79, Output: 26 / 16
+Draft time: 0.098, speed: 517.89
+Verify time: 0.860, speed: 19.76, Output: 28 / 17
+Draft time: 0.145, speed: 518.13
+Verify time: 1.263, speed: 19.80, Output: 43 / 25
+Draft time: 0.104, speed: 518.29
+Verify time: 0.910, speed: 19.79, Output: 32 / 18
+sample_idx: 1, k_config: (4, 1, 1), good_speed > 1.4: 29.391, count: 1.0, invocation: 317 / 191
+2, prompt_text: Translate the input English sentence into German.
+Input: A total of four road safety inspections were carried out and a roundabout was also considered, however, this idea was rejected on account of the narrowness of the Sulzbachweg/Kirchstrasse junctions.
+Output: 
+Draft time: 0.355, speed: 516.07
+Verify time: 3.097, speed: 19.70, Output: 130 / 61
+Draft time: 0.261, speed: 518.16
+Verify time: 2.284, speed: 19.70, Output: 76 / 45
+Draft time: 0.191, speed: 517.71
+Verify time: 1.677, speed: 19.68, Output: 53 / 33
+Draft time: 0.123, speed: 512.76
+Verify time: 1.067, speed: 19.68, Output: 56 / 21
+Draft time: 0.111, speed: 514.52
+Verify time: 0.967, speed: 19.66, Output: 49 / 19
+Draft time: 0.214, speed: 518.95
+Verify time: 1.878, speed: 19.70, Output: 63 / 37
+Draft time: 0.202, speed: 519.16
+Verify time: 1.779, speed: 19.67, Output: 53 / 35
+Draft time: 0.179, speed: 518.70
+Verify time: 1.574, speed: 19.69, Output: 51 / 31
+sample_idx: 2, k_config: (4, 1, 1), good_speed > 1.4: 33.196, count: 1.0, invocation: 531 / 282
+3, prompt_text: Translate the input English sentence into German.
+Input: If the street is clear, the pedestrian obtains a green light immediately, if not, there is a delay of around 15 seconds.
+Output: 
+Draft time: 0.424, speed: 517.06
+Verify time: 3.701, speed: 19.73, Output: 126 / 73
+Draft time: 0.151, speed: 517.75
+Verify time: 1.314, speed: 19.79, Output: 42 / 26
+Draft time: 0.191, speed: 519.24
+Verify time: 1.668, speed: 19.79, Output: 45 / 33
+Draft time: 0.179, speed: 519.49
+Verify time: 1.568, speed: 19.77, Output: 45 / 31
+Draft time: 0.410, speed: 518.94
+Verify time: 3.594, speed: 19.75, Output: 126 / 71
+Draft time: 0.179, speed: 519.54
+Verify time: 1.568, speed: 19.77, Output: 43 / 31
+Draft time: 0.260, speed: 518.81
+Verify time: 2.275, speed: 19.78, Output: 76 / 45
+Draft time: 0.053, speed: 508.15
+Verify time: 0.454, speed: 19.81, Output: 31 / 9
+sample_idx: 3, k_config: (4, 1, 1), good_speed > 1.4: 30.932, count: 0.75, invocation: 446 / 255
+4, prompt_text: Translate the input English sentence into German.
+Input: "If a group of people or if disabled persons are crossing the street, the green phase is extended, thus ensuring that everyone gets safely across the street," explained Arnold.
+Output: 
+Draft time: 0.185, speed: 520.11
+Verify time: 1.618, speed: 19.77, Output: 43 / 32
+Draft time: 0.266, speed: 518.70
+Verify time: 2.328, speed: 19.76, Output: 67 / 46
+Draft time: 0.254, speed: 519.67
+Verify time: 2.226, speed: 19.77, Output: 66 / 44
+Draft time: 0.428, speed: 518.86
+Verify time: 3.748, speed: 19.74, Output: 131 / 74
+Draft time: 0.190, speed: 520.51
+Verify time: 1.669, speed: 19.78, Output: 47 / 33
+Draft time: 0.330, speed: 518.20
+Verify time: 2.886, speed: 19.75, Output: 91 / 57
+Draft time: 0.191, speed: 518.58
+Verify time: 1.669, speed: 19.77, Output: 49 / 33
+Draft time: 0.161, speed: 520.76
+Verify time: 1.415, speed: 19.78, Output: 38 / 28
+sample_idx: 4, k_config: (4, 1, 1), good_speed > 1.4: 27.801, count: 0.75, invocation: 451 / 287
+5, prompt_text: Translate the input English sentence into German.
+Input: Yesterday this was not the case: The light had barely turned green for pedestrians when a luxury vehicle sped through on a red light.
+Output: 
+Draft time: 0.167, speed: 519.53
+Verify time: 1.467, speed: 19.77, Output: 39 / 29
+Draft time: 0.440, speed: 518.05
+Verify time: 3.850, speed: 19.74, Output: 131 / 76
+Draft time: 0.214, speed: 519.05
+Verify time: 1.872, speed: 19.76, Output: 50 / 37
+Draft time: 0.225, speed: 520.08
+Verify time: 1.972, speed: 19.77, Output: 55 / 39
+Draft time: 0.277, speed: 519.54
+Verify time: 2.428, speed: 19.77, Output: 77 / 48
+Draft time: 0.372, speed: 515.69
+Verify time: 3.243, speed: 19.74, Output: 129 / 64
+Draft time: 0.284, speed: 518.47
+Verify time: 2.478, speed: 19.77, Output: 80 / 49
+Draft time: 0.272, speed: 517.88
+Verify time: 2.378, speed: 19.76, Output: 73 / 47
+sample_idx: 5, k_config: (4, 1, 1), good_speed > 1.4: 29.840, count: 0.75, invocation: 545 / 323
+6, prompt_text: Translate the input English sentence into German.
+Input: On the predominantly empty stage - with one important requirement: a crumpled sofa, on which cast members allude to copulating and masturbating - the eight-person ensemble work their way through the text material.
+Output: 
+Draft time: 0.277, speed: 519.26
+Verify time: 2.438, speed: 19.69, Output: 67 / 48
+Draft time: 0.296, speed: 517.34
+Verify time: 2.591, speed: 19.69, Output: 73 / 51
+Draft time: 0.053, speed: 513.60
+Verify time: 0.461, speed: 19.51, Output: 14 / 9
+Draft time: 0.098, speed: 519.74
+Verify time: 0.866, speed: 19.63, Output: 25 / 17
+Draft time: 0.514, speed: 519.60
+Verify time: 4.529, speed: 19.65, Output: 128 / 89
+Draft time: 0.052, speed: 518.48
+Verify time: 0.461, speed: 19.53, Output: 15 / 9
+Draft time: 0.052, speed: 517.66
+Verify time: 0.461, speed: 19.51, Output: 15 / 9
+Draft time: 0.156, speed: 517.63
+Verify time: 1.373, speed: 19.67, Output: 49 / 27
+sample_idx: 6, k_config: (4, 1, 1), good_speed > 1.4: 26.589, count: 0.875, invocation: 319 / 211
+7, prompt_text: Translate the input English sentence into German.
+Input: The 70-minute performance glosses over the script with a host of director's additions, well-known from the repertoire of post-dramatic theatrical styles.
+Output: 
+Draft time: 0.191, speed: 518.63
+Verify time: 1.677, speed: 19.68, Output: 53 / 33
+Draft time: 0.196, speed: 519.58
+Verify time: 1.727, speed: 19.69, Output: 48 / 34
+Draft time: 0.081, speed: 516.31
+Verify time: 0.714, speed: 19.61, Output: 25 / 14
+Draft time: 0.445, speed: 519.08
+Verify time: 3.912, speed: 19.68, Output: 95 / 77
+Draft time: 0.104, speed: 518.24
+Verify time: 0.915, speed: 19.68, Output: 31 / 18
+Draft time: 0.081, speed: 518.90
+Verify time: 0.714, speed: 19.62, Output: 21 / 14
+Draft time: 0.202, speed: 519.32
+Verify time: 1.778, speed: 19.69, Output: 49 / 35
+Draft time: 0.297, speed: 514.97
+Verify time: 2.592, speed: 19.67, Output: 128 / 51
+sample_idx: 7, k_config: (4, 1, 1), good_speed > 1.4: 32.856, count: 0.75, invocation: 306 / 164
+k_config: (4, 1, 1), Speed: 30.05 tokens/s, Acceptance rate: 0.23, Block efficiency: 1.70
+Draft model: 2
+0, prompt_text: Translate the input English sentence into German.
+Input: Gutach: Increased safety for pedestrians
+Output: 
+Draft time: 0.052, speed: 517.67
+Verify time: 0.455, speed: 19.78, Output: 14 / 9
+Draft time: 0.342, speed: 517.30
+Verify time: 2.983, speed: 19.78, Output: 129 / 59
+Draft time: 0.262, speed: 516.18
+Verify time: 2.272, speed: 19.81, Output: 108 / 45
+Draft time: 0.058, speed: 518.78
+Verify time: 0.506, speed: 19.78, Output: 15 / 10
+Draft time: 0.440, speed: 518.37
+Verify time: 3.843, speed: 19.77, Output: 128 / 76
+Draft time: 0.377, speed: 517.91
+Verify time: 3.286, speed: 19.78, Output: 128 / 65
+Draft time: 0.279, speed: 515.92
+Verify time: 2.425, speed: 19.80, Output: 128 / 48
+Draft time: 0.365, speed: 517.87
+Verify time: 3.187, speed: 19.77, Output: 128 / 63
+sample_idx: 0, k_config: (4, 1, 1), good_speed > 1.4: 36.730, count: 1.0, invocation: 778 / 375
+1, prompt_text: Translate the input English sentence into German.
+Input: The Kluser lights protect cyclists, as well as those travelling by bus and the residents of Bergle.
+Output: 
+Draft time: 0.053, speed: 512.39
+Verify time: 0.455, speed: 19.76, Output: 16 / 9
+Draft time: 0.389, speed: 516.67
+Verify time: 3.390, speed: 19.76, Output: 130 / 67
+Draft time: 0.116, speed: 519.27
+Verify time: 1.011, speed: 19.79, Output: 30 / 20
+Draft time: 0.104, speed: 518.71
+Verify time: 0.908, speed: 19.82, Output: 39 / 18
+Draft time: 0.052, speed: 519.13
+Verify time: 0.456, speed: 19.76, Output: 16 / 9
+Draft time: 0.048, speed: 497.75
+Verify time: 0.405, speed: 19.74, Output: 26 / 8
+Draft time: 0.105, speed: 516.48
+Verify time: 0.909, speed: 19.80, Output: 39 / 18
+Draft time: 0.354, speed: 516.75
+Verify time: 3.088, speed: 19.76, Output: 129 / 61
+sample_idx: 1, k_config: (4, 1, 1), good_speed > 1.4: 35.797, count: 1.0, invocation: 425 / 210
+2, prompt_text: Translate the input English sentence into German.
+Input: A total of four road safety inspections were carried out and a roundabout was also considered, however, this idea was rejected on account of the narrowness of the Sulzbachweg/Kirchstrasse junctions.
+Output: 
+Draft time: 0.185, speed: 519.23
+Verify time: 1.625, speed: 19.69, Output: 49 / 32
+Draft time: 0.231, speed: 520.12
+Verify time: 2.031, speed: 19.69, Output: 60 / 40
+Draft time: 0.248, speed: 520.26
+Verify time: 2.184, speed: 19.69, Output: 64 / 43
+Draft time: 0.278, speed: 518.01
+Verify time: 2.436, speed: 19.70, Output: 101 / 48
+Draft time: 0.185, speed: 520.15
+Verify time: 1.626, speed: 19.68, Output: 47 / 32
+Draft time: 0.247, speed: 497.35
+Verify time: 2.132, speed: 19.23, Output: 57 / 41
+Draft time: 0.243, speed: 519.13
+Verify time: 2.132, speed: 19.70, Output: 57 / 42
+Draft time: 0.117, speed: 514.75
+Verify time: 1.016, speed: 19.68, Output: 50 / 20
+sample_idx: 2, k_config: (4, 1, 1), good_speed > 1.4: 30.440, count: 0.75, invocation: 371 / 215
+3, prompt_text: Translate the input English sentence into German.
+Input: If the street is clear, the pedestrian obtains a green light immediately, if not, there is a delay of around 15 seconds.
+Output: 
+Draft time: 0.359, speed: 517.89
+Verify time: 3.141, speed: 19.74, Output: 128 / 62
+Draft time: 0.331, speed: 516.56
+Verify time: 2.887, speed: 19.74, Output: 130 / 57
+Draft time: 0.134, speed: 513.12
+Verify time: 1.163, speed: 19.78, Output: 52 / 23
+Draft time: 0.451, speed: 518.42
+Verify time: 3.953, speed: 19.73, Output: 128 / 78
+Draft time: 0.059, speed: 511.84
+Verify time: 0.505, speed: 19.80, Output: 31 / 10
+Draft time: 0.064, speed: 512.17
+Verify time: 0.556, speed: 19.80, Output: 32 / 11
+Draft time: 0.369, speed: 519.98
+Verify time: 3.241, speed: 19.75, Output: 99 / 64
+Draft time: 0.255, speed: 518.32
+Verify time: 2.226, speed: 19.76, Output: 66 / 44
+sample_idx: 3, k_config: (4, 1, 1), good_speed > 1.4: 33.728, count: 1.0, invocation: 666 / 349
+4, prompt_text: Translate the input English sentence into German.
+Input: "If a group of people or if disabled persons are crossing the street, the green phase is extended, thus ensuring that everyone gets safely across the street," explained Arnold.
+Output: 
+Draft time: 0.128, speed: 516.70
+Verify time: 1.110, speed: 19.81, Output: 47 / 22
+Draft time: 0.213, speed: 520.57
+Verify time: 1.872, speed: 19.76, Output: 47 / 37
+Draft time: 0.242, speed: 519.91
+Verify time: 2.125, speed: 19.77, Output: 55 / 42
+Draft time: 0.225, speed: 520.29
+Verify time: 1.974, speed: 19.76, Output: 50 / 39
+Draft time: 0.248, speed: 519.35
+Verify time: 2.178, speed: 19.74, Output: 57 / 43
+Draft time: 0.174, speed: 518.43
+Verify time: 1.516, speed: 19.79, Output: 61 / 30
+Draft time: 0.170, speed: 511.51
+Verify time: 1.470, speed: 19.73, Output: 39 / 29
+Draft time: 0.421, speed: 519.64
+Verify time: 3.699, speed: 19.74, Output: 124 / 73
+sample_idx: 4, k_config: (4, 1, 1), good_speed > 1.4: 32.836, count: 0.375, invocation: 232 / 125
+5, prompt_text: Translate the input English sentence into German.
+Input: Yesterday this was not the case: The light had barely turned green for pedestrians when a luxury vehicle sped through on a red light.
+Output: 
+Draft time: 0.179, speed: 519.98
+Verify time: 1.569, speed: 19.76, Output: 40 / 31
+Draft time: 0.553, speed: 520.97
+Verify time: 4.869, speed: 19.72, Output: 128 / 96
+Draft time: 0.207, speed: 520.67
+Verify time: 1.822, speed: 19.76, Output: 49 / 36
+Draft time: 0.277, speed: 519.58
+Verify time: 2.429, speed: 19.76, Output: 71 / 48
+Draft time: 0.191, speed: 519.27
+Verify time: 1.669, speed: 19.77, Output: 42 / 33
+Draft time: 0.190, speed: 521.26
+Verify time: 1.669, speed: 19.77, Output: 44 / 33
+Draft time: 0.239, speed: 515.24
+Verify time: 2.074, speed: 19.76, Output: 59 / 41
+Draft time: 0.404, speed: 519.43
+Verify time: 3.546, speed: 19.74, Output: 128 / 70
+sample_idx: 5, k_config: (4, 1, 1), good_speed > 1.4: 28.693, count: 0.375, invocation: 258 / 159
+6, prompt_text: Translate the input English sentence into German.
+Input: On the predominantly empty stage - with one important requirement: a crumpled sofa, on which cast members allude to copulating and masturbating - the eight-person ensemble work their way through the text material.
+Output: 
+Draft time: 0.041, speed: 517.65
+Verify time: 0.360, speed: 19.45, Output: 14 / 7
+Draft time: 0.313, speed: 517.26
+Verify time: 2.743, speed: 19.69, Output: 128 / 54
+Draft time: 0.075, speed: 518.30
+Verify time: 0.663, speed: 19.61, Output: 23 / 13
+Draft time: 0.063, speed: 520.42
+Verify time: 0.561, speed: 19.59, Output: 25 / 11
+Draft time: 0.040, speed: 519.77
+Verify time: 0.360, speed: 19.43, Output: 12 / 7
+Draft time: 0.306, speed: 520.34
+Verify time: 2.693, speed: 19.68, Output: 73 / 53
+Draft time: 0.265, speed: 520.40
+Verify time: 2.336, speed: 19.69, Output: 66 / 46
+Draft time: 0.282, speed: 520.72
+Verify time: 2.488, speed: 19.69, Output: 63 / 49
+sample_idx: 6, k_config: (4, 1, 1), good_speed > 1.4: 34.169, count: 0.75, invocation: 268 / 138
+7, prompt_text: Translate the input English sentence into German.
+Input: The 70-minute performance glosses over the script with a host of director's additions, well-known from the repertoire of post-dramatic theatrical styles.
+Output: 
+Draft time: 0.307, speed: 518.50
+Verify time: 2.692, speed: 19.69, Output: 90 / 53
+Draft time: 0.289, speed: 518.85
+Verify time: 2.538, speed: 19.70, Output: 78 / 50
+Draft time: 0.254, speed: 519.62
+Verify time: 2.234, speed: 19.70, Output: 62 / 44
+Draft time: 0.294, speed: 520.19
+Verify time: 2.589, speed: 19.70, Output: 71 / 51
+Draft time: 0.116, speed: 518.71
+Verify time: 1.017, speed: 19.67, Output: 39 / 20
+Draft time: 0.370, speed: 519.18
+Verify time: 3.249, speed: 19.70, Output: 99 / 64
+Draft time: 0.400, speed: 517.97
+Verify time: 3.503, speed: 19.70, Output: 128 / 69
+Draft time: 0.231, speed: 519.64
+Verify time: 2.032, speed: 19.68, Output: 54 / 40
+sample_idx: 7, k_config: (4, 1, 1), good_speed > 1.4: 29.163, count: 0.75, invocation: 496 / 300
+k_config: (4, 1, 1), Speed: 30.42 tokens/s, Acceptance rate: 0.24, Block efficiency: 1.72
+Draft model: 0
+0, prompt_text: Translate the input English sentence into German.
+Input: Gutach: Increased safety for pedestrians
+Output: 
+Draft time: 0.063, speed: 520.57
+Verify time: 0.553, speed: 19.91, Output: 15 / 11
+Draft time: 0.057, speed: 524.38
+Verify time: 0.502, speed: 19.91, Output: 13 / 10
+Draft time: 0.051, speed: 525.49
+Verify time: 0.452, speed: 19.90, Output: 13 / 9
+Draft time: 0.086, speed: 525.42
+Verify time: 0.752, speed: 19.94, Output: 27 / 15
+Draft time: 0.340, speed: 520.61
+Verify time: 2.962, speed: 19.92, Output: 128 / 59
+Draft time: 0.224, speed: 522.71
+Verify time: 1.957, speed: 19.92, Output: 88 / 39
+Draft time: 0.063, speed: 521.31
+Verify time: 0.553, speed: 19.90, Output: 15 / 11
+Draft time: 0.057, speed: 524.31
+Verify time: 0.503, speed: 19.89, Output: 17 / 10
+sample_idx: 0, k_config: (3, 1, 1), good_speed > 1.4: 36.883, count: 0.625, invocation: 273 / 132
+1, prompt_text: Translate the input English sentence into German.
+Input: The Kluser lights protect cyclists, as well as those travelling by bus and the residents of Bergle.
+Output: 
+Draft time: 0.103, speed: 522.12
+Verify time: 0.904, speed: 19.90, Output: 32 / 18
+Draft time: 0.200, speed: 524.62
+Verify time: 1.757, speed: 19.92, Output: 56 / 35
+Draft time: 0.047, speed: 514.52
+Verify time: 0.402, speed: 19.89, Output: 25 / 8
+Draft time: 0.109, speed: 524.15
+Verify time: 0.954, speed: 19.92, Output: 37 / 19
+Draft time: 0.114, speed: 525.28
+Verify time: 1.004, speed: 19.91, Output: 30 / 20
+Draft time: 0.310, speed: 521.85
+Verify time: 2.716, speed: 19.88, Output: 129 / 54
+Draft time: 0.346, speed: 519.80
+Verify time: 3.018, speed: 19.88, Output: 131 / 60
+Draft time: 0.189, speed: 522.86
+Verify time: 1.657, speed: 19.91, Output: 70 / 33
+sample_idx: 1, k_config: (3, 1, 1), good_speed > 1.4: 36.779, count: 1.0, invocation: 510 / 247
+2, prompt_text: Translate the input English sentence into German.
+Input: A total of four road safety inspections were carried out and a roundabout was also considered, however, this idea was rejected on account of the narrowness of the Sulzbachweg/Kirchstrasse junctions.
+Output: 
+Draft time: 0.229, speed: 523.19
+Verify time: 2.018, speed: 19.82, Output: 60 / 40
+Draft time: 0.212, speed: 523.77
+Verify time: 1.868, speed: 19.81, Output: 57 / 37
+Draft time: 0.098, speed: 517.91
+Verify time: 0.861, speed: 19.75, Output: 49 / 17
+Draft time: 0.205, speed: 525.57
+Verify time: 1.817, speed: 19.81, Output: 55 / 36
+Draft time: 0.440, speed: 525.07
+Verify time: 3.888, speed: 19.80, Output: 128 / 77
+Draft time: 0.200, speed: 524.46
+Verify time: 1.766, speed: 19.81, Output: 52 / 35
+Draft time: 0.132, speed: 521.17
+Verify time: 1.162, speed: 19.79, Output: 49 / 23
+Draft time: 0.218, speed: 523.54
+Verify time: 1.918, speed: 19.81, Output: 60 / 38
+sample_idx: 2, k_config: (3, 1, 1), good_speed > 1.4: 29.868, count: 1.0, invocation: 510 / 303
+3, prompt_text: Translate the input English sentence into German.
+Input: If the street is clear, the pedestrian obtains a green light immediately, if not, there is a delay of around 15 seconds.
+Output: 
+Draft time: 0.251, speed: 526.51
+Verify time: 2.211, speed: 19.90, Output: 60 / 44
+Draft time: 0.074, speed: 523.97
+Verify time: 0.653, speed: 19.90, Output: 23 / 13
+Draft time: 0.149, speed: 524.19
+Verify time: 1.305, speed: 19.92, Output: 38 / 26
+Draft time: 0.275, speed: 523.78
+Verify time: 2.412, speed: 19.90, Output: 77 / 48
+Draft time: 0.230, speed: 522.87
+Verify time: 2.010, speed: 19.90, Output: 74 / 40
+Draft time: 0.384, speed: 523.79
+Verify time: 3.371, speed: 19.88, Output: 120 / 67
+Draft time: 0.317, speed: 520.92
+Verify time: 2.765, speed: 19.89, Output: 90 / 55
+Draft time: 0.430, speed: 523.34
+Verify time: 3.777, speed: 19.85, Output: 129 / 75
+sample_idx: 3, k_config: (3, 1, 1), good_speed > 1.4: 30.282, count: 0.875, invocation: 551 / 324
+4, prompt_text: Translate the input English sentence into German.
+Input: "If a group of people or if disabled persons are crossing the street, the green phase is extended, thus ensuring that everyone gets safely across the street," explained Arnold.
+Output: 
+Draft time: 0.349, speed: 524.15
+Verify time: 3.071, speed: 19.87, Output: 100 / 61
+Draft time: 0.183, speed: 524.72
+Verify time: 1.608, speed: 19.90, Output: 48 / 32
+Draft time: 0.436, speed: 523.49
+Verify time: 3.829, speed: 19.85, Output: 127 / 76
+Draft time: 0.223, speed: 525.63
+Verify time: 1.960, speed: 19.90, Output: 50 / 39
+Draft time: 0.429, speed: 524.83
+Verify time: 3.775, speed: 19.87, Output: 130 / 75
+Draft time: 0.173, speed: 520.44
+Verify time: 1.509, speed: 19.88, Output: 69 / 30
+Draft time: 0.248, speed: 520.08
+Verify time: 2.164, speed: 19.87, Output: 103 / 43
+Draft time: 0.291, speed: 525.04
+Verify time: 2.565, speed: 19.88, Output: 83 / 51
+sample_idx: 4, k_config: (3, 1, 1), good_speed > 1.4: 31.912, count: 0.875, invocation: 660 / 368
+5, prompt_text: Translate the input English sentence into German.
+Input: Yesterday this was not the case: The light had barely turned green for pedestrians when a luxury vehicle sped through on a red light.
+Output: 
+Draft time: 0.308, speed: 525.23
+Verify time: 2.715, speed: 19.89, Output: 81 / 54
+Draft time: 0.137, speed: 524.56
+Verify time: 1.205, speed: 19.92, Output: 39 / 24
+Draft time: 0.246, speed: 524.05
+Verify time: 2.161, speed: 19.90, Output: 67 / 43
+Draft time: 0.160, speed: 523.73
+Verify time: 1.407, speed: 19.90, Output: 49 / 28
+Draft time: 0.206, speed: 525.16
+Verify time: 1.809, speed: 19.90, Output: 43 / 36
+Draft time: 0.649, speed: 526.64
+Verify time: 5.745, speed: 19.84, Output: 128 / 114
+Draft time: 0.383, speed: 524.97
+Verify time: 3.372, speed: 19.87, Output: 117 / 67
+Draft time: 0.228, speed: 525.24
+Verify time: 2.010, speed: 19.90, Output: 48 / 40
+sample_idx: 5, k_config: (3, 1, 1), good_speed > 1.4: 29.118, count: 0.625, invocation: 353 / 216
+6, prompt_text: Translate the input English sentence into German.
+Input: On the predominantly empty stage - with one important requirement: a crumpled sofa, on which cast members allude to copulating and masturbating - the eight-person ensemble work their way through the text material.
+Output: 
+Draft time: 0.318, speed: 519.37
+Verify time: 2.780, speed: 19.78, Output: 130 / 55
+Draft time: 0.189, speed: 524.49
+Verify time: 1.666, speed: 19.81, Output: 55 / 33
+Draft time: 0.091, speed: 525.52
+Verify time: 0.810, speed: 19.74, Output: 25 / 16
+Draft time: 0.051, speed: 525.05
+Verify time: 0.460, speed: 19.58, Output: 14 / 9
+Draft time: 0.057, speed: 524.52
+Verify time: 0.510, speed: 19.63, Output: 14 / 10
+Draft time: 0.309, speed: 524.63
+Verify time: 2.726, speed: 19.81, Output: 73 / 54
+Draft time: 0.343, speed: 525.19
+Verify time: 3.028, speed: 19.81, Output: 79 / 60
+Draft time: 0.086, speed: 525.24
+Verify time: 0.760, speed: 19.73, Output: 20 / 15
+sample_idx: 6, k_config: (3, 1, 1), good_speed > 1.4: 35.089, count: 0.5, invocation: 224 / 113
+7, prompt_text: Translate the input English sentence into German.
+Input: The 70-minute performance glosses over the script with a host of director's additions, well-known from the repertoire of post-dramatic theatrical styles.
+Output: 
+Draft time: 0.212, speed: 524.78
+Verify time: 1.868, speed: 19.81, Output: 53 / 37
+Draft time: 0.195, speed: 524.35
+Verify time: 1.717, speed: 19.80, Output: 51 / 34
+Draft time: 0.211, speed: 525.68
+Verify time: 1.867, speed: 19.81, Output: 53 / 37
+Draft time: 0.046, speed: 524.39
+Verify time: 0.409, speed: 19.55, Output: 16 / 8
+Draft time: 0.080, speed: 525.87
+Verify time: 0.709, speed: 19.74, Output: 19 / 14
+Draft time: 0.052, speed: 523.64
+Verify time: 0.459, speed: 19.62, Output: 17 / 9
+Draft time: 0.086, speed: 524.85
+Verify time: 0.759, speed: 19.75, Output: 28 / 15
+Draft time: 0.154, speed: 526.04
+Verify time: 1.363, speed: 19.81, Output: 45 / 27
+sample_idx: 7, k_config: (3, 1, 1), good_speed > 1.4: 27.929, count: 0.875, invocation: 263 / 167
+k_config: (3, 1, 1), Speed: 29.95 tokens/s, Acceptance rate: 0.23, Block efficiency: 1.68
+Draft model: 1
+0, prompt_text: Translate the input English sentence into German.
+Input: Gutach: Increased safety for pedestrians
+Output: 
+Draft time: 0.412, speed: 524.55
+Verify time: 3.618, speed: 19.90, Output: 128 / 72
+Draft time: 0.081, speed: 521.52
+Verify time: 0.702, speed: 19.94, Output: 32 / 14
+Draft time: 0.046, speed: 525.19
+Verify time: 0.402, speed: 19.90, Output: 13 / 8
+Draft time: 0.052, speed: 523.44
+Verify time: 0.452, speed: 19.90, Output: 15 / 9
+Draft time: 0.063, speed: 525.78
+Verify time: 0.552, speed: 19.91, Output: 15 / 11
+Draft time: 0.051, speed: 525.49
+Verify time: 0.452, speed: 19.92, Output: 15 / 9
+Draft time: 0.161, speed: 522.68
+Verify time: 1.404, speed: 19.94, Output: 56 / 28
+Draft time: 0.051, speed: 524.47
+Verify time: 0.452, speed: 19.91, Output: 14 / 9
+sample_idx: 0, k_config: (3, 1, 1), good_speed > 1.4: 32.668, count: 0.875, invocation: 273 / 149
+1, prompt_text: Translate the input English sentence into German.
+Input: The Kluser lights protect cyclists, as well as those travelling by bus and the residents of Bergle.
+Output: 
+Draft time: 0.407, speed: 523.04
+Verify time: 3.574, speed: 19.87, Output: 130 / 71
+Draft time: 0.223, speed: 524.14
+Verify time: 1.958, speed: 19.92, Output: 64 / 39
+Draft time: 0.110, speed: 519.43
+Verify time: 0.954, speed: 19.92, Output: 49 / 19
+Draft time: 0.344, speed: 522.52
+Verify time: 3.021, speed: 19.86, Output: 129 / 60
+Draft time: 0.230, speed: 522.62
+Verify time: 2.009, speed: 19.91, Output: 60 / 40
+Draft time: 0.334, speed: 520.84
+Verify time: 2.919, speed: 19.87, Output: 128 / 58
+Draft time: 0.339, speed: 522.65
+Verify time: 2.970, speed: 19.86, Output: 127 / 59
+Draft time: 0.282, speed: 521.18
+Verify time: 2.463, speed: 19.90, Output: 113 / 49
+sample_idx: 1, k_config: (3, 1, 1), good_speed > 1.4: 36.050, count: 1.0, invocation: 800 / 395
+2, prompt_text: Translate the input English sentence into German.
+Input: A total of four road safety inspections were carried out and a roundabout was also considered, however, this idea was rejected on account of the narrowness of the Sulzbachweg/Kirchstrasse junctions.
+Output: 
+Draft time: 0.253, speed: 521.12
+Verify time: 2.222, speed: 19.80, Output: 98 / 44
+Draft time: 0.223, speed: 524.88
+Verify time: 1.968, speed: 19.82, Output: 60 / 39
+Draft time: 0.218, speed: 523.87
+Verify time: 1.917, speed: 19.82, Output: 59 / 38
+Draft time: 0.240, speed: 524.44
+Verify time: 2.120, speed: 19.81, Output: 64 / 42
+Draft time: 0.206, speed: 523.46
+Verify time: 1.818, speed: 19.81, Output: 61 / 36
+Draft time: 0.345, speed: 521.56
+Verify time: 3.030, speed: 19.80, Output: 128 / 60
+Draft time: 0.257, speed: 524.69
+Verify time: 2.272, speed: 19.81, Output: 63 / 45
+Draft time: 0.223, speed: 524.95
+Verify time: 1.969, speed: 19.81, Output: 60 / 39
+sample_idx: 2, k_config: (3, 1, 1), good_speed > 1.4: 31.563, count: 0.875, invocation: 530 / 298
+3, prompt_text: Translate the input English sentence into German.
+Input: If the street is clear, the pedestrian obtains a green light immediately, if not, there is a delay of around 15 seconds.
+Output: 
+Draft time: 0.178, speed: 523.75
+Verify time: 1.557, speed: 19.91, Output: 44 / 31
+Draft time: 0.183, speed: 524.50
+Verify time: 1.609, speed: 19.89, Output: 45 / 32
+Draft time: 0.166, speed: 524.50
+Verify time: 1.456, speed: 19.91, Output: 43 / 29
+Draft time: 0.218, speed: 523.59
+Verify time: 1.910, speed: 19.89, Output: 49 / 38
+Draft time: 0.446, speed: 524.66
+Verify time: 3.928, speed: 19.86, Output: 128 / 78
+Draft time: 0.384, speed: 522.92
+Verify time: 3.373, speed: 19.86, Output: 121 / 67
+Draft time: 0.447, speed: 523.92
+Verify time: 3.928, speed: 19.86, Output: 129 / 78
+Draft time: 0.223, speed: 524.80
+Verify time: 1.959, speed: 19.91, Output: 59 / 39
+sample_idx: 3, k_config: (3, 1, 1), good_speed > 1.4: 28.612, count: 0.875, invocation: 569 / 354
+4, prompt_text: Translate the input English sentence into German.
+Input: "If a group of people or if disabled persons are crossing the street, the green phase is extended, thus ensuring that everyone gets safely across the street," explained Arnold.
+Output: 
+Draft time: 0.194, speed: 525.17
+Verify time: 1.709, speed: 19.89, Output: 46 / 34
+Draft time: 0.120, speed: 524.03
+Verify time: 1.055, speed: 19.90, Output: 36 / 21
+Draft time: 0.235, speed: 523.87
+Verify time: 2.062, speed: 19.89, Output: 59 / 41
+Draft time: 0.408, speed: 522.11
+Verify time: 3.581, speed: 19.83, Output: 129 / 71
+Draft time: 0.246, speed: 525.28
+Verify time: 2.162, speed: 19.89, Output: 56 / 43
+Draft time: 0.160, speed: 523.50
+Verify time: 1.407, speed: 19.90, Output: 57 / 28
+Draft time: 0.171, speed: 525.44
+Verify time: 1.508, speed: 19.89, Output: 43 / 30
+Draft time: 0.144, speed: 521.55
+Verify time: 1.257, speed: 19.89, Output: 56 / 25
+sample_idx: 4, k_config: (3, 1, 1), good_speed > 1.4: 31.306, count: 0.75, invocation: 380 / 216
+5, prompt_text: Translate the input English sentence into German.
+Input: Yesterday this was not the case: The light had barely turned green for pedestrians when a luxury vehicle sped through on a red light.
+Output: 
+Draft time: 0.377, speed: 525.23
+Verify time: 3.322, speed: 19.87, Output: 100 / 66
+Draft time: 0.257, speed: 525.87
+Verify time: 2.262, speed: 19.89, Output: 65 / 45
+Draft time: 0.435, speed: 524.48
+Verify time: 3.826, speed: 19.86, Output: 129 / 76
+Draft time: 0.252, speed: 524.01
+Verify time: 2.211, speed: 19.90, Output: 70 / 44
+Draft time: 0.445, speed: 525.53
+Verify time: 3.927, speed: 19.86, Output: 123 / 78
+Draft time: 0.365, speed: 525.67
+Verify time: 3.221, speed: 19.87, Output: 88 / 64
+Draft time: 0.177, speed: 524.72
+Verify time: 1.557, speed: 19.91, Output: 38 / 31
+Draft time: 0.258, speed: 523.96
+Verify time: 2.263, speed: 19.88, Output: 70 / 45
+sample_idx: 5, k_config: (3, 1, 1), good_speed > 1.4: 28.014, count: 0.75, invocation: 557 / 354
+6, prompt_text: Translate the input English sentence into German.
+Input: On the predominantly empty stage - with one important requirement: a crumpled sofa, on which cast members allude to copulating and masturbating - the eight-person ensemble work their way through the text material.
+Output: 
+Draft time: 0.332, speed: 524.27
+Verify time: 2.928, speed: 19.81, Output: 92 / 58
+Draft time: 0.115, speed: 522.14
+Verify time: 1.012, speed: 19.77, Output: 37 / 20
+Draft time: 0.228, speed: 526.18
+Verify time: 2.020, speed: 19.80, Output: 52 / 40
+Draft time: 0.337, speed: 525.53
+Verify time: 2.979, speed: 19.81, Output: 79 / 59
+Draft time: 0.097, speed: 524.00
+Verify time: 0.861, speed: 19.74, Output: 29 / 17
+Draft time: 0.057, speed: 524.07
+Verify time: 0.510, speed: 19.62, Output: 17 / 10
+Draft time: 0.074, speed: 527.01
+Verify time: 0.660, speed: 19.71, Output: 20 / 13
+Draft time: 0.337, speed: 524.85
+Verify time: 2.978, speed: 19.81, Output: 88 / 59
+sample_idx: 6, k_config: (3, 1, 1), good_speed > 1.4: 28.342, count: 0.75, invocation: 283 / 177
+7, prompt_text: Translate the input English sentence into German.
+Input: The 70-minute performance glosses over the script with a host of director's additions, well-known from the repertoire of post-dramatic theatrical styles.
+Output: 
+Draft time: 0.143, speed: 523.08
+Verify time: 1.262, speed: 19.80, Output: 45 / 25
+Draft time: 0.303, speed: 525.22
+Verify time: 2.676, speed: 19.81, Output: 84 / 53
+Draft time: 0.212, speed: 524.08
+Verify time: 1.867, speed: 19.82, Output: 53 / 37
+Draft time: 0.195, speed: 524.04
+Verify time: 1.716, speed: 19.81, Output: 56 / 34
+Draft time: 0.246, speed: 523.97
+Verify time: 2.170, speed: 19.82, Output: 64 / 43
+Draft time: 0.194, speed: 524.59
+Verify time: 1.717, speed: 19.81, Output: 51 / 34
+Draft time: 0.189, speed: 524.66
+Verify time: 1.666, speed: 19.81, Output: 50 / 33
+Draft time: 0.275, speed: 524.36
+Verify time: 2.422, speed: 19.82, Output: 64 / 48
+sample_idx: 7, k_config: (3, 1, 1), good_speed > 1.4: 27.628, count: 0.875, invocation: 403 / 259
+k_config: (3, 1, 1), Speed: 29.55 tokens/s, Acceptance rate: 0.22, Block efficiency: 1.66
+Draft model: 2
+0, prompt_text: Translate the input English sentence into German.
+Input: Gutach: Increased safety for pedestrians
+Output: 
+Draft time: 0.332, speed: 523.73
+Verify time: 2.916, speed: 19.89, Output: 120 / 58
+Draft time: 0.074, speed: 525.12
+Verify time: 0.652, speed: 19.93, Output: 16 / 13
+Draft time: 0.269, speed: 523.99
+Verify time: 2.359, speed: 19.92, Output: 88 / 47
+Draft time: 0.035, speed: 519.82
+Verify time: 0.302, speed: 19.87, Output: 13 / 6
+Draft time: 0.057, speed: 523.61
+Verify time: 0.502, speed: 19.91, Output: 15 / 10
+Draft time: 0.052, speed: 524.00
+Verify time: 0.452, speed: 19.91, Output: 13 / 9
+Draft time: 0.057, speed: 525.65
+Verify time: 0.502, speed: 19.91, Output: 15 / 10
+Draft time: 0.051, speed: 524.59
+Verify time: 0.452, speed: 19.91, Output: 13 / 9
+sample_idx: 0, k_config: (3, 1, 1), good_speed > 1.4: 33.141, count: 0.875, invocation: 277 / 149
+1, prompt_text: Translate the input English sentence into German.
+Input: The Kluser lights protect cyclists, as well as those travelling by bus and the residents of Bergle.
+Output: 
+Draft time: 0.040, speed: 520.63
+Verify time: 0.353, speed: 19.85, Output: 13 / 7
+Draft time: 0.125, speed: 525.94
+Verify time: 1.104, speed: 19.92, Output: 31 / 22
+Draft time: 0.377, speed: 524.58
+Verify time: 3.319, speed: 19.89, Output: 128 / 66
+Draft time: 0.137, speed: 526.17
+Verify time: 1.204, speed: 19.93, Output: 43 / 24
+Draft time: 0.125, speed: 526.51
+Verify time: 1.104, speed: 19.93, Output: 34 / 22
+Draft time: 0.162, speed: 519.62
+Verify time: 1.409, speed: 19.88, Output: 67 / 28
+Draft time: 0.058, speed: 521.23
+Verify time: 0.503, speed: 19.87, Output: 21 / 10
+Draft time: 0.212, speed: 522.45
+Verify time: 1.857, speed: 19.92, Output: 67 / 37
+sample_idx: 1, k_config: (3, 1, 1), good_speed > 1.4: 33.333, count: 1.0, invocation: 404 / 216
+2, prompt_text: Translate the input English sentence into German.
+Input: A total of four road safety inspections were carried out and a roundabout was also considered, however, this idea was rejected on account of the narrowness of the Sulzbachweg/Kirchstrasse junctions.
+Output: 
+Draft time: 0.200, speed: 524.35
+Verify time: 1.767, speed: 19.80, Output: 50 / 35
+Draft time: 0.190, speed: 522.30
+Verify time: 1.666, speed: 19.81, Output: 79 / 33
+Draft time: 0.268, speed: 525.53
+Verify time: 2.372, speed: 19.82, Output: 65 / 47
+Draft time: 0.280, speed: 524.95
+Verify time: 2.473, speed: 19.81, Output: 78 / 49
+Draft time: 0.229, speed: 523.37
+Verify time: 2.019, speed: 19.81, Output: 56 / 40
+Draft time: 0.235, speed: 524.04
+Verify time: 2.069, speed: 19.81, Output: 55 / 41
+Draft time: 0.268, speed: 525.63
+Verify time: 2.373, speed: 19.81, Output: 64 / 47
+Draft time: 0.257, speed: 525.74
+Verify time: 2.271, speed: 19.81, Output: 63 / 45
+sample_idx: 2, k_config: (3, 1, 1), good_speed > 1.4: 31.407, count: 0.375, invocation: 207 / 117
+3, prompt_text: Translate the input English sentence into German.
+Input: If the street is clear, the pedestrian obtains a green light immediately, if not, there is a delay of around 15 seconds.
+Output: 
+Draft time: 0.188, speed: 525.40
+Verify time: 1.658, speed: 19.91, Output: 42 / 33
+Draft time: 0.257, speed: 525.47
+Verify time: 2.261, speed: 19.90, Output: 67 / 45
+Draft time: 0.297, speed: 525.31
+Verify time: 2.613, speed: 19.90, Output: 75 / 52
+Draft time: 0.315, speed: 524.58
+Verify time: 2.766, speed: 19.88, Output: 82 / 55
+Draft time: 0.188, speed: 525.54
+Verify time: 1.657, speed: 19.91, Output: 45 / 33
+Draft time: 0.463, speed: 524.95
+Verify time: 4.079, speed: 19.86, Output: 129 / 81
+Draft time: 0.229, speed: 525.08
+Verify time: 2.010, speed: 19.90, Output: 58 / 40
+Draft time: 0.419, speed: 522.36
+Verify time: 3.675, speed: 19.86, Output: 129 / 73
+sample_idx: 3, k_config: (3, 1, 1), good_speed > 1.4: 27.790, count: 0.75, invocation: 540 / 346
+4, prompt_text: Translate the input English sentence into German.
+Input: "If a group of people or if disabled persons are crossing the street, the green phase is extended, thus ensuring that everyone gets safely across the street," explained Arnold.
+Output: 
+Draft time: 0.401, speed: 524.18
+Verify time: 3.527, speed: 19.85, Output: 128 / 70
+Draft time: 0.262, speed: 525.79
+Verify time: 2.315, speed: 19.87, Output: 54 / 46
+Draft time: 0.211, speed: 526.50
+Verify time: 1.860, speed: 19.89, Output: 47 / 37
+Draft time: 0.183, speed: 525.73
+Verify time: 1.609, speed: 19.89, Output: 45 / 32
+Draft time: 0.360, speed: 524.57
+Verify time: 3.172, speed: 19.86, Output: 104 / 63
+Draft time: 0.223, speed: 523.56
+Verify time: 1.961, speed: 19.89, Output: 54 / 39
+Draft time: 0.293, speed: 522.18
+Verify time: 2.565, speed: 19.88, Output: 96 / 51
+Draft time: 0.399, speed: 525.69
+Verify time: 3.524, speed: 19.86, Output: 106 / 70
+sample_idx: 4, k_config: (3, 1, 1), good_speed > 1.4: 29.801, count: 0.625, invocation: 479 / 286
+5, prompt_text: Translate the input English sentence into German.
+Input: Yesterday this was not the case: The light had barely turned green for pedestrians when a luxury vehicle sped through on a red light.
+Output: 
+Draft time: 0.348, speed: 525.35
+Verify time: 3.068, speed: 19.88, Output: 88 / 61
+Draft time: 0.239, speed: 526.33
+Verify time: 2.110, speed: 19.90, Output: 50 / 42
+Draft time: 0.451, speed: 525.66
+Verify time: 3.979, speed: 19.85, Output: 128 / 79
+Draft time: 0.177, speed: 525.43
+Verify time: 1.557, speed: 19.91, Output: 40 / 31
+Draft time: 0.188, speed: 525.60
+Verify time: 1.658, speed: 19.90, Output: 39 / 33
+Draft time: 0.234, speed: 525.75
+Verify time: 2.061, speed: 19.89, Output: 62 / 41
+Draft time: 0.463, speed: 524.96
+Verify time: 4.079, speed: 19.86, Output: 128 / 81
+Draft time: 0.292, speed: 524.18
+Verify time: 2.565, speed: 19.89, Output: 102 / 51
+sample_idx: 5, k_config: (3, 1, 1), good_speed > 1.4: 28.889, count: 0.625, invocation: 508 / 313
+6, prompt_text: Translate the input English sentence into German.
+Input: On the predominantly empty stage - with one important requirement: a crumpled sofa, on which cast members allude to copulating and masturbating - the eight-person ensemble work their way through the text material.
+Output: 
+Draft time: 0.458, speed: 524.06
+Verify time: 4.040, speed: 19.80, Output: 130 / 80
+Draft time: 0.041, speed: 518.28
+Verify time: 0.359, speed: 19.49, Output: 14 / 7
+Draft time: 0.132, speed: 521.77
+Verify time: 1.163, speed: 19.78, Output: 43 / 23
+Draft time: 0.040, speed: 523.14
+Verify time: 0.359, speed: 19.51, Output: 16 / 7
+Draft time: 0.126, speed: 523.07
+Verify time: 1.114, speed: 19.75, Output: 41 / 22
+Draft time: 0.201, speed: 523.23
+Verify time: 1.767, speed: 19.80, Output: 74 / 35
+Draft time: 0.091, speed: 524.83
+Verify time: 0.811, speed: 19.74, Output: 28 / 16
+Draft time: 0.132, speed: 522.97
+Verify time: 1.163, speed: 19.78, Output: 42 / 23
+sample_idx: 6, k_config: (3, 1, 1), good_speed > 1.4: 32.256, count: 1.0, invocation: 388 / 213
+7, prompt_text: Translate the input English sentence into German.
+Input: The 70-minute performance glosses over the script with a host of director's additions, well-known from the repertoire of post-dramatic theatrical styles.
+Output: 
+Draft time: 0.074, speed: 524.85
+Verify time: 0.660, speed: 19.71, Output: 22 / 13
+Draft time: 0.400, speed: 525.03
+Verify time: 3.532, speed: 19.82, Output: 100 / 70
+Draft time: 0.213, speed: 521.58
+Verify time: 1.867, speed: 19.82, Output: 52 / 37
+Draft time: 0.240, speed: 524.22
+Verify time: 2.119, speed: 19.82, Output: 52 / 42
+Draft time: 0.245, speed: 525.92
+Verify time: 2.169, speed: 19.83, Output: 57 / 43
+Draft time: 0.132, speed: 524.38
+Verify time: 1.161, speed: 19.80, Output: 43 / 23
+Draft time: 0.217, speed: 525.65
+Verify time: 1.918, speed: 19.81, Output: 50 / 38
+Draft time: 0.234, speed: 525.11
+Verify time: 2.069, speed: 19.82, Output: 51 / 41
+sample_idx: 7, k_config: (3, 1, 1), good_speed > 1.4: 26.929, count: 0.5, invocation: 217 / 143
+k_config: (3, 1, 1), Speed: 28.18 tokens/s, Acceptance rate: 0.19, Block efficiency: 1.58
+Draft model: 0
+0, prompt_text: Translate the input English sentence into German.
+Input: Gutach: Increased safety for pedestrians
+Output: 
+Draft time: 0.221, speed: 516.09
+Verify time: 1.910, speed: 19.90, Output: 80 / 38
+Draft time: 0.052, speed: 519.09
+Verify time: 0.453, speed: 19.86, Output: 15 / 9
+Draft time: 0.058, speed: 520.23
+Verify time: 0.503, speed: 19.89, Output: 13 / 10
+Draft time: 0.202, speed: 519.69
+Verify time: 1.759, speed: 19.89, Output: 83 / 35
+Draft time: 0.052, speed: 519.71
+Verify time: 0.453, speed: 19.88, Output: 13 / 9
+Draft time: 0.063, speed: 520.15
+Verify time: 0.553, speed: 19.89, Output: 15 / 11
+Draft time: 0.346, speed: 519.58
+Verify time: 3.020, speed: 19.87, Output: 131 / 60
+Draft time: 0.226, speed: 517.77
+Verify time: 1.963, speed: 19.87, Output: 100 / 39
+sample_idx: 0, k_config: (2, 2, 1), good_speed > 1.4: 39.508, count: 0.75, invocation: 422 / 190
+1, prompt_text: Translate the input English sentence into German.
+Input: The Kluser lights protect cyclists, as well as those travelling by bus and the residents of Bergle.
+Output: 
+Draft time: 0.063, speed: 519.83
+Verify time: 0.554, speed: 19.86, Output: 20 / 11
+Draft time: 0.110, speed: 519.51
+Verify time: 0.954, speed: 19.91, Output: 30 / 19
+Draft time: 0.381, speed: 519.44
+Verify time: 3.325, speed: 19.85, Output: 128 / 66
+Draft time: 0.099, speed: 516.27
+Verify time: 0.855, speed: 19.89, Output: 41 / 17
+Draft time: 0.110, speed: 520.34
+Verify time: 0.955, speed: 19.91, Output: 30 / 19
+Draft time: 0.058, speed: 518.61
+Verify time: 0.503, speed: 19.86, Output: 17 / 10
+Draft time: 0.168, speed: 517.86
+Verify time: 1.460, speed: 19.86, Output: 62 / 29
+Draft time: 0.349, speed: 516.46
+Verify time: 3.022, speed: 19.85, Output: 128 / 60
+sample_idx: 1, k_config: (2, 2, 1), good_speed > 1.4: 35.087, count: 1.0, invocation: 456 / 231
+2, prompt_text: Translate the input English sentence into German.
+Input: A total of four road safety inspections were carried out and a roundabout was also considered, however, this idea was rejected on account of the narrowness of the Sulzbachweg/Kirchstrasse junctions.
+Output: 
+Draft time: 0.202, speed: 520.54
+Verify time: 1.767, speed: 19.81, Output: 52 / 35
+Draft time: 0.403, speed: 520.92
+Verify time: 3.539, speed: 19.78, Output: 119 / 70
+Draft time: 0.099, speed: 515.05
+Verify time: 0.862, speed: 19.72, Output: 48 / 17
+Draft time: 0.230, speed: 522.11
+Verify time: 2.020, speed: 19.81, Output: 61 / 40
+Draft time: 0.348, speed: 516.86
+Verify time: 3.033, speed: 19.78, Output: 130 / 60
+Draft time: 0.225, speed: 520.05
+Verify time: 1.971, speed: 19.79, Output: 61 / 39
+Draft time: 0.306, speed: 520.19
+Verify time: 2.676, speed: 19.80, Output: 90 / 53
+Draft time: 0.156, speed: 520.20
+Verify time: 1.366, speed: 19.77, Output: 49 / 27
+sample_idx: 2, k_config: (2, 2, 1), good_speed > 1.4: 31.687, count: 1.0, invocation: 610 / 341
+3, prompt_text: Translate the input English sentence into German.
+Input: If the street is clear, the pedestrian obtains a green light immediately, if not, there is a delay of around 15 seconds.
+Output: 
+Draft time: 0.253, speed: 521.46
+Verify time: 2.212, speed: 19.89, Output: 60 / 44
+Draft time: 0.184, speed: 520.35
+Verify time: 1.609, speed: 19.88, Output: 44 / 32
+Draft time: 0.190, speed: 521.62
+Verify time: 1.659, speed: 19.90, Output: 45 / 33
+Draft time: 0.134, speed: 515.83
+Verify time: 1.159, speed: 19.84, Output: 59 / 23
+Draft time: 0.058, speed: 519.69
+Verify time: 0.504, speed: 19.85, Output: 19 / 10
+Draft time: 0.122, speed: 516.68
+Verify time: 1.057, speed: 19.86, Output: 51 / 21
+Draft time: 0.299, speed: 521.28
+Verify time: 2.617, speed: 19.87, Output: 79 / 52
+Draft time: 0.123, speed: 512.29
+Verify time: 1.057, speed: 19.87, Output: 60 / 21
+sample_idx: 3, k_config: (2, 2, 1), good_speed > 1.4: 37.508, count: 0.625, invocation: 268 / 127
+4, prompt_text: Translate the input English sentence into German.
+Input: "If a group of people or if disabled persons are crossing the street, the green phase is extended, thus ensuring that everyone gets safely across the street," explained Arnold.
+Output: 
+Draft time: 0.399, speed: 519.26
+Verify time: 3.477, speed: 19.84, Output: 128 / 69
+Draft time: 0.293, speed: 521.38
+Verify time: 2.568, speed: 19.86, Output: 72 / 51
+Draft time: 0.438, speed: 520.52
+Verify time: 3.831, speed: 19.84, Output: 130 / 76
+Draft time: 0.265, speed: 521.67
+Verify time: 2.315, speed: 19.87, Output: 61 / 46
+Draft time: 0.225, speed: 520.33
+Verify time: 1.961, speed: 19.89, Output: 50 / 39
+Draft time: 0.277, speed: 520.26
+Verify time: 2.417, speed: 19.86, Output: 69 / 48
+Draft time: 0.253, speed: 520.82
+Verify time: 2.213, speed: 19.88, Output: 66 / 44
+Draft time: 0.224, speed: 522.06
+Verify time: 1.961, speed: 19.89, Output: 48 / 39
+sample_idx: 4, k_config: (2, 2, 1), good_speed > 1.4: 28.692, count: 0.625, invocation: 465 / 288
+5, prompt_text: Translate the input English sentence into German.
+Input: Yesterday this was not the case: The light had barely turned green for pedestrians when a luxury vehicle sped through on a red light.
+Output: 
+Draft time: 0.354, speed: 516.55
+Verify time: 3.074, speed: 19.85, Output: 128 / 61
+Draft time: 0.305, speed: 521.51
+Verify time: 2.666, speed: 19.88, Output: 76 / 53
+Draft time: 0.329, speed: 520.45
+Verify time: 2.870, speed: 19.86, Output: 96 / 57
+Draft time: 0.172, speed: 522.25
+Verify time: 1.508, speed: 19.89, Output: 39 / 30
+Draft time: 0.287, speed: 521.99
+Verify time: 2.515, speed: 19.88, Output: 75 / 50
+Draft time: 0.259, speed: 520.26
+Verify time: 2.263, speed: 19.89, Output: 70 / 45
+Draft time: 0.172, speed: 522.31
+Verify time: 1.507, speed: 19.90, Output: 36 / 30
+Draft time: 0.330, speed: 517.68
+Verify time: 2.871, speed: 19.85, Output: 131 / 57
+sample_idx: 5, k_config: (2, 2, 1), good_speed > 1.4: 31.706, count: 0.75, invocation: 576 / 323
+6, prompt_text: Translate the input English sentence into German.
+Input: On the predominantly empty stage - with one important requirement: a crumpled sofa, on which cast members allude to copulating and masturbating - the eight-person ensemble work their way through the text material.
+Output: 
+Draft time: 0.490, speed: 520.77
+Verify time: 4.295, speed: 19.79, Output: 129 / 85
+Draft time: 0.231, speed: 519.13
+Verify time: 2.024, speed: 19.76, Output: 90 / 40
+Draft time: 0.443, speed: 521.01
+Verify time: 3.890, speed: 19.79, Output: 131 / 77
+Draft time: 0.333, speed: 521.84
+Verify time: 2.929, speed: 19.81, Output: 75 / 58
+Draft time: 0.307, speed: 518.46
+Verify time: 2.679, speed: 19.79, Output: 113 / 53
+Draft time: 0.075, speed: 521.34
+Verify time: 0.661, speed: 19.67, Output: 19 / 13
+Draft time: 0.305, speed: 521.37
+Verify time: 2.678, speed: 19.79, Output: 79 / 53
+Draft time: 0.144, speed: 522.53
+Verify time: 1.264, speed: 19.77, Output: 36 / 25
+sample_idx: 6, k_config: (2, 2, 1), good_speed > 1.4: 30.554, count: 0.875, invocation: 597 / 346
+7, prompt_text: Translate the input English sentence into German.
+Input: The 70-minute performance glosses over the script with a host of director's additions, well-known from the repertoire of post-dramatic theatrical styles.
+Output: 
+Draft time: 0.219, speed: 521.50
+Verify time: 1.918, speed: 19.81, Output: 54 / 38
+Draft time: 0.105, speed: 512.00
+Verify time: 0.913, speed: 19.72, Output: 55 / 18
+Draft time: 0.242, speed: 521.73
+Verify time: 2.119, speed: 19.82, Output: 53 / 42
+Draft time: 0.052, speed: 519.54
+Verify time: 0.460, speed: 19.58, Output: 15 / 9
+Draft time: 0.220, speed: 518.93
+Verify time: 1.920, speed: 19.80, Output: 54 / 38
+Draft time: 0.058, speed: 517.77
+Verify time: 0.510, speed: 19.63, Output: 18 / 10
+Draft time: 0.098, speed: 522.29
+Verify time: 0.862, speed: 19.73, Output: 27 / 17
+Draft time: 0.231, speed: 519.39
+Verify time: 2.021, speed: 19.79, Output: 82 / 40
+sample_idx: 7, k_config: (2, 2, 1), good_speed > 1.4: 31.752, count: 0.875, invocation: 305 / 170
+k_config: (2, 2, 1), Speed: 30.96 tokens/s, Acceptance rate: 0.25, Block efficiency: 1.74
+Draft model: 1
+0, prompt_text: Translate the input English sentence into German.
+Input: Gutach: Increased safety for pedestrians
+Output: 
+Draft time: 0.046, speed: 518.27
+Verify time: 0.402, speed: 19.88, Output: 15 / 8
+Draft time: 0.040, speed: 520.03
+Verify time: 0.353, speed: 19.85, Output: 14 / 7
+Draft time: 0.046, speed: 520.91
+Verify time: 0.402, speed: 19.88, Output: 15 / 8
+Draft time: 0.046, speed: 522.07
+Verify time: 0.402, speed: 19.88, Output: 13 / 8
+Draft time: 0.040, speed: 521.36
+Verify time: 0.353, speed: 19.86, Output: 14 / 7
+Draft time: 0.046, speed: 520.10
+Verify time: 0.402, speed: 19.88, Output: 13 / 8
+Draft time: 0.046, speed: 520.88
+Verify time: 0.402, speed: 19.88, Output: 13 / 8
+Draft time: 0.046, speed: 520.72
+Verify time: 0.402, speed: 19.88, Output: 13 / 8
+sample_idx: 0, k_config: (2, 2, 1), good_speed > 1.4: 31.562, count: 1.0, invocation: 110 / 62
+1, prompt_text: Translate the input English sentence into German.
+Input: The Kluser lights protect cyclists, as well as those travelling by bus and the residents of Bergle.
+Output: 
+Draft time: 0.416, speed: 518.65
+Verify time: 3.628, speed: 19.85, Output: 129 / 72
+Draft time: 0.387, speed: 519.12
+Verify time: 3.376, speed: 19.85, Output: 128 / 67
+Draft time: 0.121, speed: 520.20
+Verify time: 1.055, speed: 19.91, Output: 31 / 21
+Draft time: 0.259, speed: 521.02
+Verify time: 2.264, speed: 19.88, Output: 78 / 45
+Draft time: 0.075, speed: 521.39
+Verify time: 0.654, speed: 19.89, Output: 21 / 13
+Draft time: 0.185, speed: 519.74
+Verify time: 1.608, speed: 19.89, Output: 57 / 32
+Draft time: 0.387, speed: 519.09
+Verify time: 3.375, speed: 19.85, Output: 128 / 67
+Draft time: 0.075, speed: 520.44
+Verify time: 0.653, speed: 19.90, Output: 22 / 13
+sample_idx: 1, k_config: (2, 2, 1), good_speed > 1.4: 31.998, count: 1.0, invocation: 594 / 330
+2, prompt_text: Translate the input English sentence into German.
+Input: A total of four road safety inspections were carried out and a roundabout was also considered, however, this idea was rejected on account of the narrowness of the Sulzbachweg/Kirchstrasse junctions.
+Output: 
+Draft time: 0.346, speed: 520.79
+Verify time: 3.032, speed: 19.79, Output: 104 / 60
+Draft time: 0.305, speed: 521.21
+Verify time: 2.675, speed: 19.81, Output: 76 / 53
+Draft time: 0.285, speed: 515.82
+Verify time: 2.480, speed: 19.76, Output: 130 / 49
+Draft time: 0.115, speed: 520.02
+Verify time: 1.013, speed: 19.75, Output: 37 / 20
+Draft time: 0.213, speed: 521.32
+Verify time: 1.869, speed: 19.79, Output: 59 / 37
+Draft time: 0.230, speed: 521.04
+Verify time: 2.020, speed: 19.80, Output: 57 / 40
+Draft time: 0.075, speed: 520.75
+Verify time: 0.661, speed: 19.68, Output: 22 / 13
+Draft time: 0.259, speed: 521.24
+Verify time: 2.272, speed: 19.80, Output: 65 / 45
+sample_idx: 2, k_config: (2, 2, 1), good_speed > 1.4: 30.735, count: 1.0, invocation: 550 / 317
+3, prompt_text: Translate the input English sentence into German.
+Input: If the street is clear, the pedestrian obtains a green light immediately, if not, there is a delay of around 15 seconds.
+Output: 
+Draft time: 0.438, speed: 519.98
+Verify time: 3.832, speed: 19.84, Output: 129 / 76
+Draft time: 0.438, speed: 520.65
+Verify time: 3.831, speed: 19.84, Output: 129 / 76
+Draft time: 0.236, speed: 520.80
+Verify time: 2.063, speed: 19.87, Output: 75 / 41
+Draft time: 0.201, speed: 522.57
+Verify time: 1.758, speed: 19.91, Output: 46 / 35
+Draft time: 0.184, speed: 522.65
+Verify time: 1.608, speed: 19.90, Output: 43 / 32
+Draft time: 0.346, speed: 520.54
+Verify time: 3.019, speed: 19.88, Output: 88 / 60
+Draft time: 0.195, speed: 522.16
+Verify time: 1.708, speed: 19.90, Output: 44 / 34
+Draft time: 0.184, speed: 521.59
+Verify time: 1.609, speed: 19.89, Output: 45 / 32
+sample_idx: 3, k_config: (2, 2, 1), good_speed > 1.4: 29.062, count: 0.625, invocation: 466 / 285
+4, prompt_text: Translate the input English sentence into German.
+Input: "If a group of people or if disabled persons are crossing the street, the green phase is extended, thus ensuring that everyone gets safely across the street," explained Arnold.
+Output: 
+Draft time: 0.433, speed: 520.17
+Verify time: 3.781, speed: 19.84, Output: 129 / 75
+Draft time: 0.403, speed: 521.08
+Verify time: 3.526, speed: 19.85, Output: 107 / 70
+Draft time: 0.212, speed: 522.39
+Verify time: 1.861, speed: 19.88, Output: 49 / 37
+Draft time: 0.213, speed: 521.74
+Verify time: 1.862, speed: 19.87, Output: 49 / 37
+Draft time: 0.184, speed: 520.58
+Verify time: 1.611, speed: 19.87, Output: 53 / 32
+Draft time: 0.167, speed: 520.59
+Verify time: 1.460, speed: 19.87, Output: 46 / 29
+Draft time: 0.438, speed: 520.57
+Verify time: 3.832, speed: 19.83, Output: 129 / 76
+Draft time: 0.368, speed: 521.25
+Verify time: 3.224, speed: 19.85, Output: 104 / 64
+sample_idx: 4, k_config: (2, 2, 1), good_speed > 1.4: 29.165, count: 0.75, invocation: 568 / 346
+5, prompt_text: Translate the input English sentence into German.
+Input: Yesterday this was not the case: The light had barely turned green for pedestrians when a luxury vehicle sped through on a red light.
+Output: 
+Draft time: 0.391, speed: 521.72
+Verify time: 3.425, speed: 19.86, Output: 105 / 68
+Draft time: 0.312, speed: 518.56
+Verify time: 2.718, speed: 19.87, Output: 94 / 54
+Draft time: 0.466, speed: 521.20
+Verify time: 4.083, speed: 19.84, Output: 128 / 81
+Draft time: 0.247, speed: 521.59
+Verify time: 2.161, speed: 19.90, Output: 57 / 43
+Draft time: 0.254, speed: 520.68
+Verify time: 2.213, speed: 19.88, Output: 62 / 44
+Draft time: 0.272, speed: 519.10
+Verify time: 2.365, speed: 19.87, Output: 72 / 47
+Draft time: 0.377, speed: 517.62
+Verify time: 3.278, speed: 19.83, Output: 128 / 65
+Draft time: 0.184, speed: 523.13
+Verify time: 1.608, speed: 19.90, Output: 39 / 32
+sample_idx: 5, k_config: (2, 2, 1), good_speed > 1.4: 29.151, count: 0.75, invocation: 589 / 359
+6, prompt_text: Translate the input English sentence into German.
+Input: On the predominantly empty stage - with one important requirement: a crumpled sofa, on which cast members allude to copulating and masturbating - the eight-person ensemble work their way through the text material.
+Output: 
+Draft time: 0.069, speed: 522.44
+Verify time: 0.610, speed: 19.67, Output: 13 / 12
+Draft time: 0.333, speed: 522.56
+Verify time: 2.929, speed: 19.80, Output: 71 / 58
+Draft time: 0.214, speed: 519.32
+Verify time: 1.871, speed: 19.78, Output: 72 / 37
+Draft time: 0.375, speed: 519.86
+Verify time: 3.288, speed: 19.77, Output: 131 / 65
+Draft time: 0.173, speed: 521.12
+Verify time: 1.518, speed: 19.77, Output: 59 / 30
+Draft time: 0.317, speed: 521.29
+Verify time: 2.776, speed: 19.81, Output: 81 / 55
+Draft time: 0.052, speed: 519.35
+Verify time: 0.460, speed: 19.57, Output: 19 / 9
+Draft time: 0.351, speed: 521.92
+Verify time: 3.082, speed: 19.79, Output: 93 / 61
+sample_idx: 6, k_config: (2, 2, 1), good_speed > 1.4: 31.348, count: 0.75, invocation: 455 / 257
+7, prompt_text: Translate the input English sentence into German.
+Input: The 70-minute performance glosses over the script with a host of director's additions, well-known from the repertoire of post-dramatic theatrical styles.
+Output: 
+Draft time: 0.219, speed: 521.39
+Verify time: 1.917, speed: 19.82, Output: 51 / 38
+Draft time: 0.369, speed: 520.73
+Verify time: 3.231, speed: 19.81, Output: 103 / 64
+Draft time: 0.213, speed: 521.46
+Verify time: 1.867, speed: 19.82, Output: 49 / 37
+Draft time: 0.201, speed: 521.76
+Verify time: 1.767, speed: 19.80, Output: 51 / 35
+Draft time: 0.226, speed: 518.05
+Verify time: 1.969, speed: 19.81, Output: 54 / 39
+Draft time: 0.191, speed: 518.94
+Verify time: 1.667, speed: 19.80, Output: 45 / 33
+Draft time: 0.086, speed: 521.95
+Verify time: 0.761, speed: 19.71, Output: 26 / 15
+Draft time: 0.213, speed: 520.98
+Verify time: 1.868, speed: 19.81, Output: 51 / 37
+sample_idx: 7, k_config: (2, 2, 1), good_speed > 1.4: 27.986, count: 0.375, invocation: 180 / 114
+k_config: (2, 2, 1), Speed: 28.79 tokens/s, Acceptance rate: 0.21, Block efficiency: 1.62
+Draft model: 2
+0, prompt_text: Translate the input English sentence into German.
+Input: Gutach: Increased safety for pedestrians
+Output: 
+Draft time: 0.052, speed: 518.27
+Verify time: 0.453, speed: 19.88, Output: 13 / 9
+Draft time: 0.046, speed: 521.36
+Verify time: 0.403, speed: 19.87, Output: 15 / 8
+Draft time: 0.052, speed: 521.99
+Verify time: 0.453, speed: 19.89, Output: 13 / 9
+Draft time: 0.220, speed: 518.22
+Verify time: 1.911, speed: 19.89, Output: 91 / 38
+Draft time: 0.057, speed: 521.83
+Verify time: 0.503, speed: 19.89, Output: 15 / 10
+Draft time: 0.138, speed: 520.71
+Verify time: 1.205, speed: 19.92, Output: 40 / 24
+Draft time: 0.047, speed: 512.21
+Verify time: 0.403, speed: 19.84, Output: 15 / 8
+Draft time: 0.058, speed: 517.19
+Verify time: 0.503, speed: 19.90, Output: 14 / 10
+sample_idx: 0, k_config: (2, 2, 1), good_speed > 1.4: 33.915, count: 0.875, invocation: 202 / 106
+1, prompt_text: Translate the input English sentence into German.
+Input: The Kluser lights protect cyclists, as well as those travelling by bus and the residents of Bergle.
+Output: 
+Draft time: 0.308, speed: 516.29
+Verify time: 2.669, speed: 19.86, Output: 119 / 53
+Draft time: 0.121, speed: 520.20
+Verify time: 1.054, speed: 19.92, Output: 27 / 21
+Draft time: 0.121, speed: 522.04
+Verify time: 1.055, speed: 19.91, Output: 30 / 21
+Draft time: 0.322, speed: 521.00
+Verify time: 2.820, speed: 19.86, Output: 108 / 56
+Draft time: 0.363, speed: 520.30
+Verify time: 3.171, speed: 19.87, Output: 116 / 63
+Draft time: 0.236, speed: 521.37
+Verify time: 2.060, speed: 19.90, Output: 68 / 41
+Draft time: 0.305, speed: 521.77
+Verify time: 2.666, speed: 19.88, Output: 90 / 53
+Draft time: 0.116, speed: 519.12
+Verify time: 1.005, speed: 19.89, Output: 51 / 20
+sample_idx: 1, k_config: (2, 2, 1), good_speed > 1.4: 33.727, count: 0.875, invocation: 582 / 307
+2, prompt_text: Translate the input English sentence into German.
+Input: A total of four road safety inspections were carried out and a roundabout was also considered, however, this idea was rejected on account of the narrowness of the Sulzbachweg/Kirchstrasse junctions.
+Output: 
+Draft time: 0.230, speed: 521.79
+Verify time: 2.020, speed: 19.81, Output: 56 / 40
+Draft time: 0.173, speed: 519.37
+Verify time: 1.516, speed: 19.78, Output: 60 / 30
+Draft time: 0.242, speed: 521.05
+Verify time: 2.122, speed: 19.79, Output: 64 / 42
+Draft time: 0.201, speed: 521.35
+Verify time: 1.768, speed: 19.80, Output: 56 / 35
+Draft time: 0.385, speed: 521.65
+Verify time: 3.384, speed: 19.80, Output: 108 / 67
+Draft time: 0.230, speed: 522.01
+Verify time: 2.020, speed: 19.80, Output: 58 / 40
+Draft time: 0.236, speed: 521.93
+Verify time: 2.070, speed: 19.80, Output: 60 / 41
+Draft time: 0.255, speed: 517.93
+Verify time: 2.223, speed: 19.79, Output: 63 / 44
+sample_idx: 2, k_config: (2, 2, 1), good_speed > 1.4: 27.812, count: 0.875, invocation: 469 / 299
+3, prompt_text: Translate the input English sentence into German.
+Input: If the street is clear, the pedestrian obtains a green light immediately, if not, there is a delay of around 15 seconds.
+Output: 
+Draft time: 0.351, speed: 521.26
+Verify time: 3.070, speed: 19.87, Output: 88 / 61
+Draft time: 0.201, speed: 522.02
+Verify time: 1.759, speed: 19.90, Output: 45 / 35
+Draft time: 0.334, speed: 521.57
+Verify time: 2.918, speed: 19.88, Output: 86 / 58
+Draft time: 0.255, speed: 518.38
+Verify time: 2.213, speed: 19.88, Output: 63 / 44
+Draft time: 0.317, speed: 520.89
+Verify time: 2.768, speed: 19.87, Output: 88 / 55
+Draft time: 0.460, speed: 521.82
+Verify time: 4.032, speed: 19.84, Output: 128 / 80
+Draft time: 0.449, speed: 521.33
+Verify time: 3.931, speed: 19.84, Output: 128 / 78
+Draft time: 0.345, speed: 521.86
+Verify time: 3.020, speed: 19.87, Output: 89 / 60
+sample_idx: 3, k_config: (2, 2, 1), good_speed > 1.4: 27.325, count: 0.875, invocation: 670 / 436
+4, prompt_text: Translate the input English sentence into German.
+Input: "If a group of people or if disabled persons are crossing the street, the green phase is extended, thus ensuring that everyone gets safely across the street," explained Arnold.
+Output: 
+Draft time: 0.253, speed: 520.91
+Verify time: 2.213, speed: 19.88, Output: 60 / 44
+Draft time: 0.150, speed: 519.42
+Verify time: 1.309, speed: 19.86, Output: 55 / 26
+Draft time: 0.086, speed: 522.04
+Verify time: 0.755, speed: 19.87, Output: 24 / 15
+Draft time: 0.450, speed: 520.53
+Verify time: 3.934, speed: 19.83, Output: 129 / 78
+Draft time: 0.374, speed: 521.30
+Verify time: 3.273, speed: 19.86, Output: 100 / 65
+Draft time: 0.290, speed: 517.92
+Verify time: 2.522, speed: 19.83, Output: 113 / 50
+Draft time: 0.236, speed: 520.73
+Verify time: 2.062, speed: 19.89, Output: 52 / 41
+Draft time: 0.058, speed: 521.15
+Verify time: 0.504, speed: 19.84, Output: 19 / 10
+sample_idx: 4, k_config: (2, 2, 1), good_speed > 1.4: 32.025, count: 0.75, invocation: 440 / 244
+5, prompt_text: Translate the input English sentence into German.
+Input: Yesterday this was not the case: The light had barely turned green for pedestrians when a luxury vehicle sped through on a red light.
+Output: 
+Draft time: 0.220, speed: 518.14
+Verify time: 1.910, speed: 19.90, Output: 44 / 38
+Draft time: 0.265, speed: 521.28
+Verify time: 2.313, speed: 19.88, Output: 52 / 46
+Draft time: 0.232, speed: 518.00
+Verify time: 2.015, speed: 19.85, Output: 84 / 40
+Draft time: 0.184, speed: 522.38
+Verify time: 1.608, speed: 19.90, Output: 40 / 32
+Draft time: 0.236, speed: 521.04
+Verify time: 2.060, speed: 19.90, Output: 56 / 41
+Draft time: 0.190, speed: 521.95
+Verify time: 1.658, speed: 19.90, Output: 40 / 33
+Draft time: 0.150, speed: 520.51
+Verify time: 1.306, speed: 19.90, Output: 38 / 26
+Draft time: 0.207, speed: 522.00
+Verify time: 1.809, speed: 19.90, Output: 43 / 36
+sample_idx: 5, k_config: (2, 2, 1), good_speed > 1.4: 32.878, count: 0.25, invocation: 122 / 66
+6, prompt_text: Translate the input English sentence into German.
+Input: On the predominantly empty stage - with one important requirement: a crumpled sofa, on which cast members allude to copulating and masturbating - the eight-person ensemble work their way through the text material.
+Output: 
+Draft time: 0.300, speed: 519.47
+Verify time: 2.627, speed: 19.79, Output: 91 / 52
+Draft time: 0.557, speed: 522.28
+Verify time: 4.902, speed: 19.79, Output: 128 / 97
+Draft time: 0.316, speed: 522.14
+Verify time: 2.775, speed: 19.82, Output: 63 / 55
+Draft time: 0.281, speed: 522.54
+Verify time: 2.474, speed: 19.80, Output: 67 / 49
+Draft time: 0.035, speed: 520.77
+Verify time: 0.309, speed: 19.41, Output: 11 / 6
+Draft time: 0.511, speed: 522.64
+Verify time: 4.503, speed: 19.76, Output: 130 / 89
+Draft time: 0.287, speed: 521.93
+Verify time: 2.525, speed: 19.80, Output: 67 / 50
+Draft time: 0.322, speed: 522.12
+Verify time: 2.828, speed: 19.80, Output: 77 / 56
+sample_idx: 6, k_config: (2, 2, 1), good_speed > 1.4: 27.913, count: 0.375, invocation: 232 / 147
+7, prompt_text: Translate the input English sentence into German.
+Input: The 70-minute performance glosses over the script with a host of director's additions, well-known from the repertoire of post-dramatic theatrical styles.
+Output: 
+Draft time: 0.224, speed: 521.49
+Verify time: 1.968, speed: 19.81, Output: 52 / 39
+Draft time: 0.432, speed: 520.59
+Verify time: 3.788, speed: 19.80, Output: 128 / 75
+Draft time: 0.232, speed: 517.29
+Verify time: 2.020, speed: 19.81, Output: 52 / 40
+Draft time: 0.098, speed: 518.61
+Verify time: 0.862, speed: 19.73, Output: 33 / 17
+Draft time: 0.242, speed: 521.14
+Verify time: 2.119, speed: 19.82, Output: 54 / 42
+Draft time: 0.236, speed: 521.70
+Verify time: 2.069, speed: 19.82, Output: 56 / 41
+Draft time: 0.345, speed: 521.65
+Verify time: 3.029, speed: 19.81, Output: 86 / 60
+Draft time: 0.081, speed: 520.46
+Verify time: 0.710, speed: 19.71, Output: 19 / 14
+sample_idx: 7, k_config: (2, 2, 1), good_speed > 1.4: 28.797, count: 0.375, invocation: 247 / 152
+k_config: (2, 2, 1), Speed: 27.59 tokens/s, Acceptance rate: 0.18, Block efficiency: 1.55
+Draft model: 0
+0, prompt_text: Translate the input English sentence into German.
+Input: Gutach: Increased safety for pedestrians
+Output: 
+Draft time: 0.085, speed: 519.86
+Verify time: 0.551, speed: 19.97, Output: 15 / 11
+Draft time: 0.069, speed: 524.39
+Verify time: 0.451, speed: 19.97, Output: 14 / 9
+Draft time: 0.076, speed: 525.58
+Verify time: 0.501, speed: 19.98, Output: 16 / 10
+Draft time: 0.213, speed: 526.12
+Verify time: 1.399, speed: 20.01, Output: 47 / 28
+Draft time: 0.496, speed: 524.51
+Verify time: 3.259, speed: 19.94, Output: 130 / 65
+Draft time: 0.084, speed: 524.79
+Verify time: 0.550, speed: 19.99, Output: 15 / 11
+Draft time: 0.114, speed: 525.19
+Verify time: 0.750, speed: 20.01, Output: 26 / 15
+Draft time: 0.076, speed: 524.92
+Verify time: 0.500, speed: 20.00, Output: 13 / 10
+sample_idx: 0, k_config: (2, 1, 1, 1), good_speed > 1.4: 31.730, count: 0.625, invocation: 233 / 127
+1, prompt_text: Translate the input English sentence into German.
+Input: The Kluser lights protect cyclists, as well as those travelling by bus and the residents of Bergle.
+Output: 
+Draft time: 0.137, speed: 524.38
+Verify time: 0.900, speed: 19.99, Output: 27 / 18
+Draft time: 0.328, speed: 525.04
+Verify time: 2.154, speed: 19.96, Output: 74 / 43
+Draft time: 0.168, speed: 524.15
+Verify time: 1.100, speed: 20.00, Output: 31 / 22
+Draft time: 0.190, speed: 525.96
+Verify time: 1.250, speed: 20.00, Output: 31 / 25
+Draft time: 0.206, speed: 524.97
+Verify time: 1.351, speed: 19.99, Output: 42 / 27
+Draft time: 0.152, speed: 525.53
+Verify time: 1.000, speed: 20.00, Output: 29 / 20
+Draft time: 0.443, speed: 523.70
+Verify time: 2.912, speed: 19.92, Output: 131 / 58
+Draft time: 0.190, speed: 525.56
+Verify time: 1.250, speed: 20.00, Output: 37 / 25
+sample_idx: 1, k_config: (2, 1, 1, 1), good_speed > 1.4: 30.115, count: 0.875, invocation: 371 / 213
+2, prompt_text: Translate the input English sentence into German.
+Input: A total of four road safety inspections were carried out and a roundabout was also considered, however, this idea was rejected on account of the narrowness of the Sulzbachweg/Kirchstrasse junctions.
+Output: 
+Draft time: 0.115, speed: 520.81
+Verify time: 0.759, speed: 19.77, Output: 47 / 15
+Draft time: 0.290, speed: 523.60
+Verify time: 1.914, speed: 19.85, Output: 87 / 38
+Draft time: 0.282, speed: 525.02
+Verify time: 1.861, speed: 19.88, Output: 55 / 37
+Draft time: 0.289, speed: 525.67
+Verify time: 1.912, speed: 19.88, Output: 57 / 38
+Draft time: 0.297, speed: 525.12
+Verify time: 1.962, speed: 19.88, Output: 63 / 39
+Draft time: 0.199, speed: 522.18
+Verify time: 1.313, speed: 19.80, Output: 77 / 26
+Draft time: 0.313, speed: 524.02
+Verify time: 2.063, speed: 19.87, Output: 63 / 41
+Draft time: 0.298, speed: 523.60
+Verify time: 1.962, speed: 19.87, Output: 61 / 39
+sample_idx: 2, k_config: (2, 1, 1, 1), good_speed > 1.4: 32.150, count: 1.0, invocation: 510 / 273
+3, prompt_text: Translate the input English sentence into German.
+Input: If the street is clear, the pedestrian obtains a green light immediately, if not, there is a delay of around 15 seconds.
+Output: 
+Draft time: 0.411, speed: 525.47
+Verify time: 2.706, speed: 19.95, Output: 84 / 54
+Draft time: 0.054, speed: 515.56
+Verify time: 0.352, speed: 19.86, Output: 31 / 7
+Draft time: 0.411, speed: 525.29
+Verify time: 2.706, speed: 19.96, Output: 81 / 54
+Draft time: 0.252, speed: 524.64
+Verify time: 1.654, speed: 19.95, Output: 62 / 33
+Draft time: 0.527, speed: 523.98
+Verify time: 3.462, speed: 19.93, Output: 116 / 69
+Draft time: 0.350, speed: 525.33
+Verify time: 2.304, speed: 19.97, Output: 74 / 46
+Draft time: 0.251, speed: 526.15
+Verify time: 1.653, speed: 19.97, Output: 45 / 33
+Draft time: 0.489, speed: 523.28
+Verify time: 3.216, speed: 19.90, Output: 132 / 64
+sample_idx: 3, k_config: (2, 1, 1, 1), good_speed > 1.4: 30.626, count: 0.875, invocation: 580 / 327
+4, prompt_text: Translate the input English sentence into German.
+Input: "If a group of people or if disabled persons are crossing the street, the green phase is extended, thus ensuring that everyone gets safely across the street," explained Arnold.
+Output: 
+Draft time: 0.289, speed: 525.39
+Verify time: 1.902, speed: 19.97, Output: 50 / 38
+Draft time: 0.305, speed: 525.17
+Verify time: 2.004, speed: 19.96, Output: 52 / 40
+Draft time: 0.282, speed: 525.45
+Verify time: 1.852, speed: 19.98, Output: 46 / 37
+Draft time: 0.297, speed: 525.11
+Verify time: 1.954, speed: 19.96, Output: 55 / 39
+Draft time: 0.411, speed: 525.33
+Verify time: 2.707, speed: 19.94, Output: 83 / 54
+Draft time: 0.580, speed: 524.40
+Verify time: 3.815, speed: 19.92, Output: 131 / 76
+Draft time: 0.419, speed: 525.43
+Verify time: 2.758, speed: 19.94, Output: 95 / 55
+Draft time: 0.274, speed: 525.93
+Verify time: 1.802, speed: 19.98, Output: 48 / 36
+sample_idx: 4, k_config: (2, 1, 1, 1), good_speed > 1.4: 28.062, count: 0.5, invocation: 364 / 224
+5, prompt_text: Translate the input English sentence into German.
+Input: Yesterday this was not the case: The light had barely turned green for pedestrians when a luxury vehicle sped through on a red light.
+Output: 
+Draft time: 0.442, speed: 524.82
+Verify time: 2.906, speed: 19.96, Output: 86 / 58
+Draft time: 0.267, speed: 524.13
+Verify time: 1.752, speed: 19.98, Output: 50 / 35
+Draft time: 0.434, speed: 525.13
+Verify time: 2.856, speed: 19.96, Output: 85 / 57
+Draft time: 0.327, speed: 525.29
+Verify time: 2.152, speed: 19.98, Output: 58 / 43
+Draft time: 0.358, speed: 525.22
+Verify time: 2.354, speed: 19.96, Output: 68 / 47
+Draft time: 0.245, speed: 522.14
+Verify time: 1.601, speed: 19.99, Output: 40 / 32
+Draft time: 0.253, speed: 522.14
+Verify time: 1.651, speed: 19.99, Output: 40 / 33
+Draft time: 0.365, speed: 525.84
+Verify time: 2.404, speed: 19.97, Output: 66 / 48
+sample_idx: 5, k_config: (2, 1, 1, 1), good_speed > 1.4: 25.366, count: 0.5, invocation: 289 / 197
+6, prompt_text: Translate the input English sentence into German.
+Input: On the predominantly empty stage - with one important requirement: a crumpled sofa, on which cast members allude to copulating and masturbating - the eight-person ensemble work their way through the text material.
+Output: 
+Draft time: 0.099, speed: 525.47
+Verify time: 0.658, speed: 19.77, Output: 17 / 13
+Draft time: 0.160, speed: 525.25
+Verify time: 1.059, speed: 19.83, Output: 33 / 21
+Draft time: 0.076, speed: 525.59
+Verify time: 0.508, speed: 19.69, Output: 17 / 10
+Draft time: 0.502, speed: 525.84
+Verify time: 3.320, speed: 19.88, Output: 88 / 66
+Draft time: 0.099, speed: 524.22
+Verify time: 0.658, speed: 19.76, Output: 21 / 13
+Draft time: 0.389, speed: 524.47
+Verify time: 2.566, speed: 19.88, Output: 88 / 51
+Draft time: 0.114, speed: 525.81
+Verify time: 0.758, speed: 19.79, Output: 22 / 15
+Draft time: 0.632, speed: 525.32
+Verify time: 4.181, speed: 19.85, Output: 128 / 83
+sample_idx: 6, k_config: (2, 1, 1, 1), good_speed > 1.4: 27.517, count: 0.75, invocation: 309 / 193
+7, prompt_text: Translate the input English sentence into German.
+Input: The 70-minute performance glosses over the script with a host of director's additions, well-known from the repertoire of post-dramatic theatrical styles.
+Output: 
+Draft time: 0.312, speed: 525.01
+Verify time: 2.061, speed: 19.89, Output: 56 / 41
+Draft time: 0.410, speed: 506.86
+Verify time: 2.655, speed: 19.59, Output: 128 / 52
+Draft time: 0.289, speed: 525.80
+Verify time: 1.910, speed: 19.89, Output: 52 / 38
+Draft time: 0.404, speed: 524.93
+Verify time: 2.665, speed: 19.89, Output: 82 / 53
+Draft time: 0.312, speed: 525.60
+Verify time: 2.060, speed: 19.90, Output: 57 / 41
+Draft time: 0.323, speed: 520.09
+Verify time: 2.118, speed: 19.83, Output: 130 / 42
+Draft time: 0.297, speed: 524.66
+Verify time: 1.961, speed: 19.89, Output: 54 / 39
+Draft time: 0.465, speed: 525.05
+Verify time: 3.069, speed: 19.88, Output: 91 / 61
+sample_idx: 7, k_config: (2, 1, 1, 1), good_speed > 1.4: 35.501, count: 0.5, invocation: 431 / 208
+k_config: (2, 1, 1, 1), Speed: 28.28 tokens/s, Acceptance rate: 0.16, Block efficiency: 1.64
+Draft model: 1
+0, prompt_text: Translate the input English sentence into German.
+Input: Gutach: Increased safety for pedestrians
+Output: 
+Draft time: 0.077, speed: 521.23
+Verify time: 0.500, speed: 19.98, Output: 14 / 10
+Draft time: 0.442, speed: 524.67
+Verify time: 2.907, speed: 19.95, Output: 109 / 58
+Draft time: 0.076, speed: 525.12
+Verify time: 0.500, speed: 19.99, Output: 16 / 10
+Draft time: 0.069, speed: 524.65
+Verify time: 0.451, speed: 19.97, Output: 14 / 9
+Draft time: 0.069, speed: 521.67
+Verify time: 0.451, speed: 19.96, Output: 14 / 9
+Draft time: 0.345, speed: 521.56
+Verify time: 2.254, speed: 19.96, Output: 91 / 45
+Draft time: 0.069, speed: 525.18
+Verify time: 0.451, speed: 19.97, Output: 15 / 9
+Draft time: 0.358, speed: 525.55
+Verify time: 2.351, speed: 19.99, Output: 73 / 47
+sample_idx: 0, k_config: (2, 1, 1, 1), good_speed > 1.4: 30.700, count: 0.875, invocation: 332 / 187
+1, prompt_text: Translate the input English sentence into German.
+Input: The Kluser lights protect cyclists, as well as those travelling by bus and the residents of Bergle.
+Output: 
+Draft time: 0.084, speed: 524.60
+Verify time: 0.550, speed: 19.99, Output: 15 / 11
+Draft time: 0.152, speed: 525.54
+Verify time: 1.000, speed: 20.00, Output: 30 / 20
+Draft time: 0.152, speed: 526.20
+Verify time: 0.999, speed: 20.02, Output: 32 / 20
+Draft time: 0.162, speed: 518.27
+Verify time: 1.050, speed: 20.00, Output: 31 / 21
+Draft time: 0.289, speed: 525.71
+Verify time: 1.901, speed: 19.99, Output: 61 / 38
+Draft time: 0.137, speed: 524.27
+Verify time: 0.901, speed: 19.97, Output: 32 / 18
+Draft time: 0.160, speed: 525.95
+Verify time: 1.050, speed: 20.00, Output: 31 / 21
+Draft time: 0.069, speed: 525.34
+Verify time: 0.451, speed: 19.97, Output: 14 / 9
+sample_idx: 1, k_config: (2, 1, 1, 1), good_speed > 1.4: 27.205, count: 0.875, invocation: 231 / 147
+2, prompt_text: Translate the input English sentence into German.
+Input: A total of four road safety inspections were carried out and a roundabout was also considered, however, this idea was rejected on account of the narrowness of the Sulzbachweg/Kirchstrasse junctions.
+Output: 
+Draft time: 0.069, speed: 523.38
+Verify time: 0.458, speed: 19.64, Output: 13 / 9
+Draft time: 0.526, speed: 524.35
+Verify time: 3.475, speed: 19.86, Output: 128 / 69
+Draft time: 0.442, speed: 525.22
+Verify time: 2.916, speed: 19.89, Output: 75 / 58
+Draft time: 0.176, speed: 523.15
+Verify time: 1.160, speed: 19.84, Output: 49 / 23
+Draft time: 0.358, speed: 525.19
+Verify time: 2.363, speed: 19.89, Output: 61 / 47
+Draft time: 0.290, speed: 524.83
+Verify time: 1.912, speed: 19.88, Output: 60 / 38
+Draft time: 0.518, speed: 525.19
+Verify time: 3.422, speed: 19.87, Output: 110 / 68
+Draft time: 0.161, speed: 522.83
+Verify time: 1.059, speed: 19.82, Output: 49 / 21
+sample_idx: 2, k_config: (2, 1, 1, 1), good_speed > 1.4: 30.842, count: 0.75, invocation: 409 / 228
+3, prompt_text: Translate the input English sentence into German.
+Input: If the street is clear, the pedestrian obtains a green light immediately, if not, there is a delay of around 15 seconds.
+Output: 
+Draft time: 0.406, speed: 522.00
+Verify time: 2.657, speed: 19.95, Output: 83 / 53
+Draft time: 0.335, speed: 525.15
+Verify time: 2.204, speed: 19.96, Output: 60 / 44
+Draft time: 0.442, speed: 525.10
+Verify time: 2.911, speed: 19.93, Output: 108 / 58
+Draft time: 0.435, speed: 524.30
+Verify time: 2.858, speed: 19.94, Output: 89 / 57
+Draft time: 0.069, speed: 519.05
+Verify time: 0.453, speed: 19.87, Output: 32 / 9
+Draft time: 0.252, speed: 523.09
+Verify time: 1.653, speed: 19.97, Output: 46 / 33
+Draft time: 0.269, speed: 521.26
+Verify time: 1.754, speed: 19.96, Output: 44 / 35
+Draft time: 0.244, speed: 525.29
+Verify time: 1.602, speed: 19.98, Output: 44 / 32
+sample_idx: 3, k_config: (2, 1, 1, 1), good_speed > 1.4: 30.431, count: 0.5, invocation: 312 / 177
+4, prompt_text: Translate the input English sentence into German.
+Input: "If a group of people or if disabled persons are crossing the street, the green phase is extended, thus ensuring that everyone gets safely across the street," explained Arnold.
+Output: 
+Draft time: 0.602, speed: 524.62
+Verify time: 3.966, speed: 19.92, Output: 128 / 79
+Draft time: 0.266, speed: 525.48
+Verify time: 1.752, speed: 19.97, Output: 47 / 35
+Draft time: 0.335, speed: 525.32
+Verify time: 2.203, speed: 19.97, Output: 56 / 44
+Draft time: 0.503, speed: 524.99
+Verify time: 3.310, speed: 19.94, Output: 97 / 66
+Draft time: 0.625, speed: 524.94
+Verify time: 4.117, speed: 19.92, Output: 129 / 82
+Draft time: 0.061, speed: 524.79
+Verify time: 0.401, speed: 19.93, Output: 11 / 8
+Draft time: 0.473, speed: 524.49
+Verify time: 3.108, speed: 19.95, Output: 89 / 62
+Draft time: 0.494, speed: 525.94
+Verify time: 3.258, speed: 19.95, Output: 91 / 65
+sample_idx: 4, k_config: (2, 1, 1, 1), good_speed > 1.4: 26.456, count: 0.5, invocation: 443 / 289
+5, prompt_text: Translate the input English sentence into German.
+Input: Yesterday this was not the case: The light had barely turned green for pedestrians when a luxury vehicle sped through on a red light.
+Output: 
+Draft time: 0.251, speed: 525.41
+Verify time: 1.651, speed: 19.99, Output: 41 / 33
+Draft time: 0.328, speed: 525.17
+Verify time: 2.152, speed: 19.98, Output: 56 / 43
+Draft time: 0.330, speed: 521.86
+Verify time: 2.156, speed: 19.95, Output: 70 / 43
+Draft time: 0.328, speed: 523.96
+Verify time: 2.154, speed: 19.97, Output: 62 / 43
+Draft time: 0.480, speed: 525.26
+Verify time: 3.159, speed: 19.94, Output: 92 / 63
+Draft time: 0.236, speed: 525.49
+Verify time: 1.553, speed: 19.97, Output: 45 / 31
+Draft time: 0.244, speed: 525.53
+Verify time: 1.601, speed: 19.99, Output: 40 / 32
+Draft time: 0.237, speed: 523.15
+Verify time: 1.551, speed: 19.98, Output: 39 / 31
+sample_idx: 5, k_config: (2, 1, 1, 1), good_speed > 1.4: 25.824, count: 0.5, invocation: 269 / 180
+6, prompt_text: Translate the input English sentence into German.
+Input: On the predominantly empty stage - with one important requirement: a crumpled sofa, on which cast members allude to copulating and masturbating - the eight-person ensemble work their way through the text material.
+Output: 
+Draft time: 0.640, speed: 524.87
+Verify time: 4.227, speed: 19.87, Output: 128 / 84
+Draft time: 0.084, speed: 525.37
+Verify time: 0.558, speed: 19.72, Output: 20 / 11
+Draft time: 0.069, speed: 525.34
+Verify time: 0.458, speed: 19.66, Output: 11 / 9
+Draft time: 0.129, speed: 526.65
+Verify time: 0.858, speed: 19.82, Output: 27 / 17
+Draft time: 0.404, speed: 525.09
+Verify time: 2.666, speed: 19.88, Output: 70 / 53
+Draft time: 0.305, speed: 524.58
+Verify time: 2.013, speed: 19.87, Output: 65 / 40
+Draft time: 0.572, speed: 524.86
+Verify time: 3.777, speed: 19.86, Output: 128 / 75
+Draft time: 0.541, speed: 525.39
+Verify time: 3.574, speed: 19.86, Output: 129 / 71
+sample_idx: 6, k_config: (2, 1, 1, 1), good_speed > 1.4: 28.679, count: 0.75, invocation: 497 / 298
+7, prompt_text: Translate the input English sentence into German.
+Input: The 70-minute performance glosses over the script with a host of director's additions, well-known from the repertoire of post-dramatic theatrical styles.
+Output: 
+Draft time: 0.313, speed: 524.78
+Verify time: 2.061, speed: 19.89, Output: 55 / 41
+Draft time: 0.320, speed: 524.86
+Verify time: 2.111, speed: 19.89, Output: 55 / 42
+Draft time: 0.077, speed: 522.80
+Verify time: 0.507, speed: 19.71, Output: 16 / 10
+Draft time: 0.266, speed: 525.99
+Verify time: 1.760, speed: 19.88, Output: 49 / 35
+Draft time: 0.305, speed: 524.82
+Verify time: 2.011, speed: 19.89, Output: 55 / 40
+Draft time: 0.281, speed: 525.91
+Verify time: 1.861, speed: 19.88, Output: 52 / 37
+Draft time: 0.168, speed: 525.29
+Verify time: 1.108, speed: 19.86, Output: 34 / 22
+Draft time: 0.276, speed: 522.06
+Verify time: 1.812, speed: 19.87, Output: 51 / 36
+sample_idx: 7, k_config: (2, 1, 1, 1), good_speed > 1.4: 25.072, count: 0.5, invocation: 153 / 105
+k_config: (2, 1, 1, 1), Speed: 26.55 tokens/s, Acceptance rate: 0.13, Block efficiency: 1.54
+Draft model: 2
+0, prompt_text: Translate the input English sentence into German.
+Input: Gutach: Increased safety for pedestrians
+Output: 
+Draft time: 0.077, speed: 522.06
+Verify time: 0.501, speed: 19.98, Output: 15 / 10
+Draft time: 0.076, speed: 524.16
+Verify time: 0.500, speed: 19.98, Output: 15 / 10
+Draft time: 0.068, speed: 525.79
+Verify time: 0.451, speed: 19.97, Output: 14 / 9
+Draft time: 0.076, speed: 524.99
+Verify time: 0.500, speed: 19.99, Output: 15 / 10
+Draft time: 0.137, speed: 525.68
+Verify time: 0.899, speed: 20.03, Output: 27 / 18
+Draft time: 0.541, speed: 525.36
+Verify time: 3.560, speed: 19.95, Output: 129 / 71
+Draft time: 0.069, speed: 523.98
+Verify time: 0.450, speed: 19.98, Output: 13 / 9
+Draft time: 0.068, speed: 525.56
+Verify time: 0.451, speed: 19.98, Output: 14 / 9
+sample_idx: 0, k_config: (2, 1, 1, 1), good_speed > 1.4: 28.663, count: 1.0, invocation: 242 / 146
+1, prompt_text: Translate the input English sentence into German.
+Input: The Kluser lights protect cyclists, as well as those travelling by bus and the residents of Bergle.
+Output: 
+Draft time: 0.550, speed: 523.91
+Verify time: 3.611, speed: 19.94, Output: 128 / 72
+Draft time: 0.565, speed: 523.90
+Verify time: 3.715, speed: 19.92, Output: 128 / 74
+Draft time: 0.190, speed: 526.18
+Verify time: 1.250, speed: 20.00, Output: 30 / 25
+Draft time: 0.327, speed: 525.82
+Verify time: 2.153, speed: 19.97, Output: 79 / 43
+Draft time: 0.343, speed: 524.72
+Verify time: 2.253, speed: 19.97, Output: 78 / 45
+Draft time: 0.167, speed: 526.63
+Verify time: 1.100, speed: 20.00, Output: 31 / 22
+Draft time: 0.167, speed: 526.01
+Verify time: 1.100, speed: 20.00, Output: 32 / 22
+Draft time: 0.175, speed: 525.75
+Verify time: 1.150, speed: 20.00, Output: 31 / 23
+sample_idx: 1, k_config: (2, 1, 1, 1), good_speed > 1.4: 29.584, count: 0.75, invocation: 476 / 278
+2, prompt_text: Translate the input English sentence into German.
+Input: A total of four road safety inspections were carried out and a roundabout was also considered, however, this idea was rejected on account of the narrowness of the Sulzbachweg/Kirchstrasse junctions.
+Output: 
+Draft time: 0.661, speed: 526.27
+Verify time: 4.378, speed: 19.87, Output: 131 / 87
+Draft time: 0.297, speed: 524.79
+Verify time: 1.962, speed: 19.88, Output: 60 / 39
+Draft time: 0.335, speed: 524.90
+Verify time: 2.212, speed: 19.89, Output: 59 / 44
+Draft time: 0.259, speed: 524.92
+Verify time: 1.711, speed: 19.88, Output: 56 / 34
+Draft time: 0.458, speed: 523.60
+Verify time: 3.024, speed: 19.84, Output: 128 / 60
+Draft time: 0.289, speed: 525.52
+Verify time: 1.911, speed: 19.89, Output: 58 / 38
+Draft time: 0.437, speed: 521.87
+Verify time: 2.865, speed: 19.90, Output: 75 / 57
+Draft time: 0.359, speed: 523.44
+Verify time: 2.364, speed: 19.88, Output: 69 / 47
+sample_idx: 2, k_config: (2, 1, 1, 1), good_speed > 1.4: 28.330, count: 0.75, invocation: 502 / 305
+3, prompt_text: Translate the input English sentence into German.
+Input: If the street is clear, the pedestrian obtains a green light immediately, if not, there is a delay of around 15 seconds.
+Output: 
+Draft time: 0.289, speed: 525.68
+Verify time: 1.902, speed: 19.98, Output: 46 / 38
+Draft time: 0.586, speed: 525.45
+Verify time: 3.863, speed: 19.93, Output: 128 / 77
+Draft time: 0.381, speed: 524.72
+Verify time: 2.505, speed: 19.96, Output: 80 / 50
+Draft time: 0.322, speed: 521.37
+Verify time: 2.110, speed: 19.90, Output: 128 / 42
+Draft time: 0.556, speed: 525.03
+Verify time: 3.670, speed: 19.89, Output: 128 / 73
+Draft time: 0.297, speed: 526.08
+Verify time: 1.952, speed: 19.98, Output: 43 / 39
+Draft time: 0.266, speed: 525.72
+Verify time: 1.751, speed: 19.98, Output: 47 / 35
+Draft time: 0.464, speed: 525.32
+Verify time: 3.056, speed: 19.96, Output: 98 / 61
+sample_idx: 3, k_config: (2, 1, 1, 1), good_speed > 1.4: 32.005, count: 0.625, invocation: 562 / 303
+4, prompt_text: Translate the input English sentence into German.
+Input: "If a group of people or if disabled persons are crossing the street, the green phase is extended, thus ensuring that everyone gets safely across the street," explained Arnold.
+Output: 
+Draft time: 0.342, speed: 526.11
+Verify time: 2.255, speed: 19.96, Output: 63 / 45
+Draft time: 0.519, speed: 524.47
+Verify time: 3.418, speed: 19.90, Output: 128 / 68
+Draft time: 0.358, speed: 525.01
+Verify time: 2.354, speed: 19.96, Output: 56 / 47
+Draft time: 0.282, speed: 524.66
+Verify time: 1.852, speed: 19.97, Output: 46 / 37
+Draft time: 0.289, speed: 525.77
+Verify time: 1.902, speed: 19.98, Output: 46 / 38
+Draft time: 0.312, speed: 526.05
+Verify time: 2.053, speed: 19.97, Output: 49 / 41
+Draft time: 0.289, speed: 525.45
+Verify time: 1.904, speed: 19.96, Output: 43 / 38
+Draft time: 0.336, speed: 524.44
+Verify time: 2.203, speed: 19.97, Output: 48 / 44
+sample_idx: 4, k_config: (2, 1, 1, 1), good_speed > 1.4: 32.426, count: 0.125, invocation: 128 / 68
+5, prompt_text: Translate the input English sentence into German.
+Input: Yesterday this was not the case: The light had barely turned green for pedestrians when a luxury vehicle sped through on a red light.
+Output: 
+Draft time: 0.619, speed: 523.50
+Verify time: 4.064, speed: 19.93, Output: 129 / 81
+Draft time: 0.259, speed: 525.96
+Verify time: 1.702, speed: 19.98, Output: 42 / 34
+Draft time: 0.273, speed: 526.60
+Verify time: 1.801, speed: 19.99, Output: 43 / 36
+Draft time: 0.610, speed: 524.65
+Verify time: 4.016, speed: 19.92, Output: 128 / 80
+Draft time: 0.358, speed: 525.35
+Verify time: 2.353, speed: 19.97, Output: 58 / 47
+Draft time: 0.236, speed: 525.62
+Verify time: 1.551, speed: 19.99, Output: 37 / 31
+Draft time: 0.335, speed: 525.74
+Verify time: 2.205, speed: 19.95, Output: 61 / 44
+Draft time: 0.464, speed: 525.54
+Verify time: 3.058, speed: 19.95, Output: 94 / 61
+sample_idx: 5, k_config: (2, 1, 1, 1), good_speed > 1.4: 27.283, count: 0.375, invocation: 351 / 222
+6, prompt_text: Translate the input English sentence into German.
+Input: On the predominantly empty stage - with one important requirement: a crumpled sofa, on which cast members allude to copulating and masturbating - the eight-person ensemble work their way through the text material.
+Output: 
+Draft time: 0.419, speed: 525.17
+Verify time: 2.765, speed: 19.89, Output: 71 / 55
+Draft time: 0.084, speed: 525.98
+Verify time: 0.558, speed: 19.72, Output: 18 / 11
+Draft time: 0.099, speed: 525.60
+Verify time: 0.658, speed: 19.76, Output: 19 / 13
+Draft time: 0.594, speed: 525.37
+Verify time: 3.932, speed: 19.84, Output: 129 / 78
+Draft time: 0.222, speed: 523.07
+Verify time: 1.461, speed: 19.85, Output: 67 / 29
+Draft time: 0.495, speed: 525.23
+Verify time: 3.268, speed: 19.89, Output: 77 / 65
+Draft time: 0.312, speed: 525.46
+Verify time: 2.064, speed: 19.87, Output: 79 / 41
+Draft time: 0.221, speed: 524.48
+Verify time: 1.461, speed: 19.85, Output: 59 / 29
+sample_idx: 6, k_config: (2, 1, 1, 1), good_speed > 1.4: 31.716, count: 0.75, invocation: 371 / 201
+7, prompt_text: Translate the input English sentence into German.
+Input: The 70-minute performance glosses over the script with a host of director's additions, well-known from the repertoire of post-dramatic theatrical styles.
+Output: 
+Draft time: 0.451, speed: 523.39
+Verify time: 2.972, speed: 19.85, Output: 128 / 59
+Draft time: 0.114, speed: 525.57
+Verify time: 0.757, speed: 19.80, Output: 26 / 15
+Draft time: 0.184, speed: 521.44
+Verify time: 1.209, speed: 19.85, Output: 47 / 24
+Draft time: 0.305, speed: 524.98
+Verify time: 2.009, speed: 19.91, Output: 51 / 40
+Draft time: 0.289, speed: 525.31
+Verify time: 1.912, speed: 19.87, Output: 75 / 38
+Draft time: 0.533, speed: 525.31
+Verify time: 3.520, speed: 19.89, Output: 128 / 70
+Draft time: 0.069, speed: 525.44
+Verify time: 0.457, speed: 19.69, Output: 13 / 9
+Draft time: 0.290, speed: 524.21
+Verify time: 1.911, speed: 19.89, Output: 51 / 38
+sample_idx: 7, k_config: (2, 1, 1, 1), good_speed > 1.4: 33.356, count: 0.75, invocation: 417 / 215
+k_config: (2, 1, 1, 1), Speed: 27.19 tokens/s, Acceptance rate: 0.14, Block efficiency: 1.58
+Draft model: 0
+0, prompt_text: Translate the input English sentence into German.
+Input: Gutach: Increased safety for pedestrians
+Output: 
+Draft time: 0.085, speed: 519.10
+Verify time: 0.556, speed: 19.80, Output: 15 / 11
+Draft time: 0.284, speed: 521.45
+Verify time: 1.866, speed: 19.83, Output: 64 / 37
+Draft time: 0.168, speed: 522.38
+Verify time: 1.110, speed: 19.82, Output: 48 / 22
+Draft time: 0.069, speed: 524.89
+Verify time: 0.455, speed: 19.80, Output: 13 / 9
+Draft time: 0.092, speed: 523.98
+Verify time: 0.605, speed: 19.83, Output: 17 / 12
+Draft time: 0.084, speed: 523.65
+Verify time: 0.555, speed: 19.80, Output: 15 / 11
+Draft time: 0.069, speed: 524.44
+Verify time: 0.455, speed: 19.79, Output: 15 / 9
+Draft time: 0.069, speed: 524.81
+Verify time: 0.455, speed: 19.80, Output: 13 / 9
+sample_idx: 0, k_config: (3, 1, 1, 1), good_speed > 1.4: 29.788, count: 0.75, invocation: 170 / 98
+1, prompt_text: Translate the input English sentence into German.
+Input: The Kluser lights protect cyclists, as well as those travelling by bus and the residents of Bergle.
+Output: 
+Draft time: 0.138, speed: 523.59
+Verify time: 0.909, speed: 19.80, Output: 28 / 18
+Draft time: 0.420, speed: 524.42
+Verify time: 2.782, speed: 19.77, Output: 131 / 55
+Draft time: 0.383, speed: 521.86
+Verify time: 2.529, speed: 19.77, Output: 128 / 50
+Draft time: 0.366, speed: 524.75
+Verify time: 2.425, speed: 19.80, Output: 91 / 48
+Draft time: 0.373, speed: 525.19
+Verify time: 2.476, speed: 19.79, Output: 91 / 49
+Draft time: 0.351, speed: 524.11
+Verify time: 2.325, speed: 19.79, Output: 95 / 46
+Draft time: 0.474, speed: 523.18
+Verify time: 3.137, speed: 19.77, Output: 132 / 62
+Draft time: 0.405, speed: 523.50
+Verify time: 2.683, speed: 19.76, Output: 129 / 53
+sample_idx: 1, k_config: (3, 1, 1, 1), good_speed > 1.4: 37.120, count: 1.0, invocation: 825 / 381
+2, prompt_text: Translate the input English sentence into German.
+Input: A total of four road safety inspections were carried out and a roundabout was also considered, however, this idea was rejected on account of the narrowness of the Sulzbachweg/Kirchstrasse junctions.
+Output: 
+Draft time: 0.259, speed: 524.66
+Verify time: 1.725, speed: 19.71, Output: 53 / 34
+Draft time: 0.161, speed: 520.69
+Verify time: 1.068, speed: 19.66, Output: 60 / 21
+Draft time: 0.176, speed: 523.17
+Verify time: 1.168, speed: 19.69, Output: 51 / 23
+Draft time: 0.146, speed: 521.80
+Verify time: 0.966, speed: 19.67, Output: 47 / 19
+Draft time: 0.306, speed: 522.39
+Verify time: 2.030, speed: 19.70, Output: 59 / 40
+Draft time: 0.374, speed: 523.64
+Verify time: 2.487, speed: 19.70, Output: 94 / 49
+Draft time: 0.429, speed: 522.46
+Verify time: 2.845, speed: 19.69, Output: 129 / 56
+Draft time: 0.274, speed: 524.99
+Verify time: 1.826, speed: 19.71, Output: 53 / 36
+sample_idx: 2, k_config: (3, 1, 1, 1), good_speed > 1.4: 33.541, count: 1.0, invocation: 546 / 278
+3, prompt_text: Translate the input English sentence into German.
+Input: If the street is clear, the pedestrian obtains a green light immediately, if not, there is a delay of around 15 seconds.
+Output: 
+Draft time: 0.344, speed: 522.51
+Verify time: 2.274, speed: 19.79, Output: 67 / 45
+Draft time: 0.283, speed: 522.60
+Verify time: 1.868, speed: 19.80, Output: 47 / 37
+Draft time: 0.389, speed: 524.27
+Verify time: 2.577, speed: 19.79, Output: 85 / 51
+Draft time: 0.374, speed: 524.29
+Verify time: 2.475, speed: 19.80, Output: 74 / 49
+Draft time: 0.230, speed: 521.97
+Verify time: 1.516, speed: 19.78, Output: 82 / 30
+Draft time: 0.252, speed: 524.21
+Verify time: 1.665, speed: 19.82, Output: 45 / 33
+Draft time: 0.290, speed: 523.88
+Verify time: 1.918, speed: 19.81, Output: 63 / 38
+Draft time: 0.206, speed: 524.08
+Verify time: 1.363, speed: 19.81, Output: 41 / 27
+sample_idx: 3, k_config: (3, 1, 1, 1), good_speed > 1.4: 29.454, count: 0.75, invocation: 412 / 240
+4, prompt_text: Translate the input English sentence into German.
+Input: "If a group of people or if disabled persons are crossing the street, the green phase is extended, thus ensuring that everyone gets safely across the street," explained Arnold.
+Output: 
+Draft time: 0.305, speed: 524.35
+Verify time: 2.020, speed: 19.80, Output: 55 / 40
+Draft time: 0.365, speed: 525.35
+Verify time: 2.424, speed: 19.80, Output: 81 / 48
+Draft time: 0.130, speed: 524.59
+Verify time: 0.859, speed: 19.80, Output: 29 / 17
+Draft time: 0.282, speed: 524.49
+Verify time: 1.868, speed: 19.80, Output: 48 / 37
+Draft time: 0.267, speed: 524.62
+Verify time: 1.767, speed: 19.81, Output: 46 / 35
+Draft time: 0.564, speed: 524.67
+Verify time: 3.747, speed: 19.75, Output: 129 / 74
+Draft time: 0.305, speed: 524.87
+Verify time: 2.021, speed: 19.80, Output: 57 / 40
+Draft time: 0.283, speed: 523.63
+Verify time: 1.868, speed: 19.80, Output: 48 / 37
+sample_idx: 4, k_config: (3, 1, 1, 1), good_speed > 1.4: 28.356, count: 0.5, invocation: 296 / 179
+5, prompt_text: Translate the input English sentence into German.
+Input: Yesterday this was not the case: The light had barely turned green for pedestrians when a luxury vehicle sped through on a red light.
+Output: 
+Draft time: 0.299, speed: 521.10
+Verify time: 1.971, speed: 19.79, Output: 46 / 39
+Draft time: 0.297, speed: 525.23
+Verify time: 1.971, speed: 19.78, Output: 59 / 39
+Draft time: 0.358, speed: 525.36
+Verify time: 2.375, speed: 19.79, Output: 72 / 47
+Draft time: 0.229, speed: 525.15
+Verify time: 1.515, speed: 19.80, Output: 37 / 30
+Draft time: 0.388, speed: 525.13
+Verify time: 2.577, speed: 19.79, Output: 74 / 51
+Draft time: 0.306, speed: 522.26
+Verify time: 2.021, speed: 19.80, Output: 53 / 40
+Draft time: 0.526, speed: 524.59
+Verify time: 3.491, speed: 19.77, Output: 130 / 69
+Draft time: 0.313, speed: 523.26
+Verify time: 2.074, speed: 19.77, Output: 89 / 41
+sample_idx: 5, k_config: (3, 1, 1, 1), good_speed > 1.4: 29.439, count: 0.625, invocation: 424 / 247
+6, prompt_text: Translate the input English sentence into German.
+Input: On the predominantly empty stage - with one important requirement: a crumpled sofa, on which cast members allude to copulating and masturbating - the eight-person ensemble work their way through the text material.
+Output: 
+Draft time: 0.076, speed: 524.29
+Verify time: 0.511, speed: 19.55, Output: 13 / 10
+Draft time: 0.137, speed: 525.87
+Verify time: 0.915, speed: 19.68, Output: 34 / 18
+Draft time: 0.495, speed: 524.83
+Verify time: 3.297, speed: 19.71, Output: 82 / 65
+Draft time: 0.382, speed: 523.64
+Verify time: 2.539, speed: 19.69, Output: 110 / 50
+Draft time: 0.434, speed: 525.18
+Verify time: 2.890, speed: 19.72, Output: 75 / 57
+Draft time: 0.389, speed: 523.91
+Verify time: 2.586, speed: 19.72, Output: 61 / 51
+Draft time: 0.617, speed: 524.93
+Verify time: 4.117, speed: 19.68, Output: 130 / 81
+Draft time: 0.091, speed: 524.63
+Verify time: 0.612, speed: 19.60, Output: 20 / 12
+sample_idx: 6, k_config: (3, 1, 1, 1), good_speed > 1.4: 31.148, count: 0.5, invocation: 294 / 161
+7, prompt_text: Translate the input English sentence into German.
+Input: The 70-minute performance glosses over the script with a host of director's additions, well-known from the repertoire of post-dramatic theatrical styles.
+Output: 
+Draft time: 0.267, speed: 524.28
+Verify time: 1.776, speed: 19.71, Output: 48 / 35
+Draft time: 0.313, speed: 524.28
+Verify time: 2.079, speed: 19.72, Output: 55 / 41
+Draft time: 0.046, speed: 519.51
+Verify time: 0.310, speed: 19.38, Output: 13 / 6
+Draft time: 0.266, speed: 525.67
+Verify time: 1.776, speed: 19.71, Output: 51 / 35
+Draft time: 0.307, speed: 521.73
+Verify time: 2.030, speed: 19.70, Output: 55 / 40
+Draft time: 0.115, speed: 523.48
+Verify time: 0.764, speed: 19.63, Output: 25 / 15
+Draft time: 0.382, speed: 523.95
+Verify time: 2.536, speed: 19.72, Output: 64 / 50
+Draft time: 0.259, speed: 524.80
+Verify time: 1.725, speed: 19.71, Output: 56 / 34
+sample_idx: 7, k_config: (3, 1, 1, 1), good_speed > 1.4: 27.505, count: 0.5, invocation: 145 / 90
+k_config: (3, 1, 1, 1), Speed: 29.01 tokens/s, Acceptance rate: 0.17, Block efficiency: 1.69
+Draft model: 1
+0, prompt_text: Translate the input English sentence into German.
+Input: Gutach: Increased safety for pedestrians
+Output: 
+Draft time: 0.069, speed: 521.68
+Verify time: 0.454, speed: 19.81, Output: 15 / 9
+Draft time: 0.137, speed: 524.11
+Verify time: 0.909, speed: 19.81, Output: 35 / 18
+Draft time: 0.374, speed: 523.44
+Verify time: 2.475, speed: 19.80, Output: 100 / 49
+Draft time: 0.031, speed: 516.29
+Verify time: 0.203, speed: 19.69, Output: 13 / 4
+Draft time: 0.452, speed: 522.62
+Verify time: 2.981, speed: 19.80, Output: 130 / 59
+Draft time: 0.496, speed: 523.71
+Verify time: 3.284, speed: 19.79, Output: 129 / 65
+Draft time: 0.076, speed: 524.41
+Verify time: 0.504, speed: 19.83, Output: 16 / 10
+Draft time: 0.444, speed: 522.97
+Verify time: 2.932, speed: 19.78, Output: 129 / 58
+sample_idx: 0, k_config: (3, 1, 1, 1), good_speed > 1.4: 35.754, count: 1.0, invocation: 567 / 272
+1, prompt_text: Translate the input English sentence into German.
+Input: The Kluser lights protect cyclists, as well as those travelling by bus and the residents of Bergle.
+Output: 
+Draft time: 0.130, speed: 523.12
+Verify time: 0.858, speed: 19.81, Output: 27 / 17
+Draft time: 0.153, speed: 524.47
+Verify time: 1.009, speed: 19.81, Output: 26 / 20
+Draft time: 0.137, speed: 525.11
+Verify time: 0.909, speed: 19.81, Output: 29 / 18
+Draft time: 0.160, speed: 523.94
+Verify time: 1.062, speed: 19.78, Output: 31 / 21
+Draft time: 0.084, speed: 523.27
+Verify time: 0.556, speed: 19.80, Output: 17 / 11
+Draft time: 0.145, speed: 523.46
+Verify time: 0.959, speed: 19.82, Output: 30 / 19
+Draft time: 0.191, speed: 524.37
+Verify time: 1.262, speed: 19.81, Output: 35 / 25
+Draft time: 0.099, speed: 524.80
+Verify time: 0.656, speed: 19.81, Output: 18 / 13
+sample_idx: 1, k_config: (3, 1, 1, 1), good_speed > 1.4: 26.739, count: 0.625, invocation: 134 / 86
+2, prompt_text: Translate the input English sentence into German.
+Input: A total of four road safety inspections were carried out and a roundabout was also considered, however, this idea was rejected on account of the narrowness of the Sulzbachweg/Kirchstrasse junctions.
+Output: 
+Draft time: 0.267, speed: 524.39
+Verify time: 1.775, speed: 19.71, Output: 54 / 35
+Draft time: 0.313, speed: 524.71
+Verify time: 2.080, speed: 19.71, Output: 60 / 41
+Draft time: 0.237, speed: 523.17
+Verify time: 1.573, speed: 19.70, Output: 50 / 31
+Draft time: 0.069, speed: 523.62
+Verify time: 0.461, speed: 19.52, Output: 14 / 9
+Draft time: 0.411, speed: 524.97
+Verify time: 2.740, speed: 19.71, Output: 95 / 54
+Draft time: 0.267, speed: 524.20
+Verify time: 1.776, speed: 19.71, Output: 58 / 35
+Draft time: 0.282, speed: 524.31
+Verify time: 1.877, speed: 19.72, Output: 60 / 37
+Draft time: 0.427, speed: 524.09
+Verify time: 2.841, speed: 19.71, Output: 92 / 56
+sample_idx: 2, k_config: (3, 1, 1, 1), good_speed > 1.4: 27.704, count: 1.0, invocation: 483 / 298
+3, prompt_text: Translate the input English sentence into German.
+Input: If the street is clear, the pedestrian obtains a green light immediately, if not, there is a delay of around 15 seconds.
+Output: 
+Draft time: 0.276, speed: 521.79
+Verify time: 1.818, speed: 19.81, Output: 47 / 36
+Draft time: 0.327, speed: 525.55
+Verify time: 2.173, speed: 19.79, Output: 63 / 43
+Draft time: 0.480, speed: 524.54
+Verify time: 3.185, speed: 19.78, Output: 107 / 63
+Draft time: 0.184, speed: 521.49
+Verify time: 1.213, speed: 19.78, Output: 64 / 24
+Draft time: 0.520, speed: 522.88
+Verify time: 3.442, speed: 19.76, Output: 112 / 68
+Draft time: 0.267, speed: 524.84
+Verify time: 1.767, speed: 19.81, Output: 55 / 35
+Draft time: 0.328, speed: 524.79
+Verify time: 2.172, speed: 19.79, Output: 58 / 43
+Draft time: 0.313, speed: 524.73
+Verify time: 2.072, speed: 19.79, Output: 61 / 41
+sample_idx: 3, k_config: (3, 1, 1, 1), good_speed > 1.4: 28.916, count: 0.75, invocation: 462 / 274
+4, prompt_text: Translate the input English sentence into German.
+Input: "If a group of people or if disabled persons are crossing the street, the green phase is extended, thus ensuring that everyone gets safely across the street," explained Arnold.
+Output: 
+Draft time: 0.092, speed: 523.61
+Verify time: 0.606, speed: 19.80, Output: 18 / 12
+Draft time: 0.138, speed: 522.82
+Verify time: 0.909, speed: 19.81, Output: 38 / 18
+Draft time: 0.198, speed: 524.11
+Verify time: 1.313, speed: 19.81, Output: 49 / 26
+Draft time: 0.343, speed: 524.07
+Verify time: 2.275, speed: 19.78, Output: 64 / 45
+Draft time: 0.116, speed: 519.04
+Verify time: 0.758, speed: 19.79, Output: 42 / 15
+Draft time: 0.259, speed: 524.92
+Verify time: 1.717, speed: 19.80, Output: 45 / 34
+Draft time: 0.260, speed: 523.31
+Verify time: 1.717, speed: 19.81, Output: 46 / 34
+Draft time: 0.061, speed: 523.60
+Verify time: 0.404, speed: 19.80, Output: 12 / 8
+sample_idx: 4, k_config: (3, 1, 1, 1), good_speed > 1.4: 30.855, count: 0.75, invocation: 223 / 124
+5, prompt_text: Translate the input English sentence into German.
+Input: Yesterday this was not the case: The light had barely turned green for pedestrians when a luxury vehicle sped through on a red light.
+Output: 
+Draft time: 0.611, speed: 523.92
+Verify time: 4.049, speed: 19.76, Output: 129 / 80
+Draft time: 0.587, speed: 524.76
+Verify time: 3.896, speed: 19.77, Output: 128 / 77
+Draft time: 0.266, speed: 525.54
+Verify time: 1.768, speed: 19.80, Output: 42 / 35
+Draft time: 0.328, speed: 524.23
+Verify time: 2.174, speed: 19.78, Output: 73 / 43
+Draft time: 0.244, speed: 525.32
+Verify time: 1.616, speed: 19.80, Output: 38 / 32
+Draft time: 0.613, speed: 521.99
+Verify time: 4.052, speed: 19.74, Output: 128 / 80
+Draft time: 0.602, speed: 524.99
+Verify time: 3.999, speed: 19.75, Output: 129 / 79
+Draft time: 0.267, speed: 524.13
+Verify time: 1.768, speed: 19.80, Output: 44 / 35
+sample_idx: 5, k_config: (3, 1, 1, 1), good_speed > 1.4: 27.996, count: 0.625, invocation: 587 / 359
+6, prompt_text: Translate the input English sentence into German.
+Input: On the predominantly empty stage - with one important requirement: a crumpled sofa, on which cast members allude to copulating and masturbating - the eight-person ensemble work their way through the text material.
+Output: 
+Draft time: 0.649, speed: 524.08
+Verify time: 4.311, speed: 19.72, Output: 103 / 85
+Draft time: 0.214, speed: 524.28
+Verify time: 1.421, speed: 19.71, Output: 48 / 28
+Draft time: 0.389, speed: 524.53
+Verify time: 2.586, speed: 19.72, Output: 63 / 51
+Draft time: 0.396, speed: 524.87
+Verify time: 2.638, speed: 19.71, Output: 73 / 52
+Draft time: 0.130, speed: 523.61
+Verify time: 0.865, speed: 19.65, Output: 28 / 17
+Draft time: 0.176, speed: 522.89
+Verify time: 1.168, speed: 19.69, Output: 58 / 23
+Draft time: 0.160, speed: 525.42
+Verify time: 1.067, speed: 19.69, Output: 34 / 21
+Draft time: 0.168, speed: 524.19
+Verify time: 1.117, speed: 19.69, Output: 35 / 22
+sample_idx: 6, k_config: (3, 1, 1, 1), good_speed > 1.4: 28.933, count: 0.75, invocation: 276 / 163
+7, prompt_text: Translate the input English sentence into German.
+Input: The 70-minute performance glosses over the script with a host of director's additions, well-known from the repertoire of post-dramatic theatrical styles.
+Output: 
+Draft time: 0.283, speed: 523.73
+Verify time: 1.877, speed: 19.72, Output: 52 / 37
+Draft time: 0.221, speed: 524.99
+Verify time: 1.471, speed: 19.72, Output: 41 / 29
+Draft time: 0.261, speed: 521.65
+Verify time: 1.724, speed: 19.72, Output: 52 / 34
+Draft time: 0.275, speed: 523.45
+Verify time: 1.827, speed: 19.71, Output: 52 / 36
+Draft time: 0.282, speed: 524.33
+Verify time: 1.877, speed: 19.71, Output: 50 / 37
+Draft time: 0.267, speed: 523.94
+Verify time: 1.776, speed: 19.71, Output: 48 / 35
+Draft time: 0.259, speed: 524.90
+Verify time: 1.725, speed: 19.71, Output: 49 / 34
+Draft time: 0.305, speed: 524.86
+Verify time: 2.028, speed: 19.72, Output: 50 / 40
+sample_idx: 7, k_config: (3, 1, 1, 1), good_speed > 1.4: 24.743, count: 0.625, invocation: 246 / 170
+k_config: (3, 1, 1, 1), Speed: 27.47 tokens/s, Acceptance rate: 0.15, Block efficiency: 1.60
+Draft model: 2
+0, prompt_text: Translate the input English sentence into German.
+Input: Gutach: Increased safety for pedestrians
+Output: 
+Draft time: 0.069, speed: 523.18
+Verify time: 0.454, speed: 19.80, Output: 13 / 9
+Draft time: 0.168, speed: 524.05
+Verify time: 1.109, speed: 19.83, Output: 47 / 22
+Draft time: 0.069, speed: 524.29
+Verify time: 0.455, speed: 19.80, Output: 13 / 9
+Draft time: 0.391, speed: 521.14
+Verify time: 2.580, speed: 19.77, Output: 130 / 51
+Draft time: 0.198, speed: 524.86
+Verify time: 1.309, speed: 19.86, Output: 41 / 26
+Draft time: 0.107, speed: 523.65
+Verify time: 0.706, speed: 19.82, Output: 19 / 14
+Draft time: 0.412, speed: 523.94
+Verify time: 2.730, speed: 19.78, Output: 128 / 54
+Draft time: 0.137, speed: 524.28
+Verify time: 0.907, speed: 19.84, Output: 32 / 18
+sample_idx: 0, k_config: (3, 1, 1, 1), good_speed > 1.4: 36.679, count: 0.875, invocation: 404 / 189
+1, prompt_text: Translate the input English sentence into German.
+Input: The Kluser lights protect cyclists, as well as those travelling by bus and the residents of Bergle.
+Output: 
+Draft time: 0.160, speed: 524.53
+Verify time: 1.060, speed: 19.81, Output: 32 / 21
+Draft time: 0.160, speed: 523.61
+Verify time: 1.061, speed: 19.80, Output: 31 / 21
+Draft time: 0.161, speed: 521.90
+Verify time: 1.061, speed: 19.80, Output: 32 / 21
+Draft time: 0.213, speed: 524.92
+Verify time: 1.413, speed: 19.82, Output: 36 / 28
+Draft time: 0.313, speed: 523.89
+Verify time: 2.072, speed: 19.79, Output: 72 / 41
+Draft time: 0.267, speed: 525.13
+Verify time: 1.766, speed: 19.82, Output: 62 / 35
+Draft time: 0.290, speed: 523.37
+Verify time: 1.919, speed: 19.80, Output: 60 / 38
+Draft time: 0.108, speed: 520.21
+Verify time: 0.707, speed: 19.79, Output: 39 / 14
+sample_idx: 1, k_config: (3, 1, 1, 1), good_speed > 1.4: 29.473, count: 0.875, invocation: 328 / 191
+2, prompt_text: Translate the input English sentence into German.
+Input: A total of four road safety inspections were carried out and a roundabout was also considered, however, this idea was rejected on account of the narrowness of the Sulzbachweg/Kirchstrasse junctions.
+Output: 
+Draft time: 0.282, speed: 524.13
+Verify time: 1.877, speed: 19.71, Output: 51 / 37
+Draft time: 0.315, speed: 520.56
+Verify time: 2.085, speed: 19.66, Output: 130 / 41
+Draft time: 0.305, speed: 524.90
+Verify time: 2.029, speed: 19.71, Output: 59 / 40
+Draft time: 0.374, speed: 524.39
+Verify time: 2.485, speed: 19.72, Output: 84 / 49
+Draft time: 0.351, speed: 524.10
+Verify time: 2.332, speed: 19.72, Output: 62 / 46
+Draft time: 0.275, speed: 524.55
+Verify time: 1.827, speed: 19.70, Output: 54 / 36
+Draft time: 0.587, speed: 525.10
+Verify time: 3.908, speed: 19.70, Output: 128 / 77
+Draft time: 0.252, speed: 522.81
+Verify time: 1.675, speed: 19.70, Output: 71 / 33
+sample_idx: 2, k_config: (3, 1, 1, 1), good_speed > 1.4: 32.551, count: 0.75, invocation: 526 / 276
+3, prompt_text: Translate the input English sentence into German.
+Input: If the street is clear, the pedestrian obtains a green light immediately, if not, there is a delay of around 15 seconds.
+Output: 
+Draft time: 0.518, speed: 524.75
+Verify time: 3.440, speed: 19.77, Output: 128 / 68
+Draft time: 0.467, speed: 522.14
+Verify time: 3.085, speed: 19.77, Output: 95 / 61
+Draft time: 0.443, speed: 523.62
+Verify time: 2.935, speed: 19.76, Output: 93 / 58
+Draft time: 0.251, speed: 524.95
+Verify time: 1.666, speed: 19.81, Output: 47 / 33
+Draft time: 0.450, speed: 523.95
+Verify time: 2.990, speed: 19.73, Output: 129 / 59
+Draft time: 0.505, speed: 523.12
+Verify time: 3.339, speed: 19.77, Output: 114 / 66
+Draft time: 0.496, speed: 524.35
+Verify time: 3.287, speed: 19.77, Output: 97 / 65
+Draft time: 0.336, speed: 524.59
+Verify time: 2.223, speed: 19.79, Output: 73 / 44
+sample_idx: 3, k_config: (3, 1, 1, 1), good_speed > 1.4: 29.290, count: 1.0, invocation: 776 / 454
+4, prompt_text: Translate the input English sentence into German.
+Input: "If a group of people or if disabled persons are crossing the street, the green phase is extended, thus ensuring that everyone gets safely across the street," explained Arnold.
+Output: 
+Draft time: 0.291, speed: 523.14
+Verify time: 1.920, speed: 19.79, Output: 53 / 38
+Draft time: 0.297, speed: 525.46
+Verify time: 1.970, speed: 19.80, Output: 50 / 39
+Draft time: 0.275, speed: 523.56
+Verify time: 1.821, speed: 19.77, Output: 83 / 36
+Draft time: 0.343, speed: 524.40
+Verify time: 2.275, speed: 19.78, Output: 71 / 45
+Draft time: 0.488, speed: 524.29
+Verify time: 3.240, speed: 19.75, Output: 110 / 64
+Draft time: 0.458, speed: 524.32
+Verify time: 3.035, speed: 19.77, Output: 88 / 60
+Draft time: 0.290, speed: 523.83
+Verify time: 1.920, speed: 19.79, Output: 47 / 38
+Draft time: 0.092, speed: 522.95
+Verify time: 0.606, speed: 19.81, Output: 28 / 12
+sample_idx: 4, k_config: (3, 1, 1, 1), good_speed > 1.4: 30.013, count: 0.625, invocation: 380 / 217
+5, prompt_text: Translate the input English sentence into German.
+Input: Yesterday this was not the case: The light had barely turned green for pedestrians when a luxury vehicle sped through on a red light.
+Output: 
+Draft time: 0.345, speed: 522.46
+Verify time: 2.279, speed: 19.74, Output: 123 / 45
+Draft time: 0.259, speed: 524.98
+Verify time: 1.717, speed: 19.80, Output: 41 / 34
+Draft time: 0.251, speed: 525.00
+Verify time: 1.668, speed: 19.78, Output: 42 / 33
+Draft time: 0.576, speed: 521.27
+Verify time: 3.795, speed: 19.76, Output: 129 / 75
+Draft time: 0.313, speed: 524.58
+Verify time: 2.072, speed: 19.79, Output: 69 / 41
+Draft time: 0.236, speed: 524.95
+Verify time: 1.566, speed: 19.80, Output: 38 / 31
+Draft time: 0.252, speed: 524.21
+Verify time: 1.667, speed: 19.80, Output: 43 / 33
+Draft time: 0.551, speed: 522.97
+Verify time: 3.644, speed: 19.76, Output: 132 / 72
+sample_idx: 5, k_config: (3, 1, 1, 1), good_speed > 1.4: 33.283, count: 0.5, invocation: 453 / 233
+6, prompt_text: Translate the input English sentence into German.
+Input: On the predominantly empty stage - with one important requirement: a crumpled sofa, on which cast members allude to copulating and masturbating - the eight-person ensemble work their way through the text material.
+Output: 
+Draft time: 0.099, speed: 524.08
+Verify time: 0.663, speed: 19.62, Output: 26 / 13
+Draft time: 0.099, speed: 525.63
+Verify time: 0.663, speed: 19.62, Output: 26 / 13
+Draft time: 0.434, speed: 524.92
+Verify time: 2.892, speed: 19.71, Output: 79 / 57
+Draft time: 0.633, speed: 524.73
+Verify time: 4.215, speed: 19.69, Output: 130 / 83
+Draft time: 0.053, speed: 523.53
+Verify time: 0.360, speed: 19.46, Output: 12 / 7
+Draft time: 0.305, speed: 524.17
+Verify time: 2.030, speed: 19.70, Output: 79 / 40
+Draft time: 0.412, speed: 524.45
+Verify time: 2.739, speed: 19.72, Output: 76 / 54
+Draft time: 0.411, speed: 525.18
+Verify time: 2.738, speed: 19.72, Output: 71 / 54
+sample_idx: 6, k_config: (3, 1, 1, 1), good_speed > 1.4: 28.368, count: 0.75, invocation: 349 / 210
+7, prompt_text: Translate the input English sentence into German.
+Input: The 70-minute performance glosses over the script with a host of director's additions, well-known from the repertoire of post-dramatic theatrical styles.
+Output: 
+Draft time: 0.145, speed: 524.09
+Verify time: 0.965, speed: 19.68, Output: 30 / 19
+Draft time: 0.504, speed: 524.27
+Verify time: 3.350, speed: 19.70, Output: 115 / 66
+Draft time: 0.160, speed: 523.77
+Verify time: 1.067, speed: 19.69, Output: 45 / 21
+Draft time: 0.191, speed: 523.38
+Verify time: 1.269, speed: 19.69, Output: 48 / 25
+Draft time: 0.343, speed: 524.14
+Verify time: 2.282, speed: 19.72, Output: 56 / 45
+Draft time: 0.123, speed: 522.39
+Verify time: 0.814, speed: 19.66, Output: 33 / 16
+Draft time: 0.343, speed: 525.25
+Verify time: 2.282, speed: 19.72, Output: 56 / 45
+Draft time: 0.191, speed: 523.92
+Verify time: 1.269, speed: 19.70, Output: 42 / 25
+sample_idx: 7, k_config: (3, 1, 1, 1), good_speed > 1.4: 31.077, count: 0.75, invocation: 313 / 172
+k_config: (3, 1, 1, 1), Speed: 29.10 tokens/s, Acceptance rate: 0.17, Block efficiency: 1.70
+Draft model: 0
+0, prompt_text: Translate the input English sentence into German.
+Input: Gutach: Increased safety for pedestrians
+Output: 
+Draft time: 0.063, speed: 511.99
+Verify time: 0.406, speed: 19.69, Output: 16 / 8
+Draft time: 0.240, speed: 516.47
+Verify time: 1.569, speed: 19.75, Output: 69 / 31
+Draft time: 0.408, speed: 519.27
+Verify time: 2.689, speed: 19.71, Output: 128 / 53
+Draft time: 0.216, speed: 519.08
+Verify time: 1.417, speed: 19.77, Output: 69 / 28
+Draft time: 0.085, speed: 519.81
+Verify time: 0.557, speed: 19.76, Output: 18 / 11
+Draft time: 0.069, speed: 521.14
+Verify time: 0.456, speed: 19.76, Output: 13 / 9
+Draft time: 0.069, speed: 519.81
+Verify time: 0.456, speed: 19.73, Output: 15 / 9
+Draft time: 0.069, speed: 518.30
+Verify time: 0.456, speed: 19.74, Output: 15 / 9
+sample_idx: 0, k_config: (2, 2, 1, 1), good_speed > 1.4: 37.086, count: 1.0, invocation: 343 / 158
+1, prompt_text: Translate the input English sentence into German.
+Input: The Kluser lights protect cyclists, as well as those travelling by bus and the residents of Bergle.
+Output: 
+Draft time: 0.231, speed: 519.52
+Verify time: 1.518, speed: 19.76, Output: 53 / 30
+Draft time: 0.340, speed: 517.21
+Verify time: 2.229, speed: 19.74, Output: 79 / 44
+Draft time: 0.132, speed: 516.15
+Verify time: 0.861, speed: 19.75, Output: 26 / 17
+Draft time: 0.147, speed: 518.32
+Verify time: 0.962, speed: 19.76, Output: 27 / 19
+Draft time: 0.261, speed: 520.62
+Verify time: 1.720, speed: 19.77, Output: 56 / 34
+Draft time: 0.154, speed: 519.57
+Verify time: 1.012, speed: 19.77, Output: 31 / 20
+Draft time: 0.131, speed: 519.89
+Verify time: 0.861, speed: 19.75, Output: 28 / 17
+Draft time: 0.116, speed: 519.08
+Verify time: 0.759, speed: 19.75, Output: 30 / 15
+sample_idx: 1, k_config: (2, 2, 1, 1), good_speed > 1.4: 28.804, count: 1.0, invocation: 330 / 196
+2, prompt_text: Translate the input English sentence into German.
+Input: A total of four road safety inspections were carried out and a roundabout was also considered, however, this idea was rejected on account of the narrowness of the Sulzbachweg/Kirchstrasse junctions.
+Output: 
+Draft time: 0.147, speed: 518.12
+Verify time: 0.968, speed: 19.63, Output: 41 / 19
+Draft time: 0.301, speed: 518.99
+Verify time: 1.983, speed: 19.67, Output: 64 / 39
+Draft time: 0.285, speed: 518.86
+Verify time: 1.880, speed: 19.68, Output: 59 / 37
+Draft time: 0.109, speed: 514.91
+Verify time: 0.716, speed: 19.56, Output: 47 / 14
+Draft time: 0.277, speed: 519.96
+Verify time: 1.829, speed: 19.68, Output: 58 / 36
+Draft time: 0.307, speed: 520.92
+Verify time: 2.033, speed: 19.68, Output: 67 / 40
+Draft time: 0.308, speed: 519.88
+Verify time: 2.032, speed: 19.68, Output: 63 / 40
+Draft time: 0.331, speed: 519.92
+Verify time: 2.184, speed: 19.69, Output: 62 / 43
+sample_idx: 2, k_config: (2, 2, 1, 1), good_speed > 1.4: 29.326, count: 1.0, invocation: 461 / 268
+3, prompt_text: Translate the input English sentence into German.
+Input: If the street is clear, the pedestrian obtains a green light immediately, if not, there is a delay of around 15 seconds.
+Output: 
+Draft time: 0.254, speed: 519.09
+Verify time: 1.670, speed: 19.76, Output: 45 / 33
+Draft time: 0.253, speed: 521.33
+Verify time: 1.669, speed: 19.78, Output: 45 / 33
+Draft time: 0.209, speed: 517.49
+Verify time: 1.369, speed: 19.73, Output: 76 / 27
+Draft time: 0.277, speed: 520.32
+Verify time: 1.821, speed: 19.77, Output: 47 / 36
+Draft time: 0.330, speed: 520.74
+Verify time: 2.175, speed: 19.77, Output: 62 / 43
+Draft time: 0.270, speed: 519.11
+Verify time: 1.770, speed: 19.77, Output: 46 / 35
+Draft time: 0.377, speed: 519.88
+Verify time: 2.482, speed: 19.74, Output: 85 / 49
+Draft time: 0.331, speed: 520.19
+Verify time: 2.175, speed: 19.77, Output: 62 / 43
+sample_idx: 3, k_config: (2, 2, 1, 1), good_speed > 1.4: 30.105, count: 0.5, invocation: 285 / 162
+4, prompt_text: Translate the input English sentence into German.
+Input: "If a group of people or if disabled persons are crossing the street, the green phase is extended, thus ensuring that everyone gets safely across the street," explained Arnold.
+Output: 
+Draft time: 0.600, speed: 520.27
+Verify time: 3.962, speed: 19.68, Output: 128 / 78
+Draft time: 0.138, speed: 520.09
+Verify time: 0.917, speed: 19.62, Output: 30 / 18
+Draft time: 0.317, speed: 517.39
+Verify time: 2.080, speed: 19.71, Output: 55 / 41
+Draft time: 0.261, speed: 520.75
+Verify time: 1.725, speed: 19.71, Output: 43 / 34
+Draft time: 0.538, speed: 520.44
+Verify time: 3.560, speed: 19.67, Output: 128 / 70
+Draft time: 0.424, speed: 518.96
+Verify time: 2.796, speed: 19.67, Output: 102 / 55
+Draft time: 0.292, speed: 520.15
+Verify time: 1.928, speed: 19.71, Output: 52 / 38
+Draft time: 0.538, speed: 520.19
+Verify time: 3.556, speed: 19.69, Output: 128 / 70
+sample_idx: 4, k_config: (2, 2, 1, 1), good_speed > 1.4: 30.222, count: 0.625, invocation: 516 / 291
+5, prompt_text: Translate the input English sentence into German.
+Input: Yesterday this was not the case: The light had barely turned green for pedestrians when a luxury vehicle sped through on a red light.
+Output: 
+Draft time: 0.608, speed: 520.12
+Verify time: 4.008, speed: 19.71, Output: 130 / 79
+Draft time: 0.331, speed: 519.49
+Verify time: 2.178, speed: 19.75, Output: 72 / 43
+Draft time: 0.524, speed: 519.52
+Verify time: 3.447, speed: 19.73, Output: 131 / 68
+Draft time: 0.307, speed: 521.03
+Verify time: 2.023, speed: 19.77, Output: 57 / 40
+Draft time: 0.309, speed: 517.04
+Verify time: 2.030, speed: 19.71, Output: 103 / 40
+Draft time: 0.393, speed: 519.37
+Verify time: 2.582, speed: 19.75, Output: 69 / 51
+Draft time: 0.262, speed: 520.00
+Verify time: 1.720, speed: 19.77, Output: 42 / 34
+Draft time: 0.492, speed: 520.55
+Verify time: 3.241, speed: 19.75, Output: 81 / 64
+sample_idx: 5, k_config: (2, 2, 1, 1), good_speed > 1.4: 31.198, count: 0.625, invocation: 493 / 270
+6, prompt_text: Translate the input English sentence into German.
+Input: On the predominantly empty stage - with one important requirement: a crumpled sofa, on which cast members allude to copulating and masturbating - the eight-person ensemble work their way through the text material.
+Output: 
+Draft time: 0.423, speed: 520.31
+Verify time: 2.794, speed: 19.68, Output: 79 / 55
+Draft time: 0.617, speed: 518.68
+Verify time: 4.072, speed: 19.65, Output: 130 / 80
+Draft time: 0.508, speed: 519.84
+Verify time: 3.353, speed: 19.68, Output: 90 / 66
+Draft time: 0.507, speed: 520.56
+Verify time: 3.352, speed: 19.69, Output: 96 / 66
+Draft time: 0.138, speed: 520.81
+Verify time: 0.917, speed: 19.63, Output: 25 / 18
+Draft time: 0.285, speed: 519.46
+Verify time: 1.880, speed: 19.68, Output: 65 / 37
+Draft time: 0.085, speed: 519.36
+Verify time: 0.564, speed: 19.52, Output: 19 / 11
+Draft time: 0.509, speed: 518.98
+Verify time: 3.355, speed: 19.67, Output: 129 / 66
+sample_idx: 6, k_config: (2, 2, 1, 1), good_speed > 1.4: 28.010, count: 0.75, invocation: 518 / 315
+7, prompt_text: Translate the input English sentence into German.
+Input: The 70-minute performance glosses over the script with a host of director's additions, well-known from the repertoire of post-dramatic theatrical styles.
+Output: 
+Draft time: 0.377, speed: 520.28
+Verify time: 2.488, speed: 19.69, Output: 69 / 49
+Draft time: 0.400, speed: 520.23
+Verify time: 2.640, speed: 19.70, Output: 81 / 52
+Draft time: 0.254, speed: 519.19
+Verify time: 1.678, speed: 19.67, Output: 52 / 33
+Draft time: 0.331, speed: 520.42
+Verify time: 2.184, speed: 19.69, Output: 64 / 43
+Draft time: 0.277, speed: 519.93
+Verify time: 1.829, speed: 19.68, Output: 51 / 36
+Draft time: 0.392, speed: 520.81
+Verify time: 2.591, speed: 19.69, Output: 78 / 51
+Draft time: 0.115, speed: 519.79
+Verify time: 0.765, speed: 19.60, Output: 31 / 15
+Draft time: 0.354, speed: 519.04
+Verify time: 2.338, speed: 19.68, Output: 72 / 46
+sample_idx: 7, k_config: (2, 2, 1, 1), good_speed > 1.4: 26.139, count: 1.0, invocation: 498 / 325
+k_config: (2, 2, 1, 1), Speed: 28.25 tokens/s, Acceptance rate: 0.16, Block efficiency: 1.65
+Draft model: 1
+0, prompt_text: Translate the input English sentence into German.
+Input: Gutach: Increased safety for pedestrians
+Output: 
+Draft time: 0.070, speed: 513.40
+Verify time: 0.456, speed: 19.74, Output: 14 / 9
+Draft time: 0.062, speed: 515.53
+Verify time: 0.405, speed: 19.74, Output: 15 / 8
+Draft time: 0.370, speed: 519.42
+Verify time: 2.431, speed: 19.75, Output: 90 / 48
+Draft time: 0.069, speed: 520.21
+Verify time: 0.456, speed: 19.74, Output: 15 / 9
+Draft time: 0.246, speed: 520.57
+Verify time: 1.617, speed: 19.79, Output: 58 / 32
+Draft time: 0.062, speed: 518.97
+Verify time: 0.405, speed: 19.73, Output: 15 / 8
+Draft time: 0.062, speed: 519.73
+Verify time: 0.405, speed: 19.74, Output: 15 / 8
+Draft time: 0.062, speed: 519.50
+Verify time: 0.405, speed: 19.74, Output: 13 / 8
+sample_idx: 0, k_config: (2, 2, 1, 1), good_speed > 1.4: 30.923, count: 1.0, invocation: 235 / 130
+1, prompt_text: Translate the input English sentence into German.
+Input: The Kluser lights protect cyclists, as well as those travelling by bus and the residents of Bergle.
+Output: 
+Draft time: 0.232, speed: 517.74
+Verify time: 1.518, speed: 19.76, Output: 56 / 30
+Draft time: 0.300, speed: 519.72
+Verify time: 1.974, speed: 19.76, Output: 66 / 39
+Draft time: 0.140, speed: 515.34
+Verify time: 0.911, speed: 19.76, Output: 27 / 18
+Draft time: 0.431, speed: 519.28
+Verify time: 2.836, speed: 19.74, Output: 108 / 56
+Draft time: 0.154, speed: 519.52
+Verify time: 1.012, speed: 19.77, Output: 30 / 20
+Draft time: 0.146, speed: 519.09
+Verify time: 0.961, speed: 19.77, Output: 30 / 19
+Draft time: 0.501, speed: 518.91
+Verify time: 3.297, speed: 19.71, Output: 131 / 65
+Draft time: 0.239, speed: 518.72
+Verify time: 1.568, speed: 19.77, Output: 51 / 31
+sample_idx: 1, k_config: (2, 2, 1, 1), good_speed > 1.4: 30.693, count: 1.0, invocation: 499 / 278
+2, prompt_text: Translate the input English sentence into German.
+Input: A total of four road safety inspections were carried out and a roundabout was also considered, however, this idea was rejected on account of the narrowness of the Sulzbachweg/Kirchstrasse junctions.
+Output: 
+Draft time: 0.285, speed: 519.98
+Verify time: 1.880, speed: 19.68, Output: 58 / 37
+Draft time: 0.524, speed: 518.92
+Verify time: 3.458, speed: 19.66, Output: 130 / 68
+Draft time: 0.269, speed: 520.12
+Verify time: 1.778, speed: 19.68, Output: 55 / 35
+Draft time: 0.354, speed: 519.93
+Verify time: 2.337, speed: 19.68, Output: 69 / 46
+Draft time: 0.470, speed: 519.32
+Verify time: 3.099, speed: 19.68, Output: 97 / 61
+Draft time: 0.139, speed: 517.16
+Verify time: 0.918, speed: 19.61, Output: 47 / 18
+Draft time: 0.292, speed: 520.61
+Verify time: 1.931, speed: 19.68, Output: 58 / 38
+Draft time: 0.353, speed: 520.74
+Verify time: 2.335, speed: 19.70, Output: 65 / 46
+sample_idx: 2, k_config: (2, 2, 1, 1), good_speed > 1.4: 28.287, count: 1.0, invocation: 579 / 349
+3, prompt_text: Translate the input English sentence into German.
+Input: If the street is clear, the pedestrian obtains a green light immediately, if not, there is a delay of around 15 seconds.
+Output: 
+Draft time: 0.331, speed: 520.15
+Verify time: 2.176, speed: 19.76, Output: 63 / 43
+Draft time: 0.240, speed: 516.80
+Verify time: 1.570, speed: 19.75, Output: 43 / 31
+Draft time: 0.546, speed: 520.28
+Verify time: 3.600, speed: 19.72, Output: 128 / 71
+Draft time: 0.523, speed: 520.14
+Verify time: 3.449, speed: 19.71, Output: 129 / 68
+Draft time: 0.564, speed: 517.68
+Verify time: 3.702, speed: 19.72, Output: 128 / 73
+Draft time: 0.233, speed: 514.47
+Verify time: 1.522, speed: 19.71, Output: 82 / 30
+Draft time: 0.216, speed: 519.45
+Verify time: 1.416, speed: 19.78, Output: 42 / 28
+Draft time: 0.570, speed: 519.39
+Verify time: 3.759, speed: 19.68, Output: 128 / 74
+sample_idx: 3, k_config: (2, 2, 1, 1), good_speed > 1.4: 30.883, count: 0.875, invocation: 700 / 387
+4, prompt_text: Translate the input English sentence into German.
+Input: "If a group of people or if disabled persons are crossing the street, the green phase is extended, thus ensuring that everyone gets safely across the street," explained Arnold.
+Output: 
+Draft time: 0.338, speed: 520.29
+Verify time: 2.232, speed: 19.71, Output: 57 / 44
+Draft time: 0.147, speed: 516.37
+Verify time: 0.968, speed: 19.64, Output: 50 / 19
+Draft time: 0.600, speed: 520.19
+Verify time: 3.963, speed: 19.68, Output: 131 / 78
+Draft time: 0.307, speed: 520.61
+Verify time: 2.028, speed: 19.72, Output: 47 / 40
+Draft time: 0.587, speed: 518.26
+Verify time: 3.859, speed: 19.70, Output: 129 / 76
+Draft time: 0.369, speed: 519.89
+Verify time: 2.436, speed: 19.70, Output: 67 / 48
+Draft time: 0.517, speed: 518.78
+Verify time: 3.405, speed: 19.68, Output: 116 / 67
+Draft time: 0.547, speed: 519.58
+Verify time: 3.610, speed: 19.67, Output: 129 / 71
+sample_idx: 4, k_config: (2, 2, 1, 1), good_speed > 1.4: 30.412, count: 0.625, invocation: 555 / 311
+5, prompt_text: Translate the input English sentence into German.
+Input: Yesterday this was not the case: The light had barely turned green for pedestrians when a luxury vehicle sped through on a red light.
+Output: 
+Draft time: 0.333, speed: 517.13
+Verify time: 2.177, speed: 19.75, Output: 65 / 43
+Draft time: 0.238, speed: 520.32
+Verify time: 1.567, speed: 19.78, Output: 37 / 31
+Draft time: 0.246, speed: 520.89
+Verify time: 1.617, speed: 19.78, Output: 38 / 32
+Draft time: 0.231, speed: 519.65
+Verify time: 1.517, speed: 19.78, Output: 35 / 30
+Draft time: 0.253, speed: 520.88
+Verify time: 1.668, speed: 19.78, Output: 42 / 33
+Draft time: 0.231, speed: 520.39
+Verify time: 1.517, speed: 19.78, Output: 36 / 30
+Draft time: 0.255, speed: 518.61
+Verify time: 1.669, speed: 19.77, Output: 43 / 33
+Draft time: 0.424, speed: 519.13
+Verify time: 2.787, speed: 19.73, Output: 89 / 55
+sample_idx: 5, k_config: (2, 2, 1, 1), good_speed > 1.4: 26.864, count: 0.25, invocation: 154 / 98
+6, prompt_text: Translate the input English sentence into German.
+Input: On the predominantly empty stage - with one important requirement: a crumpled sofa, on which cast members allude to copulating and masturbating - the eight-person ensemble work their way through the text material.
+Output: 
+Draft time: 0.369, speed: 519.79
+Verify time: 2.437, speed: 19.70, Output: 60 / 48
+Draft time: 0.100, speed: 518.50
+Verify time: 0.664, speed: 19.57, Output: 22 / 13
+Draft time: 0.415, speed: 520.42
+Verify time: 2.743, speed: 19.68, Output: 70 / 54
+Draft time: 0.269, speed: 519.86
+Verify time: 1.783, speed: 19.63, Output: 90 / 35
+Draft time: 0.363, speed: 518.23
+Verify time: 2.390, speed: 19.66, Output: 109 / 47
+Draft time: 0.492, speed: 520.07
+Verify time: 3.251, speed: 19.69, Output: 87 / 64
+Draft time: 0.323, speed: 519.47
+Verify time: 2.133, speed: 19.69, Output: 57 / 42
+Draft time: 0.085, speed: 520.35
+Verify time: 0.563, speed: 19.55, Output: 19 / 11
+sample_idx: 6, k_config: (2, 2, 1, 1), good_speed > 1.4: 38.502, count: 0.5, invocation: 240 / 106
+7, prompt_text: Translate the input English sentence into German.
+Input: The 70-minute performance glosses over the script with a host of director's additions, well-known from the repertoire of post-dramatic theatrical styles.
+Output: 
+Draft time: 0.340, speed: 517.48
+Verify time: 2.241, speed: 19.64, Output: 100 / 44
+Draft time: 0.239, speed: 519.87
+Verify time: 1.575, speed: 19.68, Output: 43 / 31
+Draft time: 0.231, speed: 520.44
+Verify time: 1.524, speed: 19.69, Output: 41 / 30
+Draft time: 0.285, speed: 519.87
+Verify time: 1.882, speed: 19.66, Output: 52 / 37
+Draft time: 0.277, speed: 519.79
+Verify time: 1.829, speed: 19.69, Output: 49 / 36
+Draft time: 0.408, speed: 519.50
+Verify time: 2.693, speed: 19.68, Output: 89 / 53
+Draft time: 0.310, speed: 515.87
+Verify time: 2.034, speed: 19.67, Output: 56 / 40
+Draft time: 0.416, speed: 519.39
+Verify time: 2.744, speed: 19.68, Output: 91 / 54
+sample_idx: 7, k_config: (2, 2, 1, 1), good_speed > 1.4: 30.091, count: 0.5, invocation: 332 / 188
+k_config: (2, 2, 1, 1), Speed: 28.19 tokens/s, Acceptance rate: 0.16, Block efficiency: 1.65
+Draft model: 2
+0, prompt_text: Translate the input English sentence into German.
+Input: Gutach: Increased safety for pedestrians
+Output: 
+Draft time: 0.216, speed: 519.50
+Verify time: 1.415, speed: 19.78, Output: 57 / 28
+Draft time: 0.069, speed: 520.09
+Verify time: 0.456, speed: 19.75, Output: 14 / 9
+Draft time: 0.061, speed: 520.75
+Verify time: 0.405, speed: 19.74, Output: 14 / 8
+Draft time: 0.069, speed: 520.28
+Verify time: 0.456, speed: 19.76, Output: 13 / 9
+Draft time: 0.108, speed: 518.98
+Verify time: 0.707, speed: 19.79, Output: 17 / 14
+Draft time: 0.385, speed: 518.93
+Verify time: 2.532, speed: 19.75, Output: 104 / 50
+Draft time: 0.309, speed: 518.26
+Verify time: 2.024, speed: 19.76, Output: 82 / 40
+Draft time: 0.077, speed: 519.13
+Verify time: 0.506, speed: 19.76, Output: 16 / 10
+sample_idx: 0, k_config: (2, 2, 1, 1), good_speed > 1.4: 33.334, count: 0.875, invocation: 300 / 154
+1, prompt_text: Translate the input English sentence into German.
+Input: The Kluser lights protect cyclists, as well as those travelling by bus and the residents of Bergle.
+Output: 
+Draft time: 0.454, speed: 519.27
+Verify time: 2.992, speed: 19.72, Output: 129 / 59
+Draft time: 0.346, speed: 519.54
+Verify time: 2.280, speed: 19.74, Output: 104 / 45
+Draft time: 0.093, speed: 518.74
+Verify time: 0.608, speed: 19.73, Output: 22 / 12
+Draft time: 0.439, speed: 519.79
+Verify time: 2.890, speed: 19.73, Output: 104 / 57
+Draft time: 0.485, speed: 519.89
+Verify time: 3.194, speed: 19.72, Output: 130 / 63
+Draft time: 0.062, speed: 517.84
+Verify time: 0.406, speed: 19.68, Output: 14 / 8
+Draft time: 0.500, speed: 520.16
+Verify time: 3.296, speed: 19.72, Output: 128 / 65
+Draft time: 0.232, speed: 518.33
+Verify time: 1.520, speed: 19.74, Output: 74 / 30
+sample_idx: 1, k_config: (2, 2, 1, 1), good_speed > 1.4: 35.530, count: 1.0, invocation: 705 / 339
+2, prompt_text: Translate the input English sentence into German.
+Input: A total of four road safety inspections were carried out and a roundabout was also considered, however, this idea was rejected on account of the narrowness of the Sulzbachweg/Kirchstrasse junctions.
+Output: 
+Draft time: 0.361, speed: 520.21
+Verify time: 2.387, speed: 19.69, Output: 66 / 47
+Draft time: 0.323, speed: 520.02
+Verify time: 2.133, speed: 19.69, Output: 61 / 42
+Draft time: 0.338, speed: 520.22
+Verify time: 2.233, speed: 19.70, Output: 57 / 44
+Draft time: 0.285, speed: 520.21
+Verify time: 1.879, speed: 19.69, Output: 56 / 37
+Draft time: 0.323, speed: 520.54
+Verify time: 2.133, speed: 19.69, Output: 57 / 42
+Draft time: 0.331, speed: 519.71
+Verify time: 2.185, speed: 19.68, Output: 65 / 43
+Draft time: 0.139, speed: 518.74
+Verify time: 0.917, speed: 19.62, Output: 49 / 18
+Draft time: 0.469, speed: 520.80
+Verify time: 3.099, speed: 19.68, Output: 95 / 61
+sample_idx: 2, k_config: (2, 2, 1, 1), good_speed > 1.4: 26.965, count: 0.75, invocation: 392 / 248
+3, prompt_text: Translate the input English sentence into German.
+Input: If the street is clear, the pedestrian obtains a green light immediately, if not, there is a delay of around 15 seconds.
+Output: 
+Draft time: 0.607, speed: 520.25
+Verify time: 4.006, speed: 19.72, Output: 128 / 79
+Draft time: 0.147, speed: 517.26
+Verify time: 0.963, speed: 19.73, Output: 52 / 19
+Draft time: 0.194, speed: 516.13
+Verify time: 1.265, speed: 19.76, Output: 50 / 25
+Draft time: 0.377, speed: 519.43
+Verify time: 2.485, speed: 19.72, Output: 106 / 49
+Draft time: 0.315, speed: 519.99
+Verify time: 2.073, speed: 19.78, Output: 51 / 41
+Draft time: 0.324, speed: 519.19
+Verify time: 2.126, speed: 19.75, Output: 60 / 42
+Draft time: 0.369, speed: 520.33
+Verify time: 2.429, speed: 19.76, Output: 66 / 48
+Draft time: 0.292, speed: 519.72
+Verify time: 1.922, speed: 19.77, Output: 51 / 38
+sample_idx: 3, k_config: (2, 2, 1, 1), good_speed > 1.4: 31.618, count: 0.625, invocation: 396 / 214
+4, prompt_text: Translate the input English sentence into German.
+Input: "If a group of people or if disabled persons are crossing the street, the green phase is extended, thus ensuring that everyone gets safely across the street," explained Arnold.
+Output: 
+Draft time: 0.516, speed: 519.61
+Verify time: 3.401, speed: 19.70, Output: 114 / 67
+Draft time: 0.315, speed: 520.62
+Verify time: 2.079, speed: 19.72, Output: 49 / 41
+Draft time: 0.323, speed: 520.19
+Verify time: 2.131, speed: 19.71, Output: 53 / 42
+Draft time: 0.516, speed: 519.16
+Verify time: 3.401, speed: 19.70, Output: 116 / 67
+Draft time: 0.054, speed: 517.92
+Verify time: 0.361, speed: 19.40, Output: 16 / 7
+Draft time: 0.238, speed: 520.19
+Verify time: 1.574, speed: 19.69, Output: 45 / 31
+Draft time: 0.485, speed: 519.66
+Verify time: 3.206, speed: 19.65, Output: 129 / 63
+Draft time: 0.353, speed: 520.91
+Verify time: 2.331, speed: 19.73, Output: 52 / 46
+sample_idx: 4, k_config: (2, 2, 1, 1), good_speed > 1.4: 30.459, count: 0.625, invocation: 420 / 235
+5, prompt_text: Translate the input English sentence into German.
+Input: Yesterday this was not the case: The light had barely turned green for pedestrians when a luxury vehicle sped through on a red light.
+Output: 
+Draft time: 0.308, speed: 519.94
+Verify time: 2.023, speed: 19.77, Output: 57 / 40
+Draft time: 0.446, speed: 520.23
+Verify time: 2.937, speed: 19.75, Output: 90 / 58
+Draft time: 0.384, speed: 520.32
+Verify time: 2.530, speed: 19.76, Output: 70 / 50
+Draft time: 0.223, speed: 519.65
+Verify time: 1.466, speed: 19.78, Output: 49 / 29
+Draft time: 0.417, speed: 518.32
+Verify time: 2.733, speed: 19.76, Output: 79 / 54
+Draft time: 0.338, speed: 520.43
+Verify time: 2.227, speed: 19.76, Output: 64 / 44
+Draft time: 0.292, speed: 520.95
+Verify time: 1.921, speed: 19.78, Output: 45 / 38
+Draft time: 0.238, speed: 520.83
+Verify time: 1.567, speed: 19.78, Output: 40 / 31
+sample_idx: 5, k_config: (2, 2, 1, 1), good_speed > 1.4: 25.788, count: 0.625, invocation: 339 / 225
+6, prompt_text: Translate the input English sentence into German.
+Input: On the predominantly empty stage - with one important requirement: a crumpled sofa, on which cast members allude to copulating and masturbating - the eight-person ensemble work their way through the text material.
+Output: 
+Draft time: 0.377, speed: 519.77
+Verify time: 2.489, speed: 19.69, Output: 64 / 49
+Draft time: 0.062, speed: 518.33
+Verify time: 0.411, speed: 19.45, Output: 13 / 8
+Draft time: 0.146, speed: 520.60
+Verify time: 0.969, speed: 19.61, Output: 34 / 19
+Draft time: 0.215, speed: 520.48
+Verify time: 1.425, speed: 19.65, Output: 49 / 28
+Draft time: 0.285, speed: 520.14
+Verify time: 1.883, speed: 19.65, Output: 76 / 37
+Draft time: 0.522, speed: 520.94
+Verify time: 3.457, speed: 19.67, Output: 97 / 68
+Draft time: 0.062, speed: 519.63
+Verify time: 0.411, speed: 19.45, Output: 13 / 8
+Draft time: 0.138, speed: 520.69
+Verify time: 0.917, speed: 19.64, Output: 27 / 18
+sample_idx: 6, k_config: (2, 2, 1, 1), good_speed > 1.4: 28.279, count: 0.875, invocation: 309 / 186
+7, prompt_text: Translate the input English sentence into German.
+Input: The 70-minute performance glosses over the script with a host of director's additions, well-known from the repertoire of post-dramatic theatrical styles.
+Output: 
+Draft time: 0.300, speed: 520.43
+Verify time: 1.980, speed: 19.70, Output: 53 / 39
+Draft time: 0.309, speed: 518.44
+Verify time: 2.032, speed: 19.69, Output: 55 / 40
+Draft time: 0.517, speed: 518.68
+Verify time: 3.405, speed: 19.68, Output: 128 / 67
+Draft time: 0.077, speed: 520.19
+Verify time: 0.513, speed: 19.51, Output: 18 / 10
+Draft time: 0.307, speed: 520.99
+Verify time: 2.031, speed: 19.70, Output: 55 / 40
+Draft time: 0.292, speed: 521.33
+Verify time: 1.929, speed: 19.70, Output: 50 / 38
+Draft time: 0.232, speed: 517.71
+Verify time: 1.525, speed: 19.68, Output: 39 / 30
+Draft time: 0.494, speed: 517.75
+Verify time: 3.258, speed: 19.64, Output: 125 / 64
+sample_idx: 7, k_config: (2, 2, 1, 1), good_speed > 1.4: 32.700, count: 0.375, invocation: 271 / 141
+k_config: (2, 2, 1, 1), Speed: 28.23 tokens/s, Acceptance rate: 0.16, Block efficiency: 1.65

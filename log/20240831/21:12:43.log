@@ -1,0 +1,150 @@
+21:12:43 - INFO - The full evaluation configuration:
+Namespace(auto_model=False, datapath='/data0/amax/git/MCSD/dataset/wmt_ende.json', disable_tqdm=True, disable_tree_attn=False, draft_model='/data0/lygao/model/llama/vicuna-160m', flash_attn=False, fp16=False, k_config=(3, 2, 1), max_new_tokens=128, naive_sampling=False, replacement=False, run_baseline=False, sampling_type='sampling', target_model='/data0/lygao/model/llama/llama-13b', tokenizer='/data0/lygao/model/llama/llama-13b')
+21:12:43 - INFO - Loading draft model: /data0/lygao/model/llama/vicuna-160m
+21:12:44 - INFO - Loading target model: /data0/lygao/model/llama/llama-13b
+21:12:44 - ERROR - Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+21:12:50 - ERROR - Loading checkpoint shards:  33%|###3      | 1/3 [00:06<00:12,  6.16s/it]
+21:12:56 - ERROR - Loading checkpoint shards:  67%|######6   | 2/3 [00:12<00:06,  6.01s/it]
+21:13:00 - ERROR - Loading checkpoint shards: 100%|##########| 3/3 [00:15<00:00,  4.96s/it]
+21:13:00 - ERROR - Loading checkpoint shards: 100%|##########| 3/3 [00:15<00:00,  5.26s/it]
+21:13:00 - ERROR - /home/amax/miniconda3/envs/pytorch/lib/python3.8/site-packages/transformers/generation/configuration_utils.py:362: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+21:13:00 - ERROR - /home/amax/miniconda3/envs/pytorch/lib/python3.8/site-packages/transformers/generation/configuration_utils.py:367: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+21:13:00 - INFO - Arguments: Namespace(auto_model=False, datapath='/data0/amax/git/MCSD/dataset/wmt_ende.json', disable_tqdm=True, disable_tree_attn=False, draft_model='/data0/lygao/model/llama/vicuna-160m', flash_attn=False, fp16=False, k_config=(3, 2, 1), max_new_tokens=128, naive_sampling=False, replacement=False, run_baseline=False, sampling_type='sampling', target_model='/data0/lygao/model/llama/llama-13b', tokenizer='/data0/lygao/model/llama/llama-13b')
+21:13:00 - INFO - Please input the k_config:
+21:13:07 - INFO - Using k_config: 3,2,1
+21:13:07 - INFO - evaluation start.
+21:13:08 - INFO - samples: 0, acceptance_count: 7, draft_token_count: 27, invocation_count: 9
+21:13:13 - INFO - samples: 1, acceptance_count: 71, draft_token_count: 219, invocation_count: 73
+21:13:14 - INFO - samples: 2, acceptance_count: 87, draft_token_count: 252, invocation_count: 84
+21:13:20 - INFO - samples: 3, acceptance_count: 143, draft_token_count: 471, invocation_count: 157
+21:13:25 - INFO - samples: 4, acceptance_count: 179, draft_token_count: 663, invocation_count: 221
+21:13:31 - INFO - samples: 5, acceptance_count: 235, draft_token_count: 879, invocation_count: 293
+21:13:32 - INFO - samples: 6, acceptance_count: 249, draft_token_count: 933, invocation_count: 311
+21:13:33 - INFO - samples: 7, acceptance_count: 249, draft_token_count: 936, invocation_count: 312
+21:13:34 - INFO - samples: 8, acceptance_count: 253, draft_token_count: 984, invocation_count: 328
+21:13:35 - INFO - samples: 9, acceptance_count: 273, draft_token_count: 1038, invocation_count: 346
+21:13:35 - INFO - evaluation complete.
+21:13:35 - INFO - Running time: 28.64 s
+21:13:35 - INFO - Token latency: 46.26 ms
+21:13:35 - INFO - Speed: 21.62 tokens/s
+21:13:35 - INFO - Acceptance rate: 0.26
+21:13:35 - INFO - Block efficiency: 1.79
+21:13:35 - INFO - Please input the k_config:
+21:14:38 - INFO - Using k_config: 4,2,1
+21:14:38 - INFO - evaluation start.
+21:14:39 - INFO - samples: 0, acceptance_count: 3, draft_token_count: 30, invocation_count: 10
+21:14:41 - INFO - samples: 1, acceptance_count: 25, draft_token_count: 84, invocation_count: 28
+21:14:44 - INFO - samples: 2, acceptance_count: 104, draft_token_count: 207, invocation_count: 69
+21:14:47 - INFO - samples: 3, acceptance_count: 113, draft_token_count: 309, invocation_count: 103
+21:14:49 - INFO - samples: 4, acceptance_count: 155, draft_token_count: 417, invocation_count: 139
+21:14:52 - INFO - samples: 5, acceptance_count: 164, draft_token_count: 495, invocation_count: 165
+21:14:55 - INFO - samples: 6, acceptance_count: 206, draft_token_count: 615, invocation_count: 205
+21:14:58 - INFO - samples: 7, acceptance_count: 221, draft_token_count: 723, invocation_count: 241
+21:15:01 - INFO - samples: 8, acceptance_count: 261, draft_token_count: 834, invocation_count: 278
+21:15:02 - INFO - samples: 9, acceptance_count: 282, draft_token_count: 900, invocation_count: 300
+21:15:02 - INFO - evaluation complete.
+21:15:02 - INFO - Running time: 23.98 s
+21:15:02 - INFO - Token latency: 41.20 ms
+21:15:02 - INFO - Speed: 24.27 tokens/s
+21:15:02 - INFO - Acceptance rate: 0.31
+21:15:02 - INFO - Block efficiency: 1.94
+21:15:02 - INFO - Please input the k_config:
+21:15:19 - INFO - Using k_config: 4,2
+21:15:19 - INFO - evaluation start.
+21:15:24 - INFO - samples: 0, acceptance_count: 66, draft_token_count: 124, invocation_count: 62
+21:15:25 - INFO - samples: 1, acceptance_count: 73, draft_token_count: 164, invocation_count: 82
+21:15:28 - INFO - samples: 2, acceptance_count: 92, draft_token_count: 258, invocation_count: 129
+21:15:34 - INFO - samples: 3, acceptance_count: 147, draft_token_count: 406, invocation_count: 203
+21:15:39 - INFO - samples: 4, acceptance_count: 198, draft_token_count: 564, invocation_count: 282
+21:15:41 - INFO - samples: 5, acceptance_count: 206, draft_token_count: 626, invocation_count: 313
+21:15:42 - INFO - samples: 6, acceptance_count: 212, draft_token_count: 636, invocation_count: 318
+21:15:45 - INFO - samples: 7, acceptance_count: 242, draft_token_count: 730, invocation_count: 365
+21:15:46 - INFO - samples: 8, acceptance_count: 261, draft_token_count: 764, invocation_count: 382
+21:15:48 - INFO - samples: 9, acceptance_count: 294, draft_token_count: 824, invocation_count: 412
+21:15:48 - INFO - evaluation complete.
+21:15:48 - INFO - Running time: 28.98 s
+21:15:48 - INFO - Token latency: 41.05 ms
+21:15:48 - INFO - Speed: 24.36 tokens/s
+21:15:48 - INFO - Acceptance rate: 0.36
+21:15:48 - INFO - Block efficiency: 1.71
+21:15:48 - INFO - Please input the k_config:
+21:17:05 - INFO - Using k_config: 5,2
+21:17:05 - INFO - evaluation start.
+21:17:06 - INFO - samples: 0, acceptance_count: 5, draft_token_count: 18, invocation_count: 9
+21:17:07 - INFO - samples: 1, acceptance_count: 25, draft_token_count: 68, invocation_count: 34
+21:17:10 - INFO - samples: 2, acceptance_count: 45, draft_token_count: 156, invocation_count: 78
+21:17:13 - INFO - samples: 3, acceptance_count: 60, draft_token_count: 218, invocation_count: 109
+21:17:18 - INFO - samples: 4, acceptance_count: 115, draft_token_count: 364, invocation_count: 182
+21:17:21 - INFO - samples: 5, acceptance_count: 134, draft_token_count: 450, invocation_count: 225
+21:17:24 - INFO - samples: 6, acceptance_count: 147, draft_token_count: 536, invocation_count: 268
+21:17:26 - INFO - samples: 7, acceptance_count: 161, draft_token_count: 604, invocation_count: 302
+21:17:31 - INFO - samples: 8, acceptance_count: 228, draft_token_count: 726, invocation_count: 363
+21:17:32 - INFO - samples: 9, acceptance_count: 257, draft_token_count: 778, invocation_count: 389
+21:17:32 - INFO - evaluation complete.
+21:17:32 - INFO - Running time: 27.59 s
+21:17:32 - INFO - Token latency: 42.71 ms
+21:17:32 - INFO - Speed: 23.41 tokens/s
+21:17:32 - INFO - Acceptance rate: 0.33
+21:17:32 - INFO - Block efficiency: 1.66
+21:17:32 - INFO - Please input the k_config:
+21:18:27 - INFO - Using k_config: 3,3
+21:18:27 - INFO - evaluation start.
+21:18:28 - INFO - samples: 0, acceptance_count: 4, draft_token_count: 20, invocation_count: 10
+21:18:31 - INFO - samples: 1, acceptance_count: 27, draft_token_count: 106, invocation_count: 53
+21:18:35 - INFO - samples: 2, acceptance_count: 70, draft_token_count: 222, invocation_count: 111
+21:18:39 - INFO - samples: 3, acceptance_count: 107, draft_token_count: 334, invocation_count: 167
+21:18:41 - INFO - samples: 4, acceptance_count: 123, draft_token_count: 408, invocation_count: 204
+21:18:44 - INFO - samples: 5, acceptance_count: 134, draft_token_count: 486, invocation_count: 243
+21:18:45 - INFO - samples: 6, acceptance_count: 149, draft_token_count: 516, invocation_count: 258
+21:18:48 - INFO - samples: 7, acceptance_count: 166, draft_token_count: 612, invocation_count: 306
+21:18:49 - INFO - samples: 8, acceptance_count: 180, draft_token_count: 638, invocation_count: 319
+21:18:54 - INFO - samples: 9, acceptance_count: 248, draft_token_count: 762, invocation_count: 381
+21:18:54 - INFO - evaluation complete.
+21:18:54 - INFO - Running time: 26.72 s
+21:18:54 - INFO - Token latency: 42.48 ms
+21:18:54 - INFO - Speed: 23.54 tokens/s
+21:18:54 - INFO - Acceptance rate: 0.33
+21:18:54 - INFO - Block efficiency: 1.65
+21:18:54 - INFO - Please input the k_config:
+21:19:22 - INFO - Using k_config: 4,1
+21:19:22 - INFO - evaluation start.
+21:19:23 - INFO - samples: 0, acceptance_count: 3, draft_token_count: 24, invocation_count: 12
+21:19:27 - INFO - samples: 1, acceptance_count: 66, draft_token_count: 156, invocation_count: 78
+21:19:32 - INFO - samples: 2, acceptance_count: 126, draft_token_count: 296, invocation_count: 148
+21:19:37 - INFO - samples: 3, acceptance_count: 183, draft_token_count: 438, invocation_count: 219
+21:19:40 - INFO - samples: 4, acceptance_count: 195, draft_token_count: 504, invocation_count: 252
+21:19:44 - INFO - samples: 5, acceptance_count: 239, draft_token_count: 634, invocation_count: 317
+21:19:49 - INFO - samples: 6, acceptance_count: 283, draft_token_count: 784, invocation_count: 392
+21:19:52 - INFO - samples: 7, acceptance_count: 297, draft_token_count: 862, invocation_count: 431
+21:19:53 - INFO - samples: 8, acceptance_count: 308, draft_token_count: 896, invocation_count: 448
+21:19:55 - INFO - samples: 9, acceptance_count: 325, draft_token_count: 942, invocation_count: 471
+21:19:55 - INFO - evaluation complete.
+21:19:55 - INFO - Running time: 32.91 s
+21:19:55 - INFO - Token latency: 41.34 ms
+21:19:55 - INFO - Speed: 24.19 tokens/s
+21:19:55 - INFO - Acceptance rate: 0.35
+21:19:55 - INFO - Block efficiency: 1.69
+21:19:55 - INFO - Please input the k_config:
+21:20:30 - INFO - Using k_config: 4,11
+21:20:30 - INFO - evaluation start.
+21:20:30 - INFO - samples: 0, acceptance_count: 4, draft_token_count: 22, invocation_count: 11
+21:20:32 - INFO - samples: 1, acceptance_count: 12, draft_token_count: 68, invocation_count: 34
+21:20:35 - INFO - samples: 2, acceptance_count: 34, draft_token_count: 158, invocation_count: 79
+21:20:37 - INFO - samples: 3, acceptance_count: 45, draft_token_count: 192, invocation_count: 96
+21:20:37 - INFO - samples: 4, acceptance_count: 56, draft_token_count: 210, invocation_count: 105
+21:20:40 - INFO - samples: 5, acceptance_count: 70, draft_token_count: 292, invocation_count: 146
+21:20:44 - INFO - samples: 6, acceptance_count: 88, draft_token_count: 394, invocation_count: 197
+21:20:47 - INFO - samples: 7, acceptance_count: 104, draft_token_count: 468, invocation_count: 234
+21:20:48 - INFO - samples: 8, acceptance_count: 121, draft_token_count: 496, invocation_count: 248
+21:20:49 - INFO - samples: 9, acceptance_count: 144, draft_token_count: 528, invocation_count: 264
+21:20:49 - INFO - evaluation complete.
+21:20:49 - INFO - Running time: 19.62 s
+21:20:49 - INFO - Token latency: 48.10 ms
+21:20:49 - INFO - Speed: 20.79 tokens/s
+21:20:49 - INFO - Acceptance rate: 0.27
+21:20:49 - INFO - Block efficiency: 1.55
+21:20:49 - INFO - Please input the k_config:
+21:21:13 - INFO - Using k_config: -1
+
