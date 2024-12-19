@@ -198,6 +198,7 @@ def run_baseline_eval(
     target_model.eval()
 
     start_time = time.time()
+    batch_size = 1
     invocation_count = 0
 
     iterator = range(min(16, len(dataloader)))
@@ -222,6 +223,51 @@ def run_baseline_eval(
     logger.info("Running time: {:.2f} s".format(run_time))
     logger.info("Token latency: {:.2f} ms".format(latency * 1000))
     logger.info("Speed: {:.2f} tokens/s".format(speed))
+
+
+def run_baseline_eval_batch(
+    target_model,
+    tokenizer,
+    datapath: str,
+    max_new_tokens: int = 128,
+    sampling_type: str= "sampling",
+):
+
+    if sampling_type == "argmax":
+        target_model_temp = 0
+    else:
+        target_model_temp = 1
+
+    dataloader = JsonData(datapath, args.datapath)
+    generator = BaseGenerator(
+        target_model,
+        eos_token_id=tokenizer.eos_token_id,
+        max_new_tokens=max_new_tokens,
+        temp=target_model_temp,
+    )
+    target_model.eval()
+
+    
+    batch_size = [1,2,4,6,8,12,16,24,32]
+
+
+    with torch.no_grad():
+        for batch in batch_size:
+            start_time = time.time()
+            invocation_count = 0
+            logger.info(f"batch_size: {batch}")
+
+            for i in range(0, len(8), batch):
+                input_ids = tokenizer([dataloader[j] for j in range(i, i+batch)], return_tensors="pt", padding=True, truncation=True).input_ids.to(device)
+                output = generator.generate(input_ids)
+
+                invocation_count += output.invocation_count
+
+            run_time = time.time() - start_time
+            # logger.info(f"batch: {i}, invocation_count: {output.invocation_count}")
+            logger.info("Token latency: {:.2f} ms".format((run_time / invocation_count) * 1000))
+            logger.info("Speed: {:.2f} tokens/s".format(invocation_count / run_time))
+
 
 
 def main(args):

@@ -17,5 +17,6 @@ python evaluation_log.py \
     --disable-tqdm \
     --sampling-type myway \
     --gpu-id 7 \
+    --disable-tree-attn \
 
-# nohup
+
