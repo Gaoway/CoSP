@@ -1,3 +1,0 @@
-usage: evaluation_log.py [-h] [--draft-model DRAFT_MODEL] [--target-model TARGET_MODEL] [--tokenizer TOKENIZER] [--fp16] [--k-config K_CONFIG] [--datapath DATAPATH] [--max-new-tokens MAX_NEW_TOKENS] [--replacement] [--naive-sampling]
-                         [--disable-tree-attn] [--sampling-type {argmax,sampling}] [--disable-tqdm] [--auto-model] [--run-baseline] [--flash-attn]
-evaluation_log.py: error: argument --sampling-type: invalid choice: 'self' (choose from 'argmax', 'sampling')
