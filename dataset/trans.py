@@ -22,7 +22,7 @@ except Exception as e:
 # json_file = "wikitext2.json"
 # with open(json_file, "w", encoding="utf-8") as f:
 #     json.dump(custom_json, f, ensure_ascii=False, indent=4)
-curl -X GET \
-     "https://datasets-server.huggingface.co/splits?dataset=mikasenghaas%2Fwikitext-2"
-curl -X GET \
-     "https://datasets-server.huggingface.co/rows?dataset=mikasenghaas%2Fwikitext-2&config=default&split=train&offset=0&length=100"
+# curl -X GET \
+#      "https://datasets-server.huggingface.co/splits?dataset=mikasenghaas%2Fwikitext-2"
+# curl -X GET \
+#      "https://datasets-server.huggingface.co/rows?dataset=mikasenghaas%2Fwikitext-2&config=default&split=train&offset=0&length=100"

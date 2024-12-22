@@ -1,4 +1,4 @@
-# Source Code for Multi-Candidate Speculative Decoding
+# Source Code for Collaborative Speculative Inference with Heterogeneous Devices.
 
 We provide Python application interfaces for inference, as well as command-line interfaces for evaluation.
 

@@ -25,3 +25,4 @@ with open(f'chatgpt_offloading.json', 'w') as f:
     json.dump(original_list[:16], f)
 
 END
+# wget wget https://specinfer.s3.us-east-2.amazonaws.com/prompts/webqa.json
