@@ -12,7 +12,10 @@ if tokenizer.pad_token is None:
 
 from datasets import load_dataset, load_metric
 
-datasetname  = 'swag'
+import argparse
+
+
+datasetname  = 'alpaca'
 print(f"Loading {datasetname} dataset...")
 
 if datasetname == 'piqa':
@@ -34,7 +37,17 @@ elif datasetname == 'swag':
     end3 = train["ending3"]
     labels = train["label"]
     responses = [end0[i] if labels[i] == 0 else end1[i] if labels[i] == 1 else end2[i] if labels[i] == 2 else end3[i] for i in range(len(labels))]
-    
+elif datasetname == 'alpaca':
+    dataset = load_dataset('tatsu-lab/alpaca', cache_dir='/data0/amax/cache/dataset')
+    train = dataset["train"]
+    instructions = train["instruction"]
+    inputs = train["input"]
+    outputs = train["output"]
+
+    prompts = [f"{instructions[i]} {inputs[i]}" for i in range(len(instructions))]
+    responses = outputs
+
+
 max_length = 256
 tokenized_inputs = tokenizer(prompts, padding="max_length", truncation=True, max_length=max_length, return_tensors="pt")
 tokenized_labels = tokenizer(responses, padding="max_length", truncation=True, max_length=max_length, return_tensors="pt")["input_ids"]
@@ -75,9 +88,10 @@ training_args = TrainingArguments(
     output_dir=f"/data0/amax/git/CoSP/finetune/{datasetname}",
     eval_strategy="no",
     learning_rate=2e-5,
-    per_device_train_batch_size=2,
-    num_train_epochs=3,  # Increase to 5 or more
-    weight_decay=0.01
+    per_device_train_batch_size=8,
+    num_train_epochs=5,  # Increase to 5 or more
+    weight_decay=0.01,
+    save_steps= 2000, 
 )
 
 
@@ -86,7 +100,8 @@ trainer = Trainer(
     model=model,
     args=training_args,
     train_dataset=dataset,
-    data_collator=data_collator
+    data_collator=data_collator,
+
 )
 
 # Start training
